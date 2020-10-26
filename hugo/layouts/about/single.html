@@ -1,0 +1,25 @@
+{{ define "main" }}
+
+<div class="about-content">
+  {{ .Content }}
+</div>
+
+<h2>Clients</h2>
+<ul class="client-list">
+  {{ range where .Site.RegularPages "Section" "clients" }}
+    {{ partial "client-tile.html" . }}
+  {{ end }}
+</ul>
+
+<h2>Leadership</h2>
+<ul class="leadership-team">
+  {{ range where .Site.RegularPages "Section" "leadership" }}
+    {{ partial "person-tile.html" . }}
+  {{ end }}
+</ul>
+
+{{ end }}
+
+{{ define "cta" }}
+  {{ partial "cta.html" . }}
+{{ end }}

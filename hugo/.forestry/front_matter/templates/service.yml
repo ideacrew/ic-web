@@ -1,0 +1,9 @@
+---
+label: Service
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: Title
+  config:
+    required: true

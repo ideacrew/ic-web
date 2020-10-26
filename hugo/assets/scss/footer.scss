@@ -1,0 +1,34 @@
+footer {
+  min-height: 7rem;
+  background-color: var(--neutral-015);
+  color: var(--neutral-094);
+}
+
+.company-info {
+  grid-column: 2 / 4;
+  align-self: center;
+}
+
+.footer-nav {
+  grid-column: 5 / 6;
+  align-self: center;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .footer-nav a {
+    font-size: 0.75rem;
+  }
+}

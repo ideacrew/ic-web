@@ -1,0 +1,47 @@
+{
+  "name": "ic-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cd hugo && hugo server --disableFastRender",
+    "build": "cd hugo && hugo --minify",
+    "build:local": "rm -rf public && npm run build:hugo",
+    "deploy": "firebase deploy --only hosting",
+    "lint": "stylelint \"hugo/assets/scss/**/*.scss\" --fix",
+    "stylelint-check": "stylelint-config-prettier-check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markgoho/ic-web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/markgoho/ic-web/issues"
+  },
+  "homepage": "https://github.com/markgoho/ic-web#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.5.0",
+    "@typescript-eslint/parser": "^4.5.0",
+    "broken-link-checker": "^0.7.8",
+    "eslint": "^7.11.0",
+    "eslint-config-prettier": "^6.14.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.2",
+    "firebase-tools": "^8.13.1",
+    "prettier": "^2.1.2",
+    "replace-in-file": "^6.1.0",
+    "stylelint": "^13.7.2",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.18.0",
+    "typescript": "^4.0.2"
+  },
+  "dependencies": {}
+}

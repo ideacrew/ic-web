@@ -1,0 +1,46 @@
+.call-to-action {
+  padding-bottom: 3rem;
+}
+
+.cta-heading {
+  grid-column: 2 / 6;
+  margin: 0;
+  padding: 3rem 0;
+  color: var(--neutral-031);
+  font-size: 2rem;
+  line-height: 1.25;
+}
+
+.link-as-button {
+  grid-column: 2 / 6;
+  display: inline-block;
+  padding: 0.75rem 3rem;
+  border-radius: 4px;
+  background-color: var(--primary-blue);
+  color: var(--neutral-094);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-align: center;
+
+  &:active {
+    background-color: var(--neutral-077);
+  }
+
+  &:hover {
+    color: var(--neutral-010);
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .cta-heading {
+    grid-column: 2 / 4;
+    font-size: 4rem;
+    text-align: left;
+  }
+
+  .link-as-button {
+    grid-column: 4 / 6;
+    align-self: center;
+    justify-self: center;
+  }
+}

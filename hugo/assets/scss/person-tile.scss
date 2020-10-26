@@ -1,0 +1,32 @@
+.person-tile {
+  display: grid;
+  position: relative;
+  padding: 1.125rem;
+  grid-template-columns: 1fr min-content;
+  grid-template-rows: minmax(2.5rem, max-content) minmax(2.5rem, max-content) min-content;
+  border: 1px solid var(--neutral-064);
+  border-radius: 5px;
+  font-size: 0.75rem;
+}
+
+.person-name {
+  color: var(--neutral-031);
+  font-size: 1rem;
+  font-weight: 600;
+  grid-column: 1 / -1;
+  line-height: 1.25;
+
+  &:hover {
+    color: var(--neutral-020);
+    text-decoration: underline;
+  }
+}
+
+.person-title {
+  grid-column: 1 / 2;
+}
+
+.linked-in {
+  grid-column: 1 / -1;
+  justify-self: end;
+}

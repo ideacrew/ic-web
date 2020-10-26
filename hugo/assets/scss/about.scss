@@ -1,0 +1,32 @@
+.about-content {
+  grid-column: 2 / 6;
+}
+
+.client-list,
+.leadership-team {
+  display: grid;
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  gap: 0.75rem;
+}
+
+.client-list {
+  grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+}
+
+.leadership-team {
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+}
+
+.about-content,
+.client-list,
+.leadership-team {
+  margin-bottom: 5.5rem;
+}
+
+@media screen and (min-width: 769px) {
+  .leadership-team {
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  }
+}

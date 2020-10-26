@@ -1,0 +1,45 @@
+.bio-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  .leadership-name {
+    margin: 0;
+    grid-area: name;
+  }
+
+  .job-title {
+    margin: 0;
+    font-size: 0.75rem;
+  }
+
+  .headshot {
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--neutral-031);
+    border-radius: 5px;
+    grid-area: headshot;
+  }
+
+  p {
+    grid-area: bio;
+  }
+
+  .leadership-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-area: info;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .bio-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "name . ."
+      "info . ."
+      "headshot bio bio";
+  }
+}

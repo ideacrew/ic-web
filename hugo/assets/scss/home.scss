@@ -1,0 +1,60 @@
+.home-content,
+.visit-us {
+  padding: 3em 0;
+  background-color: var(--lighter);
+  color: var(--black);
+}
+
+.audio-sermons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+  background-color: var(--black);
+  background-image: url("/images/fog-small.webp");
+  background-position: bottom center;
+  background-size: cover;
+  background-blend-mode: screen;
+
+  h3 {
+    color: var(--accent);
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  a {
+    display: block;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background-color: var(--accent);
+    color: var(--black);
+  }
+}
+
+.visit-us {
+  h2 {
+    color: var(--darker);
+    text-align: center;
+  }
+}
+
+.visitation-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.times,
+.address {
+  text-align: center;
+}
+
+.address {
+  margin-left: 2rem;
+}
+
+.address a {
+  color: var(--black);
+}

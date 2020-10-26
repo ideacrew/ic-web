@@ -1,0 +1,44 @@
+{{ define "main" }}
+<h1>Contact Us</h1>
+<div class="contact-info">
+  <div>Email</div>
+  <a href="mailto:info@ideacrew.com">info@ideacrew.com</a>
+  <div>Phone</div>
+  <a href="tel:202-688-3130">202-688-3130</a>
+  <div>Address</div>
+  <a href="https://g.page/IdeaCrew?share"
+    >1150 Connecticut Ave NW, Suite 710, Washington, DC 20036</a
+  >
+</div>
+<!-- <img class="map" src="/images/ideacrew-map.jpg" /> -->
+<div class="contact-form">
+  <div class="input-group">
+    <label for="contact-name">Name</label>
+    <input type="text" name="contact-name" id="contact-name" />
+  </div>
+  <div class="input-group">
+    <label for="contact-email">Email</label>
+    <input
+      type="email"
+      inputmode="email"
+      name="contact-email"
+      id="contact-email"
+    />
+  </div>
+  <div class="input-group">
+    <label for="contact-company">Company</label>
+    <input type="text" name="contact-company" id="contact-company" />
+  </div>
+  <div class="input-group">
+    <label for="contact-body">How can we help?</label>
+    <textarea
+      name="contact-body"
+      id="contact-body"
+      cols="30"
+      rows="10"
+    ></textarea>
+  </div>
+  <button type="button">Send message</button>
+</div>
+<div class="shade"></div>
+{{ end }}

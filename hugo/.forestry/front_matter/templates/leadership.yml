@@ -1,0 +1,22 @@
+---
+label: leadership
+hide_body: false
+fields:
+- type: text
+  name: name
+  label: name
+- type: file
+  name: image
+  label: image
+- type: text
+  name: job_title
+  label: job_title
+- type: text
+  name: linkedIn
+  label: linkedIn
+- name: twitter
+  type: text
+  config:
+    required: false
+  label: Twitter
+  description: Your twitter username

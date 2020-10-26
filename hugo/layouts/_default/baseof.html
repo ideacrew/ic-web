@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ $.Site.LanguageCode | default "en" }}">
+
+  <head>
+    {{ partial "head.html" .}}
+
+    {{- block "head-scripts" . -}}
+    {{- end -}}
+  </head>
+
+  <body>
+    <header class="grid">
+      {{ block "hero" . }}
+        {{ partial "header.html" . }}
+      {{ end }}
+    </header>
+    <main class="grid">
+      {{ block "main" . }}{{ end }}
+      {{ block "feed" . }}{{ end }}
+    </main>
+
+    {{ block "cta" . }}{{ end }}
+
+    {{ block "footer" . }}
+     {{ partial "footer.html" . }}
+    {{ end }}
+    {{ $opts := dict "targetPath" "main.js"  }}
+    {{ $built := resources.Get "ts/menu.ts" | js.Build $opts | resources.Minify | resources.Fingerprint }}
+    <script type="text/javascript" src="{{ $built.RelPermalink }}" defer></script>
+
+  </body>
+</html>
