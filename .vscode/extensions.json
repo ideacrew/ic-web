@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "bungcip.better-toml",
+    "coenraads.bracket-pair-colorizer-2",
+    "streetsidesoftware.code-spell-checker",
+    "editorconfig.editorconfig",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "toba.vsfire",
+    "yzhang.markdown-all-in-one",
+    "stylelint.vscode-stylelint"
+  ]
+}
