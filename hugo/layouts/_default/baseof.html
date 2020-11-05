@@ -28,5 +28,7 @@
     {{ $built := resources.Get "ts/menu.ts" | js.Build $opts | resources.Minify | resources.Fingerprint }}
     <script type="text/javascript" src="{{ $built.RelPermalink }}" defer></script>
 
+    {{ block "page-scripts" . }}
+    {{ end }}
   </body>
 </html>

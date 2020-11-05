@@ -71,7 +71,7 @@
     border-radius: 5px;
   }
 
-  button {
+  .submit-button {
     display: block;
     width: 100%;
     padding: 0.75rem 0;
@@ -79,5 +79,10 @@
     border-radius: 5px;
     background-color: var(--primary-blue);
     color: var(--neutral-094);
+
+    &:disabled {
+      background-color: var(--neutral-031);
+      cursor: not-allowed;
+    }
   }
 }

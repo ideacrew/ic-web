@@ -1,3 +1,7 @@
+{{ define "head-scripts" }}
+<script src="https://www.google.com/recaptcha/api.js?render=6LezZ98ZAAAAAP9dauh0WuNerMeRvRzhuP83rbL6"></script>
+{{ end }}
+
 {{ define "main" }}
 <h1>Contact Us</h1>
 <div class="contact-info">
@@ -11,7 +15,7 @@
   >
 </div>
 <!-- <img class="map" src="/images/ideacrew-map.jpg" /> -->
-<div class="contact-form">
+<form class="contact-form">
   <div class="input-group">
     <label for="contact-name">Name</label>
     <input type="text" name="contact-name" id="contact-name" />
@@ -30,15 +34,22 @@
     <input type="text" name="contact-company" id="contact-company" />
   </div>
   <div class="input-group">
-    <label for="contact-body">How can we help?</label>
+    <label for="contact-message">How can we help?</label>
     <textarea
-      name="contact-body"
-      id="contact-body"
+      name="contact-message"
+      id="contact-message"
       cols="30"
       rows="10"
     ></textarea>
   </div>
-  <button type="button">Send message</button>
-</div>
+  <button disabled class="submit-button" type="button">Send message</button>
+</form>
 <div class="shade"></div>
+{{ end }}
+
+
+{{ define "page-scripts" }}
+{{ $opts := dict "targetPath" "contact.js"  }}
+{{ $built := resources.Get "ts/contact.ts" | js.Build $opts | resources.Minify | resources.Fingerprint }}
+<script type="text/javascript" src="{{ $built.RelPermalink }}" defer></script>
 {{ end }}

@@ -12,10 +12,16 @@
   },
   "hosting": {
     "public": "public",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "/contact-form-submission",
+        "function": "processFormSubmission"
+      },
+      {
+        "source": "/verify-captcha",
+        "function": "verifyRecaptcha"
+      }
     ],
     "headers": [
       {
