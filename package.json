@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cd hugo && hugo server --disableFastRender",
     "build": "cd hugo && hugo --minify",
-    "build:local": "rm -rf public && npm run build:hugo",
+    "build:local": "rm -rf public && npm run build",
     "deploy": "firebase deploy --only hosting",
     "lint": "stylelint \"hugo/assets/scss/**/*.scss\" --fix",
     "stylelint-check": "stylelint-config-prettier-check"
