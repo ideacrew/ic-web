@@ -1,0 +1,12 @@
+{{ define "main" }}
+<div class="content-wrapper list-container">
+  {{ .Content }}
+  <ul>
+    {{ range .Pages.ByTitle }}
+    <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}
