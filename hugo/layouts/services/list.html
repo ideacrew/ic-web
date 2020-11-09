@@ -2,9 +2,9 @@
 <div class="content-wrapper list-container">
   {{ .Content }}
   <ul>
-    {{ range .Pages.ByTitle }}
+    {{ range .Pages }}
     <li>
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
     </li>
     {{ end }}
   </ul>
