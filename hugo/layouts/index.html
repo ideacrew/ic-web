@@ -2,24 +2,22 @@
 {{ end }}
 
 {{ define "main"}}
-  <h2 class="index-heading">Strategy & technology solutions that help our clients solve their most important challenges</h2>
+<h2 class="index-heading">Strategy & technology solutions that help our clients solve their most important challenges</h2>
 
-  <div class="services-section grid">
-    <div class="services-container">
-      <h3 class="services-heading">Our Services</h3>
-      <ul class="services-list">
-        {{ range where .Site.RegularPages "Section" "services" }}
-          <li>
-            <a class="service-link" href="{{ .Permalink | relURL }}" title="{{ .Title }}">{{ .Params.title }}</a>
-          </li>
-        {{ end }}
-      </ul>
-    </div>
-    <div class="horizontal-block"></div>
+<div class="services-section grid">
+  <div class="services-container">
+    <h3 class="services-heading">Our Services</h3>
+    <ul class="services-list">
+      {{ $services := where $.Site.Pages "Section" "services" }}
+      {{ range where $services ".Params.section_group" true }}
+        <li>
+          <a class="service-link" href="{{ .Permalink | relURL }}" title="{{ .Title }}">{{ .Params.title }}</a>
+        </li>
+      {{ end }}
+    </ul>
   </div>
-
-  {{ .Content }}
-
+  <div class="horizontal-block"></div>
+</div>
 {{ end }}
 
 {{ define "cta" }}
