@@ -7,7 +7,6 @@ sections:
 - type: document
   path: hugo/data/team.json
   label: Team
-  match: "**/*"
 - type: document
   path: hugo/data/clients.json
   label: Clients
