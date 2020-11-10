@@ -6,7 +6,7 @@
 
 <h2>Clients</h2>
 <ul class="client-list">
-  {{ range where .Site.RegularPages "Section" "clients" }}
+  {{ range .Site.Data.clients }}
     {{ partial "client-tile.html" . }}
   {{ end }}
 </ul>
