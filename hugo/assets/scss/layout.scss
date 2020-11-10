@@ -8,6 +8,9 @@ body {
   grid-template-rows: 1fr max-content auto;
   grid-template-columns: 100%;
   background-color: var(--neutral-094);
+}
+
+body.home {
   background-image: url("/images/background-graphic.svg");
   background-repeat: no-repeat;
   background-position: left top;

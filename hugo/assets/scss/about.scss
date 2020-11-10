@@ -1,5 +1,49 @@
 .about-content {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 70ch 1fr;
   grid-column: 2 / 6;
+
+  h1,
+  p {
+    grid-column: 1 / 2;
+  }
+}
+
+.ideacrew-logo {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  align-self: center;
+  justify-self: center;
+}
+
+.our-services {
+  display: grid;
+  margin-bottom: 3rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.service {
+  text-align: center;
+
+  ul {
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+  }
+
+  li {
+    font-size: 0.75rem;
+    text-align: left;
+  }
+
+  h3 {
+    margin-top: 1.75rem;
+    font-size: 1rem;
+    text-align: left;
+  }
 }
 
 .client-list,
@@ -20,8 +64,7 @@
 }
 
 .about-content,
-.client-list,
-.leadership-team {
+.client-list {
   margin-bottom: 5.5rem;
 }
 
