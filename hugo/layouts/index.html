@@ -8,12 +8,10 @@
   <div class="services-container">
     <h3 class="services-heading">Our Services</h3>
     <ul class="services-list">
-      {{ $services := where $.Site.Pages "Section" "services" }}
-      {{ range where $services ".Params.section_group" true }}
-        <li>
-          <a class="service-link" href="{{ .Permalink | relURL }}" title="{{ .Title }}">{{ .Params.title }}</a>
-        </li>
-      {{ end }}
+      <li>Management Consulting</li>
+      <li>Data Integration</li>
+      <li>Application Development</li>
+      <li>DevOps & Cloud Infrastructure</li>
     </ul>
   </div>
   <div class="horizontal-block"></div>
