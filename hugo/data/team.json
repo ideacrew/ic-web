@@ -1,9 +1,5 @@
 [
   {
-    "name": "Simon Henry",
-    "job_title": "VP of Strategic Initiatives"
-  },
-  {
     "name": "Dan Thomas",
     "job_title": "Founder & CEO"
   },
@@ -12,12 +8,16 @@
     "job_title": "Co-founder & Human Resources Executive"
   },
   {
+    "name": "Trevor Garner, MBA",
+    "job_title": "Chief Financial Officer"
+  },
+  {
     "name": "Jack Weiner",
     "job_title": "VP of Operations"
   },
   {
-    "name": "Trevor Garner, MBA",
-    "job_title": "Chief Financial Officer"
+    "name": "Simon Henry",
+    "job_title": "VP of Strategic Initiatives"
   },
   {
     "name": "Saadi Mirza",
@@ -32,16 +32,16 @@
     "job_title": "VP of Consulting Services"
   },
   {
+    "name": "Dominic Foster",
+    "job_title": "Lead Business Analyst"
+  },
+  {
     "name": "Angus Irvine",
     "job_title": "Director of Application Development"
   },
   {
     "name": "Matt Williams",
     "job_title": "VP of DevOps & Cloud"
-  },
-  {
-    "name": "Dominic Foster",
-    "job_title": "Lead Business Analyst"
   },
   {
     "name": "Kirsten Johnsen",
