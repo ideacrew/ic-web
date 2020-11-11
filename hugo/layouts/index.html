@@ -22,3 +22,30 @@
   {{ partial "cta.html" . }}
 {{ end }}
 
+{{ define "schema" }}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Washington",
+      "addressRegion": "District of Columbia"
+      "postalCode": "20036",
+      "streetAddress": "1150 Connecticut Ave NW #710"
+    },
+    "email": "info@ideacrew.com",
+    "name": "IdeaCrew",
+    "telephone": "(202) 688-3130",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-202-688-3130",
+      "contactType": "business inquiries"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Dan Thomas"
+    }
+  }
+</script>
+{{ end }}
