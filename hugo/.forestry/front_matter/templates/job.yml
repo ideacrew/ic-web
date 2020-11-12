@@ -1,4 +1,56 @@
 ---
 label: Job
 hide_body: false
-fields: []
+fields:
+- name: job_title
+  type: text
+  config:
+    required: true
+    min: 10
+    max: 100
+  label: Job Title
+  description: The title of the job, e.g. Senior Software Engineer
+  default: Software Engineer
+- name: job_type
+  type: select
+  default: Full Time
+  config:
+    required: true
+    options:
+    - Full Time
+    - Part Time
+    - Contractor
+    - Temporary
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Job Type
+- name: location
+  type: text
+  config:
+    required: true
+    min: 5
+    max: 50
+  label: Location
+  description: Where the job is located
+  default: Washington, DC
+- name: post_date
+  type: datetime
+  label: Post Date
+  description: When was this job posted?
+  config:
+    required: true
+    date_format: 
+    time_format: 
+    display_utc: false
+    export_format: YYYY-MM-DD
+  default: now
+- name: salary_range
+  type: text
+  config:
+    required: true
+  label: Salary Range
+  description: A range of salary that we're offering this position
+  default: "$70,000 to $150,000 per year"
