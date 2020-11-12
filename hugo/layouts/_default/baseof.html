@@ -9,11 +9,9 @@
   </head>
 
   <body class="{{ .Page.Kind }}">
-    <header class="grid">
-      {{ block "hero" . }}
-        {{ partial "header.html" . }}
-      {{ end }}
-    </header>
+    {{ block "hero" . }}
+      {{ partial "header.html" . }}
+    {{ end }}
     <main class="grid">
       {{ block "main" . }}{{ end }}
       {{ block "feed" . }}{{ end }}

@@ -1,12 +1,17 @@
 footer {
   min-height: 7rem;
-  background-color: var(--neutral-015);
-  color: var(--neutral-094);
+  padding: 2rem 0;
+  background-color: var(--dark-blue);
+  color: var(--white);
 }
 
 .company-info {
   grid-column: 2 / 4;
   align-self: center;
+}
+
+.company-name {
+  margin-top: 1rem;
 }
 
 .footer-nav {
