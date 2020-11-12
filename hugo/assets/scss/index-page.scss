@@ -13,10 +13,16 @@
 }
 
 .services-container {
-  grid-column: 2 / 6;
+  display: grid;
   padding: 0.5rem;
+  grid-template-columns: max-content 1fr;
+  grid-template-areas:
+    'heading heading'
+    'services button';
+  grid-column: 2 / 6;
+  border: 5px solid var(--secondary-blue);
   border-radius: 5px;
-  background-color: var(--neutral-041);
+  background-color: var(--white);
   z-index: 2;
 }
 
@@ -37,20 +43,34 @@
 }
 
 .services-heading {
-  color: var(--neutral-094);
-  font-weight: 400;
+  color: var(--secondary-blue);
+  font-weight: 700;
+  grid-area: heading;
 }
 
 .services-list {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
-  color: var(--neutral-094);
+  color: var(--secondary-blue);
   font-family: var(--sans-serif);
   list-style: none;
+  grid-area: services;
+  gap: 1rem;
 
   li {
-    padding: 0.25rem 0;
+    padding: 0;
   }
+}
+
+.services-link {
+  grid-area: button;
+  align-self: end;
+  padding: 0.5rem 2rem;
+  justify-self: end;
+  border: 2px solid var(--primary-blue);
+  border-radius: 5px;
 }
 
 @media screen and (min-width: 769px) {
@@ -64,12 +84,12 @@
     font-size: 2rem;
   }
 
+  .services-list {
+    margin-top: 1rem;
+  }
+
   .services-container {
     padding: 1rem 2rem;
     grid-column: 4 / 6;
-  }
-
-  .services-list li {
-    padding: 0.625rem 0;
   }
 }
