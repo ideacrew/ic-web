@@ -22,7 +22,7 @@ Reporting to the Director of Application Development, you will oversee the evolu
 * Test and Behavior Driven Development
 * Continuous Integration
 
-### A Development Lead for IdeaCrew is someone who can:
+## A Development Lead for IdeaCrew is someone who can:
 
 * Design and develop software for Web applications, Application Program Interfaces (APIs) and Electronic Data Interchange (EDI)
 * Oversee multiple cross functional development teams and provide technical guidance and steering

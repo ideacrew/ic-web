@@ -1,0 +1,12 @@
+{{ define "main" }}
+<h1>{{ .Params.title }}</h1>
+<h2 class="subheading">{{ .Params.position_type }} in {{ .Params.location }}</h2>
+<div class="posted-on">Posted: {{ .Params.post_date.Format "January 2, 2006" }}</div>
+<div class="career-content-container">
+  {{ .Content }}
+</div>
+<h3>Benefits</h3>
+<p>We offer a flexible work environment, a competitive benefits package including medical and dental insurance, 401k matching and a generous vacation allowance. This position is located in Washington, DC. Relocation assistance may be available.</p>
+<h4>Salary</h4>
+<div>{{ .Params.salary_range }}</div>
+{{- end }}

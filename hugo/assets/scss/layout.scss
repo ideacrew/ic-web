@@ -35,6 +35,10 @@ main > * {
   grid-column: 2 / 6;
 }
 
+// p {
+//   max-width: 70ch;
+// }
+
 @media screen and (min-width: 1128px) {
   .grid {
     grid-template-columns: 1fr repeat(4, 15.667rem) 1fr;

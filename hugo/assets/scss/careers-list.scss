@@ -1,0 +1,17 @@
+.career-list {
+  margin: 0;
+  margin-top: 2rem;
+  padding: 0;
+}
+
+.career-summary {
+  display: grid;
+  padding: 1rem 0;
+  grid-template-columns: 4fr 1fr 1fr;
+  gap: 1rem;
+  border-bottom: 1px solid var(--secondary-blue);
+}
+
+// .career-summary > * {
+//   outline: 1px solid red;
+// }

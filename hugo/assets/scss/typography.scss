@@ -61,10 +61,18 @@ h6 {
   font-family: var(--serif);
   font-weight: 400;
   line-height: 1.2;
+
+  &.subheading {
+    font-size: smaller;
+  }
 }
 
 .alt-heading {
   font-family: var(--sans-serif);
+}
+
+p > a:hover {
+  text-decoration: underline;
 }
 
 h1 {
