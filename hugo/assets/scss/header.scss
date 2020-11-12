@@ -6,9 +6,16 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  height: var(--header-height);
   background: var(--neutral-094);
   z-index: 100;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  width: var(--content-width);
+  height: var(--header-height);
+  margin: 0 auto;
 }
 
 .navbar {

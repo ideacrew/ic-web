@@ -1,0 +1,18 @@
+.work-list {
+  display: grid;
+  margin-top: 2rem;
+  padding: 0;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.work-content-container {
+  width: var(--content-width);
+}
+
+.work-item {
+  padding: 1em;
+  border: 2px solid var(--secondary-blue);
+  border-radius: 0.27em;
+  list-style: none;
+}

@@ -1,0 +1,24 @@
+{{ define "head-styles" }}
+{{ $options := (dict "targetPath" "work-list.css" "outputStyle" "compressed") }}
+{{ $style := resources.Get "scss/work-list.scss" | resources.ToCSS $options | resources.Fingerprint}}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+{{ end }}
+
+
+{{ define "main" }}
+<div class="work-content-container">
+  <h1>Our Work</h1>
+  <div class="content-container">
+    {{ .Content }}
+  </div>
+  <ul class="work-list">
+    {{ range .Pages.ByTitle }}
+    <li class="work-item">
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <span>{{ .Params.location }}</span>
+      <span>{{ .Params.position_type }}</span>
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}

@@ -1,6 +1,6 @@
-.about-content {
+.about-content-container {
   display: grid;
-  width: 100%;
+  width: var(--content-width);
   grid-template-columns: 70ch 1fr;
   grid-column: 2 / 6;
 
@@ -30,7 +30,7 @@
   text-align: center;
 
   ul, h3 {
-    font-family: var(--sans-serif); 
+    font-family: var(--sans-serif);
   }
 
   ul {

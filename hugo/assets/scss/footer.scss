@@ -5,6 +5,13 @@ footer {
   color: var(--white);
 }
 
+.footer-content-container {
+  display: flex;
+  justify-content: space-between;
+  width: var(--content-width);
+  margin: 0 auto;
+}
+
 .company-info {
   grid-column: 2 / 4;
   align-self: center;

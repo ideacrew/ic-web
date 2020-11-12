@@ -6,18 +6,24 @@
 
     {{- block "head-scripts" . -}}
     {{- end -}}
+
+    {{- block "head-styles" . -}}
+    {{- end -}}
   </head>
 
   <body class="{{ .Page.Kind }}">
     {{ block "hero" . }}
       {{ partial "header.html" . }}
     {{ end }}
-    <main class="grid">
-      {{ block "main" . }}{{ end }}
-      {{ block "feed" . }}{{ end }}
+
+    <main>
+    {{ block "main" . }}{{ end }}
+    {{ block "feed" . }}{{ end }}
     </main>
 
-    {{ block "cta" . }}{{ end }}
+    {{ if ne .Page.Title "Contact Us" }}
+    {{ partial "cta.html" . }}
+    {{ end }}
 
     {{ block "footer" . }}
      {{ partial "footer.html" . }}

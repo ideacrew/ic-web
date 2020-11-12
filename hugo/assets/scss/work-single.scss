@@ -1,0 +1,45 @@
+.work-summary {
+  display: flex;
+  gap: 1rem;
+}
+
+.problem,
+.solution {
+  padding: 1rem;
+  border: 2px solid var(--secondary-blue);
+  border-radius: 0.28em;
+  h2 {
+    font-family: var(--sans-serif);
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.75rem;
+  }
+}
+
+.problem {
+  grid-column: 1 / 3;
+}
+
+.solution {
+  grid-column: 3 / 5;
+}
+
+.work-content {
+  margin: 2rem auto;
+  color: var(--secondary-blue);
+}
+
+.quote {
+  padding: 3rem 4rem;
+  background-color: var(--neutral-077);
+  color: var(--secondary-blue);
+  text-align: center;
+}
+
+.quote-content {
+  font-style: italic;
+}

@@ -1,0 +1,33 @@
+{{ define "head-styles" }}
+{{ $options := (dict "targetPath" "work-single.css" "outputStyle" "compressed") }}
+{{ $style := resources.Get "scss/work-single.scss" | resources.ToCSS $options | resources.Fingerprint}}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+{{ end }}
+
+{{ define "main" }}
+<h1>{{ .Params.title }}</h1>
+<div class="work-summary">
+  <div class="problem">
+    <h2>Problem</h2>
+    <p>{{ .Params.problem }}</p>
+  </div>
+  <div class="solution">
+    <h2>Solution</h2>
+    <p>{{ .Params.solution }}</p>
+  </div>
+</div>
+<div class="work-content measure">
+  {{ .Content }}
+</div>
+<div class="quote">
+  <p class="quote-content">
+    {{ .Params.quote }}
+  </p>
+  <div class="attribution">&mdash; {{ .Params.quote_attribution }}</div>
+</div>
+{{ end }}
+
+{{ define "cta" }}
+  {{ partial "cta.html" . }}
+{{ end }}
+ 

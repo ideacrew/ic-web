@@ -1,5 +1,6 @@
 :root {
   --main-margin: var(--header-height);
+  --content-width: 62.67rem;
 }
 
 body {
@@ -11,7 +12,7 @@ body {
 }
 
 body.home {
-  background-image: url("/images/background-graphic.svg");
+  background-image: url('/images/background-graphic.svg');
   background-repeat: no-repeat;
   background-position: left top;
   background-size: 150vh;
@@ -19,10 +20,18 @@ body.home {
 
 .grid {
   display: grid;
+  column-gap: 1rem;
   grid-template-columns: 0.875rem repeat(4, 1fr) 0.875rem;
 }
 
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
 main {
+  max-width: var(--content-width);
+  margin: 0 auto;
   margin-top: var(--main-margin);
   padding-bottom: 5rem;
 }
@@ -31,17 +40,25 @@ main > :first-child:not(.index-heading) {
   margin-top: 1rem;
 }
 
-main > * {
+.grid > * {
   grid-column: 2 / 6;
 }
 
-// p {
-//   max-width: 70ch;
-// }
+.content-grid > * {
+  grid-column: 1 / 4;
+}
+
+.measure {
+  max-width: 70ch;
+}
 
 @media screen and (min-width: 1128px) {
   .grid {
     grid-template-columns: 1fr repeat(4, 15.667rem) 1fr;
+  }
+
+  .content-grid {
+    grid-template-columns: repeat(4, 15.667rem);
   }
 
   main > :first-child:not(.index-heading) {

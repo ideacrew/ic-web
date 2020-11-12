@@ -1,5 +1,11 @@
+{{ define "head-styles" }}
+{{ $options := (dict "targetPath" "about.css" "outputStyle" "compressed") }}
+{{ $style := resources.Get "scss/about.scss" | resources.ToCSS $options | resources.Fingerprint}}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+{{ end }}
+
 {{ define "main" }}
-<div class="about-content">
+<div class="about-content-container">
   <h1>About IdeaCrew</h1>
   <p>Established in 2002 with headquarters in Washington DC, IdeaCrew is a full service IT and clinical consultancy. We offer a cadre of experienced former leaders who have served federal and state government at the highest levels. Our team has led agencies through challenging start-up phases, crisis situations, and transition to normal operations. Our IT professionals have worked side-by-side with our consultants during these challenges, and we have a unique perspective on the role that IT plays in the delivery of the agency’s core mission.</p>
   <div class="ideacrew-logo">
@@ -60,6 +66,3 @@
 
 {{ end }}
 
-{{ define "cta" }}
-  {{ partial "cta.html" . }}
-{{ end }}
