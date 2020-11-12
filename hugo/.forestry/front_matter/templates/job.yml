@@ -58,3 +58,4 @@ fields:
   default: "$70,000 to $150,000 per year"
 pages:
 - hugo/content/careers/development-lead.md
+- hugo/content/careers/solutions-engineer-architect.md
