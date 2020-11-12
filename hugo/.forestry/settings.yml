@@ -11,11 +11,6 @@ sections:
   path: hugo/data/clients.json
   label: Clients
 - type: directory
-  path: hugo/content/services
-  label: Services
-  create: documents
-  match: "**/*"
-- type: directory
   path: hugo/content
   label: Pages
   create: all
