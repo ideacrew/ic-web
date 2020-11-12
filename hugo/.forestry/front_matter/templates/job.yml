@@ -56,3 +56,5 @@ fields:
   label: Salary Range
   description: A range of salary that we're offering this position
   default: "$70,000 to $150,000 per year"
+pages:
+- hugo/content/careers/development-lead.md
