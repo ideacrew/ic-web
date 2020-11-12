@@ -1,0 +1,14 @@
+.button {
+  padding: 0.5em 2em;
+  border-radius: 0.28em;
+  text-align: center;
+
+  &.primary {
+    background-color: var(--primary-blue);
+    color: var(--white);
+  }
+
+  &:hover {
+    color: var(--white);
+  }
+}

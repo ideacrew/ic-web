@@ -1,7 +1,10 @@
 {{ define "main" }}
-<h1>{{ .Params.title }}</h1>
-<h2 class="subheading">{{ .Params.position_type }} in {{ .Params.location }}</h2>
-<div class="posted-on">Posted: {{ .Params.post_date.Format "January 2, 2006" }}</div>
+<div class="career-heading">
+  <h1 class="career-title">{{ .Params.title }}</h1>
+  <h2 class="subheading">{{ .Params.position_type }} in {{ .Params.location }}</h2>
+  <div class="posted-on">Posted: {{ .Params.post_date.Format "January 2, 2006" }}</div>
+  <a class="button primary" href="mailto:careers@ideacrew.com">Apply Now</a>
+</div>
 <div class="career-content-container">
   {{ .Content }}
 </div>
@@ -9,4 +12,5 @@
 <p>We offer a flexible work environment, a competitive benefits package including medical and dental insurance, 401k matching and a generous vacation allowance. This position is located in Washington, DC. Relocation assistance may be available.</p>
 <h4>Salary</h4>
 <div>{{ .Params.salary_range }}</div>
+<a class="apply-now button primary" href="mailto:careers@ideacrew.com">Apply Now</a>
 {{- end }}

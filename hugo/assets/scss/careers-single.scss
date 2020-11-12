@@ -1,8 +1,38 @@
+.career-title {
+  grid-area: title;
+}
+
+.subheading {
+  grid-area: subheading;
+}
+
 .posted-on {
   font-family: var(--serif);
   font-size: 0.75rem;
+  grid-area: posted;
 }
 
 .career-content-container {
   margin-top: 1rem;
+}
+
+.career-heading {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  grid-template-rows: repeat(3, max-content);
+  grid-template-areas:
+    'title button'
+    'subheading button'
+    'posted button';
+}
+
+.career-heading .button {
+  grid-area: button;
+  align-self: center;
+}
+
+.apply-now {
+  grid-column: 2 / 3;
+  margin-top: 2rem;
+  justify-self: start;
 }
