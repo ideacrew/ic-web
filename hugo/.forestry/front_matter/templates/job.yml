@@ -1,7 +1,7 @@
 ---
 label: Career
 hide_body: false
-display_field: job_title
+display_field: title
 fields:
 - name: title
   type: text
