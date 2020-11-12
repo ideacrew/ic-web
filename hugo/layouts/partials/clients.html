@@ -1,0 +1,7 @@
+<h2 class="clients-section-heading">Clients</h2>
+<ul class="client-list">
+  {{ range .Site.Data.clients }}
+    {{ partial "client-tile.html" . }}
+  {{ end }}
+</ul>
+ 
