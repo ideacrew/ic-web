@@ -38,3 +38,11 @@ fields:
     max: 500
   label: Quote
   description: A testimonial-style quote from a stakeholder
+- name: quote_attribution
+  type: text
+  config:
+    required: false
+    min: 10
+    max: 100
+  label: Quote Attribution
+  description: The name and title of the testimonial quote
