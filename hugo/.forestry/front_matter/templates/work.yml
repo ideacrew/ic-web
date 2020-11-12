@@ -55,6 +55,5 @@ fields:
   label: Quote Attribution
   description: The name and title of the testimonial quote
 pages:
-- hugo/content/work/washington-dc-health-benefit-exchange-copy.md
 - hugo/content/work/washington-dc-health-benefit-exchange.md
 - hugo/content/work/workradar.md
