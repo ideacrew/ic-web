@@ -1,6 +1,7 @@
 ---
-label: Job
+label: Career
 hide_body: false
+display_field: job_title
 fields:
 - name: job_title
   type: text
