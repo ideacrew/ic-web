@@ -4,6 +4,13 @@ auto_deploy: false
 admin_path: "/hugo/static/admin"
 webhook_url: 
 sections:
+- type: directory
+  path: hugo/content/work
+  label: Work
+  create: documents
+  match: "**/*"
+  templates:
+  - work
 - type: document
   path: hugo/data/team.json
   label: Team
