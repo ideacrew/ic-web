@@ -29,6 +29,10 @@
 .service {
   text-align: center;
 
+  ul, h3 {
+    font-family: var(--sans-serif); 
+  }
+
   ul {
     margin-top: 0.5rem;
     padding-left: 1rem;
