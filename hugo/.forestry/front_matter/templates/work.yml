@@ -1,4 +1,40 @@
 ---
 label: Work
 hide_body: false
-fields: []
+fields:
+- name: problem
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+    max: 500
+    min: 50
+  label: Problem
+  description: What problem did we try to solve?
+- name: solution
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+    min: 50
+    max: 500
+  label: Solution
+  description: A summary of the solution we implemented to solve the client's problem.
+- name: quote
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+    min: 50
+    max: 500
+  label: Quote
+  description: A testimonial-style quote from a stakeholder
