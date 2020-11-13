@@ -1,29 +1,34 @@
 .about-content-container {
-  display: grid;
-  width: var(--content-width);
-  grid-template-columns: 70ch 1fr;
-  grid-column: 2 / 6;
+  // display: grid;
+  // width: var(--content-width);
+  // grid-template-columns: 70ch 1fr;
+  // grid-column: 2 / 6;
 
   h1,
   p {
     grid-column: 1 / 2;
   }
-}
 
-.ideacrew-logo {
-  grid-row-start: 1;
-  grid-row-end: 3;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  align-self: center;
-  justify-self: center;
+  .ideacrew-logo {
+    display: none;
+    // grid-row-start: 1;
+    // grid-row-end: 3;
+    // grid-column-start: 2;
+    // grid-column-end: 3;
+    // align-self: center;
+    // justify-self: center;
+  }
 }
 
 .our-services {
-  display: grid;
+  // display: grid;
   margin-bottom: 3rem;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
+  // grid-template-columns: repeat(4, 1fr);
+  // gap: 1rem;
+}
+
+.graphic {
+  display: none;
 }
 
 .service {
@@ -45,7 +50,7 @@
   }
 
   h3 {
-    margin-top: 1.75rem;
+    // margin-top: 1.75rem;
     font-size: 1rem;
     text-align: left;
   }
@@ -53,7 +58,6 @@
 
 .leadership-team {
   display: grid;
-  margin-top: 0;
   padding: 0;
   grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
   list-style: none;
@@ -62,6 +66,35 @@
 
 .about-content {
   margin-bottom: 5.5rem;
+}
+
+.person-tile {
+  display: grid;
+  position: relative;
+  padding: 0.5rem;
+  grid-template-columns: 1fr min-content;
+  grid-template-rows: minmax(2.5rem, max-content) minmax(2.5rem, max-content) min-content;
+  border: 2px solid var(--secondary-blue);
+  border-radius: 5px;
+  font-size: 0.75rem;
+}
+
+.person-name {
+  color: var(--secondary-blue);
+  font-size: 1rem;
+  font-weight: 700;
+  grid-column: 1 / -1;
+  line-height: 1.25;
+
+  // &:hover {
+  //   color: var(--neutral-020);
+  //   text-decoration: underline;
+  // }
+}
+
+.person-title {
+  // grid-column: 1 / 2;
+  color: inherit;
 }
 
 @media screen and (min-width: 769px) {

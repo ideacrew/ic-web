@@ -33,6 +33,14 @@ main {
   // margin: 0 auto;
   margin-top: var(--main-margin);
   padding: 0 var(--side-padding);
+
+  section {
+    scroll-margin-top: var(--header-height);
+  }
+
+  section + section {
+    margin-top: 2rem;
+  }
 }
 
 main > :first-child:not(.index-heading) {
@@ -49,10 +57,6 @@ main > :first-child:not(.index-heading) {
 
 .measure {
   max-width: 70ch;
-}
-
-section {
-  scroll-margin-top: var(--header-height);
 }
 
 @media screen and (min-width: 62.67rem) {
