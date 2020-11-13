@@ -21,9 +21,7 @@
     {{ block "feed" . }}{{ end }}
     </main>
 
-    {{ if ne .Page.Title "Contact Us" }}
-    {{ partial "cta.html" . }}
-    {{ end }}
+    {{ block "cta" . }}{{ end }}
 
     {{ block "footer" . }}
      {{ partial "footer.html" . }}

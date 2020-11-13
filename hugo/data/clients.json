@@ -1,46 +1,42 @@
 [
   {
     "client": "DC Health Link",
-    "image": "dchealthlink2.png"
+    "image": "dc-healthlink.png"
   },
   {
     "client": "MA Health Connector",
-    "image": "masshealth2.jpg"
+    "image": "massachusetts-health-connector.jpg"
   },
   {
     "client": "Connect for Health Colorado",
-    "image": "colorado2.png"
+    "image": "connect-health-colorado.png"
   },
   {
-    "client": "DODEA",
-    "image": "dodea2.jpg"
+    "client": "Department of Defense Education Activity",
+    "image": "dodea.png"
   },
   {
-    "client": "DC Gov",
-    "image": "dcgov2.png"
+    "client": "District of Columbia Government",
+    "image": "dc-gov.png"
   },
   {
     "client": "Vermont Health Connect",
-    "image": "vthc2.jpg"
+    "image": "vermont-health-connect.png"
   },
   {
     "client": "State Health & Value Strategies",
-    "image": "statehealthvaluestrategies2.jpg"
+    "image": "state-health-value-strategies.png"
   },
   {
     "client": "Pennsylvania Department of Human Services",
-    "image": "padhs2.jpg"
+    "image": "pennsylvania-department-human-services.png"
   },
   {
-    "client": "Montgomery County MD",
-    "image": "montgomerymd2.png"
-  },
-  {
-    "client": "MD Department of Health",
-    "image": "mddoh2.jpg"
+    "client": "Maryland Department of Health",
+    "image": "maryland-department-health.png"
   },
   {
     "client": "FEMA",
-    "image": "fema2.jpg"
+    "image": "fema.png"
   }
 ]

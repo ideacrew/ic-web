@@ -1,10 +1,18 @@
 {{ define "head-scripts" }}
 {{ end }}
 
-{{ define "main"}}
-<h2 class="index-heading">Strategy & technology solutions that help our clients solve their most important challenges</h2>
+{{ define "head-styles" }}
+{{ $options := (dict "targetPath" "index.css" "outputStyle" "compressed") }}
+{{ $style := resources.Get "scss/index.scss" | resources.ToCSS $options | resources.Fingerprint}}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+{{ end }}
 
-<div class="services-section grid">
+{{ define "main"}}
+<h2 class="index-heading">
+  Strategy & technology solutions that help our clients solve their most important challenges
+</h2>
+
+<section class="services-section">
   <div class="services-container">
     <h3 class="services-heading alt-heading">Our Services</h3>
     <ul class="services-list">
@@ -13,19 +21,41 @@
       <li>Application Development</li>
       <li>DevOps & Cloud Infrastructure</li>
     </ul>
-    <a class="services-link" href="/contact/">
+    <a class="services-link" href="/about/#services-section">
       Learn More
     </a>
   </div>
-  <div class="horizontal-block"></div>
-</div>
+</section>
 
-{{ partial "clients.html" . }}
+<section class="clients-section">
+  <h2 class="clients-section-heading">Clients</h2>
+  <ul class="client-list">
+    {{ range .Site.Data.clients }}
+    <li class="client-tile">
+      <img
+        loading="lazy"
+        src="https://res.cloudinary.com/ideacrew/image/upload/v1/c_scale,e_grayscale,f_auto,w_300/ideacrew-website/{{ .image }}"
+        alt="{{ .title }}"
+      />
+    </li>
+    {{ end }}
+  </ul>
+</section>
 
-{{ partial "recent-work.html" . }}
+<section class="recent-work-section">
+  <h2 class="work-section-heading">Our Work</h2>
+  <ul class="work-list">
+    {{ range (where .Site.RegularPages.ByTitle "Section" "work") }}
+    <li class="work-item">
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <span>{{ .Params.location }}</span>
+      <span>{{ .Params.position_type }}</span>
+    </li>
+    {{ end }}
+  </ul>
+</section>
 
 {{ end }}
-
 
 {{ define "cta" }}
   {{ partial "cta.html" . }}

@@ -1,4 +1,5 @@
 .button {
+  display: inline-block;
   padding: 0.5em 2em;
   border-radius: 0.28em;
   text-align: center;
@@ -8,7 +9,16 @@
     color: var(--white);
   }
 
-  &:hover {
+  &.primary:hover {
     color: var(--white);
+  }
+
+  &.secondary {
+    background-color: var(--white);
+    color: var(--secondary-blue);
+  }
+
+  &.secondary:hover {
+    color: var(--secondary-blue);
   }
 }

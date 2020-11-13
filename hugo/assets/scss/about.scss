@@ -29,7 +29,8 @@
 .service {
   text-align: center;
 
-  ul, h3 {
+  ul,
+  h3 {
     font-family: var(--sans-serif);
   }
 
@@ -50,25 +51,16 @@
   }
 }
 
-.client-list,
 .leadership-team {
   display: grid;
   margin-top: 0;
   padding: 0;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
   list-style: none;
   gap: 0.75rem;
 }
 
-.client-list {
-  grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
-}
-
-.leadership-team {
-  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
-}
-
-.about-content,
-.client-list {
+.about-content {
   margin-bottom: 5.5rem;
 }
 

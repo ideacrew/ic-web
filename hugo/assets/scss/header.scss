@@ -2,7 +2,7 @@
   --header-height: 4rem;
 }
 
-header {
+.header {
   position: fixed;
   top: 0;
   width: 100%;
@@ -16,6 +16,7 @@ header {
   width: var(--content-width);
   height: var(--header-height);
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .navbar {
@@ -94,6 +95,10 @@ header {
 }
 
 @media screen and (min-width: 769px) {
+  .header-container {
+    padding: 0;
+  }
+  
   .mobile-nav {
     display: none;
   }
