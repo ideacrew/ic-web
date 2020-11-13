@@ -1,9 +1,18 @@
-const navBar: HTMLUListElement = document.querySelector(".navbar-nav");
-const menuButtons: NodeListOf<HTMLButtonElement> = document.querySelectorAll(
-  ".navbar-toggler"
-);
-menuButtons.forEach((button) =>
-  button.addEventListener("click", () => {
-    navBar.classList.toggle("show");
-  })
-);
+const navBar: HTMLElement | null = document.getElementById('mobile-nav');
+
+const menuButton: HTMLButtonElement | null = document.getElementById(
+  'menu-button'
+) as HTMLButtonElement;
+const closeButton: HTMLButtonElement | null = document.getElementById(
+  'close-button'
+) as HTMLButtonElement;
+
+menuButton?.addEventListener('click', () => {
+  navBar?.classList.add('show');
+  document.body.classList.add('mobile-nav-open');
+});
+
+closeButton?.addEventListener('click', () => {
+  navBar?.classList.remove('show');
+  document.body.classList.remove('mobile-nav-open');
+});
