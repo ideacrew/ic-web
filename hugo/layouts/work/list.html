@@ -14,9 +14,12 @@
   <ul class="work-list">
     {{ range .Pages.ByTitle }}
     <li class="work-item">
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-      <span>{{ .Params.location }}</span>
-      <span>{{ .Params.position_type }}</span>
+      <div class="work-content">
+        <h2 class="work-title">
+          <a class="work-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h2>
+        <p>{{ .Summary }}</p>
+      </div>
     </li>
     {{ end }}
   </ul>
