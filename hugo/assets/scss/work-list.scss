@@ -1,6 +1,6 @@
 .work-list {
   // display: grid;
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding: 0;
   // grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
@@ -25,11 +25,11 @@
 
 .work-content {
   position: absolute;
-  top: 0;
+  top: 60%;
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 75% 0.75rem 0 0.75rem;
+  padding: var(--side-padding);
 
   p {
     font-size: 0.75rem;

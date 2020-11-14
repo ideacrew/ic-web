@@ -3,6 +3,7 @@ problem = "When initially launched, the Massachusetts Health Connector focused o
 quote = "The SHOP system IdeaCrew delivered exceeded our expectations…The online marketplace is easy for customers to use. Feedback from enrolled businesses and their workers, brokers, and our congressional customers is very positive."
 quote_attribution = "Mila Kofman, DCHBX Executive Director"
 solution = "IdeaCrew’s successful implementation, including carrier and broker onboarding resulted in immediate growth. Since its re-launch Massachusetts SHOP was the fastest growing in the country. Membership increased 90% from 4,500 to over 8,000 members in two years. The shared services model with DC has resulted in significant financial savings for both Massachusetts and the District of Columbia."
+summary = "A modern tool to help companies safely return to the workplace during COVD-19"
 title = "Washington DC Health Benefit Exchange"
 
 +++

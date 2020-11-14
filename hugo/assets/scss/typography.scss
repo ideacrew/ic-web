@@ -79,16 +79,13 @@ h6 {
   }
 }
 
-.alt-heading {
-  font-family: var(--sans-serif);
-}
-
 p > a:hover {
   text-decoration: underline;
 }
 
 h1 {
   font-size: 2rem;
+  font-weight: 600;
 }
 
 h2 {
