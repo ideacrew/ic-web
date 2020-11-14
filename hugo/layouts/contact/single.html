@@ -2,20 +2,15 @@
 <script src="https://www.google.com/recaptcha/api.js?render=6LezZ98ZAAAAAP9dauh0WuNerMeRvRzhuP83rbL6"></script>
 {{ end }}
 
+{{ define "head-styles" }}
+{{ $options := (dict "targetPath" "contact.css" "outputStyle" "compressed") }}
+{{ $style := resources.Get "scss/contact.scss" | resources.ToCSS $options | resources.Fingerprint}}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+{{ end }}
+
 {{ define "main" }}
-<div class="contact-container content-grid">
+<div class="contact-container">
   <h1>Contact Us</h1>
-  <div class="contact-info">
-    <div>Email</div>
-    <a href="mailto:info@ideacrew.com">info@ideacrew.com</a>
-    <div>Phone</div>
-    <a href="tel:202-688-3130">202-688-3130</a>
-    <div>Address</div>
-    <a href="https://g.page/IdeaCrew?share"
-      >1150 Connecticut Ave NW, Suite 710, Washington, DC 20036</a
-    >
-    <iframe title="IdeaCrew's location in Washington DC" class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7384.461599373528!2d-77.04385897801647!3d38.906062648858494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b7b8ed774369%3A0x3be4d6b4c87536d0!2sIdeaCrew%2C%20Inc.!5e0!3m2!1sen!2sus!4v1604677071819!5m2!1sen!2sus" width="100%" height="350" frameborder="0" style="border:0;" loading="lazy" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-  </div>
 
   <form class="contact-form">
     <div class="input-group">
@@ -46,8 +41,21 @@
     </div>
     <button disabled class="submit-button" type="button">Send message</button>
   </form>
-  <div class="shade"></div>
+
+  <div class="contact-info">
+    <div class="label-heading">Email</div>
+    <a href="mailto:info@ideacrew.com">info@ideacrew.com</a>
+    <div class="label-heading"v>Phone</div>
+    <a href="tel:202-688-3130">202-688-3130</a>
+    <div class="label-heading">Address</div>
+    <a href="https://g.page/IdeaCrew?share"
+      >1150 Connecticut Ave NW, Suite 710, Washington, DC 20036</a
+    >
+  </div>
+
+  <iframe title="IdeaCrew's location in Washington DC" class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7384.461599373528!2d-77.04385897801647!3d38.906062648858494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b7b8ed774369%3A0x3be4d6b4c87536d0!2sIdeaCrew%2C%20Inc.!5e0!3m2!1sen!2sus!4v1604677071819!5m2!1sen!2sus" width="100%" height="350" frameborder="0" style="border:0;" loading="lazy" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 </div>
+
 {{ end }}
 
 

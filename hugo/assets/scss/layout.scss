@@ -32,7 +32,7 @@ body {
 main {
   // margin: 0 auto;
   margin-top: var(--main-margin);
-  padding: 0 var(--side-padding);
+  padding: 0 var(--side-padding) 1rem var(--side-padding);
 
   section {
     scroll-margin-top: var(--header-height);
