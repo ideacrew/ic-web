@@ -10,6 +10,14 @@ fields:
     max: 100
   label: Title
   description: A title describing the work we did
+- name: summary
+  type: text
+  config:
+    required: true
+    min: 10
+    max: 100
+  label: Summary
+  description: A one-sentence description of the work
 - name: problem
   type: textarea
   default: ''
