@@ -1,14 +1,16 @@
+{{ define "head-styles" }}
+{{ $options := (dict "targetPath" "careers/list.css" "outputStyle" "compressed") }}
+{{ $style := resources.Get "scss/careers/list.scss" | resources.ToCSS $options | resources.Fingerprint}}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+{{ end }}
+
 {{ define "main" }}
 <div class="page-wrapper">
   <h1>Careers</h1>
   {{ .Content }}
   <ul class="career-list">
     {{ range .Pages.ByTitle }}
-    <li class="career-summary">
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-      <span>{{ .Params.location }}</span>
-      <span>{{ .Params.position_type }}</span>
-    </li>
+    {{ partial "career-item" . }}
     {{ end }}
   </ul>
 </div>
