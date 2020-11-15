@@ -1,12 +1,13 @@
 .career-summary {
   // display: grid;
-  padding: 1rem 0;
+  padding-bottom: 1rem;
   // grid-template-columns: 4fr 1fr 1fr;
   // gap: 1rem;
   list-style: none;
 }
 
 .career-summary + .career-summary {
+  padding-top: 1rem;
   border-top: 1px solid var(--secondary-blue);
 }
 
@@ -14,7 +15,12 @@
   display: block;
   color: var(--secondary-blue);
   font-size: 1.5rem;
+  line-height: 1.15;
   // font-family: var(--sans-serif);
 }
 
-
+.location-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}

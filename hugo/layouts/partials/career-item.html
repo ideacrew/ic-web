@@ -1,6 +1,10 @@
 <li class="career-summary">
   <a class="career-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
   <div class="career-position-type">{{ .Params.position_type }}</div>
-  <div class="career-location">{{ .Params.location }}</div>
+  <div class="location-list">
+    {{ range .Params.location }}
+    <span>{{ . }}</span>
+    {{ end }}
+  </div>
 </li>
 
