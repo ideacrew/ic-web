@@ -1,6 +1,6 @@
 {{ define "head-styles" }}
-{{ $options := (dict "targetPath" "work-single.css" "outputStyle" "compressed") }}
-{{ $style := resources.Get "scss/work-single.scss" | resources.ToCSS $options | resources.Fingerprint}}
+{{ $options := (dict "targetPath" "work/single.css" "outputStyle" "compressed") }}
+{{ $style := resources.Get "scss/work/single.scss" | resources.ToCSS $options | resources.Fingerprint}}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 {{ end }}
 

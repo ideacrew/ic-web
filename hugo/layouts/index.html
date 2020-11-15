@@ -34,7 +34,7 @@
     <li class="client-tile">
       <img
         loading="lazy"
-        src="https://res.cloudinary.com/ideacrew/image/upload/v1/c_scale,e_grayscale,f_auto,w_300/ideacrew-website/{{ .image }}"
+        src="https://res.cloudinary.com/ideacrew/image/upload/c_scale,e_grayscale,f_auto,w_300/ideacrew-website/{{ .image }}"
         alt="{{ .title }}"
       />
     </li>
@@ -46,11 +46,7 @@
   <h2 class="work-section-heading">Our Work</h2>
   <ul class="work-list">
     {{ range (where .Site.RegularPages.ByTitle "Section" "work") }}
-    <li class="work-item">
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-      <span>{{ .Params.location }}</span>
-      <span>{{ .Params.position_type }}</span>
-    </li>
+    {{ partial "work-item" . }}
     {{ end }}
   </ul>
 </section>

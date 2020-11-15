@@ -1,6 +1,6 @@
 .work-summary {
-  display: flex;
-  gap: 1rem;
+  // display: flex;
+  // gap: 1rem;
 }
 
 .problem,
@@ -8,6 +8,7 @@
   padding: 1rem;
   border: 2px solid var(--secondary-blue);
   border-radius: 0.28em;
+
   h2 {
     font-family: var(--sans-serif);
     font-size: 1rem;
@@ -20,13 +21,17 @@
   }
 }
 
-.problem {
-  grid-column: 1 / 3;
+.solution {
+  margin-top: 0.5rem;
 }
 
-.solution {
-  grid-column: 3 / 5;
-}
+// .problem {
+//   grid-column: 1 / 3;
+// }
+
+// .solution {
+//   grid-column: 3 / 5;
+// }
 
 .work-content {
   margin: 2rem auto;
