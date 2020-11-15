@@ -29,15 +29,6 @@ fields:
       path: 
   label: Type
   description: The type of position
-- name: location
-  type: text
-  config:
-    required: true
-    min: 5
-    max: 50
-  label: Location
-  description: Where the job is located
-  default: Washington, DC
 - name: post_date
   type: datetime
   label: Post Date
@@ -56,6 +47,16 @@ fields:
   label: Salary Range
   description: A range of salary that we're offering this position
   default: "$70,000 to $150,000 per year"
+- name: location
+  type: list
+  config:
+    use_select: false
+    min: 1
+    max: 
+  label: Location(s)
+  description: Where is this job located?
+  showOnly:
+    value: Full Time
 pages:
 - hugo/content/careers/development-lead.md
 - hugo/content/careers/qa-engineer.md
