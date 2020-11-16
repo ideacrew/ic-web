@@ -21,7 +21,7 @@
   font-size: 0.875rem;
 }
 
-@media screen and (min-width: 42.72rem) {
+@media screen and (min-width: 769px) {
   .call-to-action {
     padding: 2rem var(--side-padding);
   }
@@ -37,7 +37,7 @@
   }
 }
 
-@media screen and (min-width: 62.67rem) {
+@media screen and (min-width: 1128px) {
   .cta-container {
     display: flex;
     align-items: center;

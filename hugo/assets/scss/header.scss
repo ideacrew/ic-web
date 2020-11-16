@@ -14,7 +14,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  // width: var(--content-width);
   height: var(--header-height);
   margin: 0 auto;
   padding: 0 var(--side-padding);
@@ -103,7 +102,7 @@
   display: none;
 }
 
-@media screen and (min-width: 42.72rem) {
+@media screen and (min-width: 769px) {
   .menu-button {
     display: none;
   }
@@ -142,5 +141,12 @@
 
   .mobile-navbar-toggler {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1128px) {
+  .header-container {
+    max-width: var(--content-width);
+    padding: 0;
   }
 }

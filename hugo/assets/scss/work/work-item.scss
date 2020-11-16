@@ -7,20 +7,13 @@
 }
 
 .work-item {
-  position: relative;
-  padding-bottom: 136.63%;
+  padding: var(--side-padding);
   border: 2px solid var(--secondary-blue);
   border-radius: 0.27em;
-  background: conic-gradient(
-    from 35.5deg at 50% 50%,
-    hsla(236, 100%, 10%, 0.2) 0deg,
-    hsla(236, 100%, 10%, 0) 360deg
-  );
   list-style: none;
 }
 
 .work-content {
-  position: absolute;
   top: 60%;
   left: 0;
   width: 100%;
