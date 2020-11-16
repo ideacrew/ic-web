@@ -1,6 +1,11 @@
 {{ define "head-scripts" }}
-<script src="https://www.google.com/recaptcha/api.js?render=6LezZ98ZAAAAAP9dauh0WuNerMeRvRzhuP83rbL6"></script>
+{{ if eq hugo.Environment "production" }}
+<script
+  src="https://www.google.com/recaptcha/api.js?render=6LezZ98ZAAAAAP9dauh0WuNerMeRvRzhuP83rbL6">
+</script>
 {{ end }}
+{{ end }}
+
 
 {{ define "head-styles" }}
 {{ $options := (dict "targetPath" "contact.css" "outputStyle" "compressed") }}
@@ -60,7 +65,9 @@
 
 
 {{ define "page-scripts" }}
+{{ if eq hugo.Environment "production" }}
 {{ $opts := dict "targetPath" "contact.js"  }}
 {{ $built := resources.Get "ts/contact.ts" | js.Build $opts | resources.Minify | resources.Fingerprint }}
 <script type="text/javascript" src="{{ $built.RelPermalink }}" defer></script>
+{{ end }}
 {{ end }}

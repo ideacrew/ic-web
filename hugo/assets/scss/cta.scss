@@ -1,13 +1,8 @@
 .call-to-action {
-  padding: 1rem 0;
+  padding: 1rem var(--side-padding);
   background-color: var(--primary-blue);
   text-align: center;
 }
-
-// .cta-container {
-//   width: var(--content-width);
-//   margin: 0 auto;
-// }
 
 .cta-heading {
   margin: 0;
@@ -26,16 +21,30 @@
   font-size: 0.875rem;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 42.72rem) {
+  .call-to-action {
+    padding: 2rem var(--side-padding);
+  }
+
   .cta-heading {
-    grid-column: 1 / 3;
     font-size: 2.66rem;
-    text-align: left;
   }
 
   .link-as-button {
     grid-column: 3 / 5;
     align-self: center;
     justify-self: center;
+  }
+}
+
+@media screen and (min-width: 62.67rem) {
+  .cta-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .cta-button {
+    margin: 0;
   }
 }

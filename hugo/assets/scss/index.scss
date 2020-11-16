@@ -3,20 +3,14 @@
 .index-heading {
   display: flex;
   align-items: center;
-  height: calc(100vh - var(--header-height));
+  height: calc(100vh - var(--header-height) + 2rem);
   font-size: 1.25rem;
   grid-column: 2 / 6;
   line-height: 1.5;
 }
 
 .services-container {
-  // display: grid;
   padding: 0.5rem;
-  // grid-template-columns: max-content 1fr;
-  // grid-template-areas:
-  // 'heading heading'
-  // 'services button';
-  // grid-column: 2 / 6;
   border: 5px solid var(--secondary-blue);
   border-radius: 5px;
   background-color: var(--neutral-094);
@@ -29,21 +23,10 @@
     border: 2px solid var(--primary-blue);
     border-radius: 5px;
     text-align: center;
-    // grid-area: button;
-    // align-self: end;
-    // padding: 0.5rem 2rem;
-    // justify-self: end;
   }
 }
 
 .horizontal-block {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 80%;
-  transform: translateY(14%);
   background-image: linear-gradient(
     267.63deg,
     var(--primary-blue) 45.83%,
@@ -105,6 +88,12 @@
 
 .recent-work-section {
   background-color: var(--neutral-094);
+
+  .work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-rows: auto;
+  }
 }
 
 @media screen and (min-width: 769px) {
@@ -112,6 +101,19 @@
     max-width: 40ch;
     grid-column: 2 / 5;
     font-size: 2rem;
+  }
+
+  .services-section {
+    display: grid;
+    margin: 0 calc(var(--side-padding) * -1);
+    grid-template-columns: var(--side-padding) repeat(4, 1fr) var(
+        --side-padding
+      );
+    background-image: linear-gradient(
+      267.63deg,
+      rgba(52, 147, 255, 0.2) 45.83%,
+      rgba(52, 147, 255, 0) 100%
+    );
   }
 
   .services-heading {
@@ -123,8 +125,22 @@
   }
 
   .services-container {
-    padding: 1rem 2rem;
+    display: grid;
+    margin: -1.5rem 0;
+    padding: var(--side-padding);
+    column-gap: 1rem;
+    grid-template-columns: max-content 1fr;
+    grid-template-areas:
+      'heading heading'
+      'services button';
     grid-column: 4 / 6;
+  }
+
+  .services-link {
+    grid-area: button;
+    align-self: end;
+    padding: 0.5rem 2rem;
+    justify-self: stretch;
   }
 }
 

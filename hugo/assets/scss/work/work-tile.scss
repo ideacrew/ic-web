@@ -19,26 +19,21 @@
   list-style: none;
 }
 
-.work-item + .work-item {
-  margin-top: 1rem;
-}
-
 .work-content {
   position: absolute;
   top: 60%;
   left: 0;
   width: 100%;
-  height: 100%;
   padding: var(--side-padding);
 
   p {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 }
 
 .work-title {
   color: var(--secondary-blue);
   font-family: var(--sans-serif);
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 700;
 }

@@ -30,8 +30,8 @@ body {
 }
 
 main {
-  // margin: 0 auto;
-  margin-top: var(--main-margin);
+  min-height: calc(100vh - var(--header-height) - 5rem);
+  margin-top: var(--header-height);
   padding: 0 var(--side-padding) 1rem var(--side-padding);
 
   section {
@@ -59,21 +59,16 @@ main > :first-child:not(.index-heading) {
   max-width: 70ch;
 }
 
-@media screen and (min-width: 62.67rem) {
+@media screen and (min-width: 42.72rem) {
   body.home {
     background-image: url('/images/background-graphic.svg');
     background-repeat: no-repeat;
     background-position: left top;
     background-size: 150vh;
   }
+}
 
-  main {
-    display: grid;
-    width: 100%;
-    padding: 0;
-    grid-template-columns: 1fr repeat(4, 15.667rem) 1fr;
-  }
-
+@media screen and (min-width: 62.67rem) {
   .grid {
     grid-template-columns: 1fr repeat(4, 15.667rem) 1fr;
   }

@@ -103,9 +103,9 @@
   display: none;
 }
 
-@media screen and (min-width: 769px) {
-  .header-container {
-    padding: 0;
+@media screen and (min-width: 42.72rem) {
+  .menu-button {
+    display: none;
   }
 
   .mobile-nav {

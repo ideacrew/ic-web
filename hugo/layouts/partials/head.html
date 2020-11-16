@@ -1,10 +1,10 @@
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<link rel="preconnect" href="https://www.google-analytics.com">
-<link rel="preconnect" href="https://stats.g.doubleclick.net">
 <link rel="preload" href="/fonts/domine.woff2" as="font" crossorigin />
 <link rel="preload" href="/fonts/OpenSans-Bold.woff2" as="font" crossorigin />
 <link rel="preload" href="/fonts/OpenSans-Regular.woff2" as="font" crossorigin />
 
+{{ if eq hugo.Environment "production" }}
+<link rel="preconnect" href="https://www.google-analytics.com">
+<link rel="preconnect" href="https://stats.g.doubleclick.net">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-MXRFF077XE"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -13,12 +13,12 @@
 
   gtag('config', 'G-MXRFF077XE');
 </script>
+{{ end }}
 
 {{ $options := (dict "targetPath" "style.css" "outputStyle" "compressed") }}
 {{ $style := resources.Get "styles.scss" | resources.ToCSS $options | resources.Fingerprint}}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
-<!-- META TAGS -->
 <title>{{ .Title }} - Strategic solutions for the IT industry</title>
 <meta charset="utf-8">
 <meta name="HandheldFriendly" content="True">
