@@ -21,4 +21,8 @@
   &.secondary:hover {
     color: var(--secondary-blue);
   }
+
+  &.outline {
+    border: 2px solid var(--secondary-blue);
+  }
 }
