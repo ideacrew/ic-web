@@ -5,19 +5,45 @@
 
 .heading-cta {
   margin-top: 0.5rem;
+  grid-area: button;
 }
 
 .location-list {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  grid-area: location;
+}
+
+.career-title {
+  grid-area: title;
 }
 
 .career-content-container {
   margin-top: 1rem;
 }
 
-.career-heading .button {
-  grid-area: button;
-  align-self: center;
+.career-heading {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 769px) {
+  .career-heading {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    grid-template-areas:
+      'title button'
+      'subheading .'
+      'location .'
+      'posted .';
+
+    .career-title {
+      margin: 0;
+    }
+
+    .heading-cta {
+      align-self: start;
+      margin: 0;
+    }
+  }
 }

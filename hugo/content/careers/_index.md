@@ -3,6 +3,20 @@ title: Careers
 ---
 If you’re looking for a company that works where technology touches people’s lives… a company that regularly turns “that’s impossible” into “Got it – what’s next?”… a company that rewards performance with generous pay, health insurance and other employee benefits… IdeaCrew may be right for you.
 
-IdeaCrew is currently seeking senior and mid-level Ruby on Rails Developers to join our innovative, hard-working team as we disrupt healthcare technology. As a member of our crew you will have the opportunity to work closely with like-minded professionals in a fast-paced, engaging, professional environment.
+We’re smart, talented, solutions oriented, diverse, forward thinking and fun. As a member of our crew you will have the opportunity to work closely with like-minded professionals in a fast-paced, engaging, professional environment.
 
-As a member of our development team, you will work closely with subject matter experts, chief engineers, business analysts, system architects, UI designers, SOA and RoR developers, DBA's, testers and others to design and implement APIs and Web-based applications. More about IdeaCrew can be found on our [about](/about/) page.
+## About Us
+
+Headquartered in Washington, D.C., IdeaCrew is a full-service technology consultancy that develops and operates modern technology solutions for public and private organizations. Clients in need of new ideas and better solutions turn to IdeaCrew as a trusted source and partner. Our clients do important work with purpose, and our support for that work is a renewable source for IdeaCrew’s “sense of service” core value.
+
+IdeaCrew is an open source software community supporter and contributor. Our culture encourages independent work, creative input, sharing of ideas, continuous learning and superior results.
+
+## Benefits
+
+We offer a flexible work environment, a competitive benefits package including medical, dental and vision insurance, life insurance, and 401k matching.  The company observes nine paid holidays, provides paid time off for bereavement and jury duty, and offers a generous vacation allowance.
+
+Our headquarters are located in Washington, DC. We have an “IT casual” dress code, enjoy social events, team builders, and a commitment to helping our organization continue to evolve.
+
+The safety and well-being of our team members is of the utmost importance to IdeaCrew.  In response to the health pandemic, our team has been working in a full-time remote as of March 2020.
+
+Since then, we have continued to meet (virtually) for social and team building events including Monthly Fun Meetings, Quarterly Team Events, Happy Hours, Trivia Nights, Game Nights and Cooking with the Crew.  We look forward to being able to return to our modern, open office space, when it is safe to do so.
