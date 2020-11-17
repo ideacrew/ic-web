@@ -16,7 +16,7 @@
       {{ partial "header.html" . }}
     {{ end }}
 
-    <main>
+    <main class="{{ .Page.Title | urlize }}-page">
     {{ block "main" . }}{{ end }}
     {{ block "feed" . }}{{ end }}
     </main>

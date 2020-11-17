@@ -1,1 +1,27 @@
 @import './work-item';
+
+.our-work-page {
+  .work-item + .work-item {
+    margin-top: 1rem;
+  }
+}
+
+.work-content-container:empty {
+  display: none;
+}
+
+@media screen and (min-width: 769px) {
+  .our-work-page {
+    .work-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+
+    .work-item + .work-item {
+      margin-top: 0;
+    }
+  }
+}
+
+// @media screen and (min-width: 1128px) {
+// }

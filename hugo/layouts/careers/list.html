@@ -5,14 +5,12 @@
 {{ end }}
 
 {{ define "main" }}
-<div class="page-wrapper">
-  <h1>Careers</h1>
-  {{ .Content }}
-  <h2>Current Openings</h2>
-  <ul class="career-list">
-    {{ range .Pages.ByTitle }}
-    {{ partial "career-item" . }}
-    {{ end }}
-  </ul>
-</div>
+<h1>Careers</h1>
+{{ .Content }}
+<h2>Current Openings</h2>
+<ul class="career-list">
+  {{ range .Pages.ByTitle }}
+  {{ partial "career-item" . }}
+  {{ end }}
+</ul>
 {{ end }}

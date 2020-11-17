@@ -35,3 +35,14 @@
 .quote-content {
   font-style: italic;
 }
+
+@media screen and (min-width: 769px) {
+  .work-summary {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .solution {
+    margin: 0;
+  }
+}

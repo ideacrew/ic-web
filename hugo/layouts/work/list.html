@@ -6,17 +6,13 @@
 
 
 {{ define "main" }}
-<div class="work-content-container">
-  <h1>Our Work</h1>
-  <div class="content-container">
-    {{ .Content }}
-  </div>
-  <ul class="work-list">
-    {{ range .Pages.ByTitle }}
-    {{ partial "work-item" . }}
-    {{ end }}
-  </ul>
-</div>
+<h1>Our Work</h1>
+{{ .Content }}
+<ul class="work-list">
+  {{ range .Pages.ByTitle }}
+  {{ partial "work-item" . }}
+  {{ end }}
+</ul>
 {{ end }}
 
 {{ define "cta" }}
