@@ -1,37 +1,14 @@
 .about-content-container {
-  // display: grid;
-  // width: var(--content-width);
-  // grid-template-columns: 70ch 1fr;
-  // grid-column: 2 / 6;
-
-  h1,
-  p {
-    grid-column: 1 / 2;
-  }
-
   .ideacrew-logo {
     display: none;
-    // grid-row-start: 1;
-    // grid-row-end: 3;
-    // grid-column-start: 2;
-    // grid-column-end: 3;
-    // align-self: center;
-    // justify-self: center;
   }
-}
-
-.our-services {
-  // display: grid;
-  margin-bottom: 3rem;
-  // grid-template-columns: repeat(4, 1fr);
-  // gap: 1rem;
 }
 
 .graphic {
   display: none;
 }
 
-.service {
+.service-container {
   text-align: center;
 
   ul,
@@ -98,6 +75,20 @@
 }
 
 @media screen and (min-width: 769px) {
+  .about-content-container {
+    display: grid;
+    grid-template-columns: 80% 1fr;
+
+    h1 {
+      grid-column: span 2;
+    }
+
+    .ideacrew-logo {
+      display: block;
+      justify-self: center;
+    }
+  }
+
   .leadership-team {
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
   }

@@ -143,6 +143,12 @@
   }
 }
 
+@media screen and (min-width: 769px) {
+  .services-container {
+    grid-column: 3 / 6;
+  }
+}
+
 @media screen and (min-width: 1128px) {
   .services-section {
     margin: 0;
