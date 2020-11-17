@@ -89,6 +89,26 @@
     }
   }
 
+  .services-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+
+    .graphic {
+      display: block;
+      margin: 0 auto;
+    }
+
+    h2 {
+      grid-column: 1 / 5;
+    }
+
+    h3 {
+      margin-top: 0.5rem;
+      font-weight: 600;
+    }
+  }
+
   .leadership-team {
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
   }
