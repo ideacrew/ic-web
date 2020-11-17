@@ -17,8 +17,6 @@
 }
 
 .company-info {
-  // grid-column: 2 / 4;
-  // align-self: center;
   display: grid;
   column-gap: 0.75rem;
   grid-template-columns: repeat(2, max-content);
@@ -34,7 +32,6 @@
 }
 
 .company-name {
-  // margin-top: 1rem;
   grid-area: company;
   align-self: end;
 }
@@ -81,6 +78,21 @@
 }
 
 @media screen and (min-width: 769px) {
+  .footer {
+    display: grid;
+    padding-right: 0;
+    padding-left: 0;
+    grid-template-columns: var(--side-padding) 1fr var(--side-padding);
+  }
+
+  .footer-content-container {
+    grid-column: 2 / 3;
+    display: grid;
+    align-items: start;
+    column-gap: 1.5rem;
+    grid-template-columns: 0.75fr repeat(3, 1fr);
+  }
+
   .company-info {
     display: block;
 
@@ -93,25 +105,9 @@
     margin-top: 0;
   }
 
-  .footer-content-container {
-    gap: 2rem;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-around;
-  }
-
   .footer-nav {
     margin: 0;
     text-align: left;
-  }
-}
-
-@media screen and (min-width: 1128px) {
-  .footer {
-    --side-padding: 0;
-
-    display: grid;
-    grid-template-columns: 1fr 62.667rem 1fr;
   }
 
   .footer .contact-info {
@@ -149,11 +145,13 @@
       font-size: 0.75rem;
     }
   }
+}
 
-  .footer-content-container {
-    grid-column: 2 / 3;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+@media screen and (min-width: 1128px) {
+  .footer {
+    --side-padding: 0;
+
+    grid-template-columns: 1fr 62.667rem 1fr;
   }
 
   .footer-nav a {
