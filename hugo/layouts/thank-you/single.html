@@ -1,7 +1,13 @@
+{{ define "head-styles" }}
+{{ $options := (dict "targetPath" "thank-you.css" "outputStyle" "compressed") }}
+{{ $style := resources.Get "scss/thank-you.scss" | resources.ToCSS $options | resources.Fingerprint}}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+{{ end }}
+
 {{ define "main" }}
 <h1 class="post__title">{{ .Title }}</h1>
 
-<div class="content post__content clearfix">
+<p>
   Thank you for your submission. We'll be in touch shortly!
-</div>
+</p>
 {{ end }}
