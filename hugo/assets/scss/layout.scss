@@ -73,8 +73,15 @@ main > :first-child:not(.index-heading) {
 }
 
 @media screen and (min-width: 1128px) {
-  .grid {
-    grid-template-columns: 1fr repeat(4, 15.667rem) 1fr;
+  main {
+    display: grid;
+    padding-right: 0;
+    padding-left: 0;
+    grid-template-columns: 1fr 62.667rem 1fr;
+  }
+
+  main > * {
+    grid-column: 2 / 3;
   }
 
   .content-grid {

@@ -38,10 +38,18 @@
 }
 
 @media screen and (min-width: 1128px) {
+  .call-to-action {
+    --side-padding: 0;
+    
+    display: grid;
+    grid-template-columns: 1fr 62.667rem 1fr;
+  }
+
   .cta-container {
+    grid-column: 2 / 3;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .cta-button {

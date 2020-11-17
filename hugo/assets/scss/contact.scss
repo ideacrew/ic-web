@@ -2,21 +2,23 @@
   margin-top: 1rem;
 }
 
-.contact-info {
-  // grid-column: 1 / 4;
-  line-height: 2;
-  z-index: 2;
+.contact-container {
+  .contact-info {
+    // grid-column: 1 / 4;
+    line-height: 2;
+    z-index: 2;
 
-  .label-heading {
-    font-weight: 700;
-  }
+    .label-heading {
+      font-weight: 700;
+    }
 
-  a + .label-heading {
-    margin-top: 1rem;
-  }
+    a + .label-heading {
+      margin-top: 1rem;
+    }
 
-  a {
-    color: var(--secondary-blue);
+    a {
+      color: var(--secondary-blue);
+    }
   }
 }
 

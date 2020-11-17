@@ -35,25 +35,27 @@
   opacity: 0.2;
 }
 
-.services-heading {
-  color: var(--secondary-blue);
-  font-weight: 700;
-  grid-area: heading;
-}
+.services-section {
+  .services-heading {
+    color: var(--secondary-blue);
+    font-weight: 700;
+    grid-area: heading;
+  }
 
-.services-list {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-  color: var(--secondary-blue);
-  font-family: var(--sans-serif);
-  list-style: none;
-  grid-area: services;
-  gap: 1rem;
-
-  li {
+  .services-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
     padding: 0;
+    color: var(--secondary-blue);
+    font-family: var(--sans-serif);
+    list-style: none;
+    grid-area: services;
+    gap: 1rem;
+
+    li {
+      padding: 0;
+    }
   }
 }
 
@@ -87,8 +89,6 @@
 }
 
 .recent-work-section {
-  background-color: var(--neutral-094);
-
   .work-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
@@ -114,35 +114,43 @@
       rgba(52, 147, 255, 0.2) 45.83%,
       rgba(52, 147, 255, 0) 100%
     );
-  }
 
-  .services-heading {
-    font-size: 2rem;
-  }
+    .services-heading {
+      font-size: 2rem;
+    }
 
-  .services-list {
-    margin-top: 1rem;
-  }
+    .services-list {
+      margin-top: 1rem;
+    }
 
-  .services-container {
-    display: grid;
-    margin: -1.5rem 0;
-    padding: var(--side-padding);
-    column-gap: 1rem;
-    grid-template-columns: max-content 1fr;
-    grid-template-areas:
-      'heading heading'
-      'services button';
-    grid-column: 4 / 6;
-  }
+    .services-container {
+      display: grid;
+      margin: -1.5rem 0;
+      padding: var(--side-padding);
+      column-gap: 1rem;
+      grid-template-columns: max-content 1fr;
+      grid-template-areas:
+        'heading heading'
+        'services button';
+    }
 
-  .services-link {
-    grid-area: button;
-    align-self: end;
-    padding: 0.5rem 2rem;
-    justify-self: stretch;
+    .services-link {
+      grid-area: button;
+      align-self: end;
+      padding: 0.5rem 2rem;
+      justify-self: stretch;
+    }
   }
 }
 
-// @media screen and (min-width: 1128px) {
-// }
+@media screen and (min-width: 1128px) {
+  .services-section {
+    margin: 0;
+    grid-column: 1 / -1;
+    grid-template-columns: 1fr repeat(2, 31.33rem) 1fr;
+  }
+
+  .services-container {
+    grid-column: 3 /4;
+  }
+}
