@@ -1,5 +1,4 @@
 .career-summary {
-  // display: grid;
   padding-bottom: 1rem;
   // grid-template-columns: 4fr 1fr 1fr;
   // gap: 1rem;
@@ -14,13 +13,34 @@
 .career-title {
   display: block;
   color: var(--secondary-blue);
-  font-size: 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
   line-height: 1.15;
   // font-family: var(--sans-serif);
+}
+
+.career-position-type {
+  font-size: 0.75rem;
 }
 
 .location-list {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   gap: 1rem;
+  font-size: 0.75rem;
+  list-style: none;
+}
+
+@media screen and (min-width: 769px) {
+  .career-summary {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .location-list {
+    gap: 0.5rem;
+  }
 }
