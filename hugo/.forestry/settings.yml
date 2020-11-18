@@ -17,6 +17,7 @@ sections:
   create: documents
   match: "**/*"
   templates:
+  - quote
   - work
 - type: document
   path: hugo/data/team.json

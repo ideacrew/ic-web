@@ -1,4 +1,23 @@
 ---
 label: quote
 hide_body: true
-fields: []
+fields:
+- name: quoted_text
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Quoted Text
+  description: Transcribe the person's statement here
+- name: attribution
+  type: text
+  config:
+    required: true
+    min: 5
+    max: 50
+  label: Attribution
+  description: The name of the person that you're quoting
+  default: Marie Curie
