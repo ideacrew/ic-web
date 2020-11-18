@@ -21,3 +21,5 @@ fields:
   label: Attribution
   description: The name of the person that you're quoting
   default: Marie Curie
+pages:
+- hugo/content/work/luis-gutierrez-cca-executive-director.md
