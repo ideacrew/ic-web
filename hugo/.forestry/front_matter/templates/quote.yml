@@ -22,5 +22,15 @@ fields:
   label: Attribution
   description: The name of the person that you're quoting
   default: Marie Curie
+- name: not_sure
+  type: blocks
+  label: Not Sure
+  template_types:
+  - work
+  - quote
+  config:
+    min: 
+    max: 
+  description: I don't know
 pages:
 - hugo/content/work/luis-gutierrez-cca-executive-director.md
