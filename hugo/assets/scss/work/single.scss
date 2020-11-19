@@ -46,3 +46,15 @@
     margin: 0;
   }
 }
+
+@media screen and (min-width: 1128px) {
+  .quote {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr var(--content-width) 1fr;
+
+    * {
+      grid-column: 2 / 3;
+    }
+  }
+}
