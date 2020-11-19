@@ -66,10 +66,13 @@ html {
 }
 
 body {
-  color: var(--secondary-blue);
+  --text-color: var(--secondary-blue);
+
+  color: var(--text-color);
   font-family: var(--sans-serif);
+  font-size: 0.89rem;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 2;
 }
 
 h1,
@@ -78,8 +81,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin: 0;
   color: var(--secondary-blue);
   font-family: var(--serif);
   font-weight: 400;
@@ -90,21 +92,30 @@ h6 {
   }
 }
 
-p > a:hover {
-  text-decoration: underline;
-}
-
 h1 {
+  margin-bottom: 2rem;
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 h2 {
+  margin-bottom: 2rem;
   font-size: 1.75rem;
+
+  &.alt-heading {
+    font-family: var(--sans-serif);
+  }
 }
 
 h3 {
-  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  font-family: var(--sans-serif);
+  font-size: 1rem;
+  font-weight: 700;
+
+  a {
+    color: inherit;
+  }
 }
 
 h4 {
@@ -117,4 +128,12 @@ h5 {
 
 h6 {
   font-size: 0.75rem;
+}
+
+p > a:hover {
+  text-decoration: underline;
+}
+
+section {
+  outline: 1px solid blue;
 }

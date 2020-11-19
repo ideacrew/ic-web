@@ -48,7 +48,7 @@
 .leadership-team {
   display: grid;
   padding: 0;
-  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
   list-style: none;
   gap: 0.75rem;
 }
@@ -60,16 +60,15 @@
 .person-tile {
   display: grid;
   position: relative;
-  padding: 0.5rem;
+  padding: 0.75rem;
   grid-template-columns: 1fr min-content;
-  grid-template-rows: minmax(2.5rem, max-content) minmax(2.5rem, max-content) min-content;
+  grid-template-rows: minmax(1.5rem, max-content) minmax(2.5rem, max-content);
   border: 2px solid var(--secondary-blue);
   border-radius: 5px;
   font-size: 0.75rem;
 }
 
 .person-name {
-  color: var(--secondary-blue);
   font-size: 1rem;
   font-weight: 700;
   grid-column: 1 / -1;
@@ -109,6 +108,7 @@
     .graphic {
       display: block;
       margin: 0 auto;
+      margin-bottom: 2rem;
     }
 
     h2 {
@@ -116,7 +116,6 @@
     }
 
     h3 {
-      margin-top: 0.5rem;
       font-weight: 600;
     }
   }
@@ -126,7 +125,7 @@
     padding: 2rem 0;
     grid-template-columns: 1fr repeat(3, 20.89rem) 1fr;
     grid-column: 1 / -1;
-    background-color: var(--neutral-087);
+    background-color: var(--neutral-094);
     // column-gap: 1rem;
 
     h2 {

@@ -5,7 +5,13 @@
 }
 
 body {
-  background-color: var(--neutral-094);
+  background-color: var(--white);
+}
+
+body.home {
+  background-image: url('https://res.cloudinary.com/ideacrew/image/upload/f_auto,q_auto/v1605799183/ideacrew-website/background.png');
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 
 .mobile-nav-open {
@@ -28,14 +34,14 @@ body {
 main {
   // min-height: calc(100vh - var(--header-height));
   margin-top: var(--header-height);
-  padding: 0 var(--side-padding) 1rem var(--side-padding);
+  padding: 0 var(--side-padding);
 
   section {
     scroll-margin-top: var(--header-height);
   }
 
   section + section {
-    margin-top: 2rem;
+    margin-top: 4rem;
   }
 }
 
@@ -60,11 +66,8 @@ main > :first-child:not(.index-heading) {
     --side-padding: 1rem;
   }
 
-  body.home {
-    background-image: url('/images/background-graphic.svg');
-    background-repeat: no-repeat;
-    background-position: left top;
-    background-size: 150vh;
+  body {
+    background-size: contain;
   }
 }
 
@@ -85,6 +88,6 @@ main > :first-child:not(.index-heading) {
   }
 
   main > :first-child:not(.index-heading) {
-    margin-top: 3rem;
+    margin-top: 6rem;
   }
 }

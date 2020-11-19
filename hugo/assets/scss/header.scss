@@ -1,13 +1,18 @@
 :root {
-  --header-height: 4rem;
+  --header-height: 3rem;
 }
 
 .header {
   position: fixed;
   top: 0;
   width: 100%;
-  background: var(--neutral-094);
+  background: var(--white);
   z-index: 100;
+}
+
+.header-logo {
+  width: auto;
+  height: 1.5rem;
 }
 
 .header-container {

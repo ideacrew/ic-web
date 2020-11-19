@@ -150,6 +150,10 @@
         margin: 0;
       }
 
+      h2 + div {
+        margin-top: 1rem;
+      }
+
       a {
         justify-self: center;
         align-self: center;

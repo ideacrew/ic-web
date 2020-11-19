@@ -89,6 +89,11 @@
 }
 
 .recent-work-section {
+  padding: 2rem 0;
+  grid-column: 1 / -1;
+  background-color: hsl(0, 0%, 96%);
+
+
   .work-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
@@ -116,7 +121,7 @@
     );
 
     .services-heading {
-      font-size: 2rem;
+      font-size: 1.33rem;
     }
 
     .services-list {
@@ -124,21 +129,12 @@
     }
 
     .services-container {
-      display: grid;
       margin: -1.5rem 0;
-      padding: var(--side-padding);
-      column-gap: 1rem;
-      grid-template-columns: max-content 1fr;
-      grid-template-areas:
-        'heading heading'
-        'services button';
+      padding: 3rem;
     }
 
     .services-link {
-      grid-area: button;
-      align-self: end;
       padding: 0.5rem 2rem;
-      justify-self: stretch;
     }
   }
 }
@@ -157,6 +153,24 @@
   }
 
   .services-container {
-    grid-column: 3 /4;
+    grid-column: 3 / 4;
+    justify-self: center;
+  }
+
+  .services-link {
+    margin-top: 1rem;
+  }
+
+  .recent-work-section {
+    display: grid;
+    grid-template-columns: 1fr var(--content-width) 1fr;
+
+    .work-section-heading {
+      grid-column: 2 / 3;
+    }
+
+    .work-list {
+      grid-column: 2 / 3;
+    }
   }
 }

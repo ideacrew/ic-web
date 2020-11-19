@@ -1,11 +1,16 @@
+:root {
+  --footer-gray: var(--neutral-080);
+  --footer-text: var(--neutral-020);
+}
+
 .footer {
   // min-height: 7rem;
   padding: 3rem var(--side-padding);
-  background-color: var(--dark-blue);
-  color: var(--dark-blue-tint);
+  background-color: var(--footer-gray);
+  color: var(--footer-text);
 
   h3 {
-    color: var(--dark-blue-tint);
+    color: var(--footer-text);
     font-size: 1rem;
   }
 }
@@ -54,8 +59,11 @@
   }
 
   .nav-links {
+    display: flex;
     margin: 0;
     padding: 0;
+    gap: 1rem;
+
   }
 
   .navbar-link {
@@ -108,6 +116,7 @@
   .footer-nav {
     margin: 0;
     text-align: left;
+    grid-column: 4 / 5;
   }
 
   .footer .contact-info {
@@ -118,7 +127,7 @@
     }
 
     .contact-link {
-      color: var(--dark-blue-tint);
+      color: var(--footer-text);
       font-size: 0.75rem;
     }
 
