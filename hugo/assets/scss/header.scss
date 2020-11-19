@@ -10,7 +10,8 @@
   z-index: 100;
 }
 
-.header-logo {
+.header-logo,
+.mobile-nav-logo {
   width: auto;
   height: 1.5rem;
 }
@@ -57,6 +58,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: var(--header-height);
+  padding: 0 var(--side-padding);
 }
 
 .mobile-nav {
@@ -64,7 +67,6 @@
   top: 0;
   width: 100vw;
   height: 100vh;
-  padding: 1rem var(--side-padding);
   grid-template-columns: 1rem 1fr 1rem;
   grid-template-rows: repeat(3, min-content) 1fr;
   row-gap: 0.75rem;
