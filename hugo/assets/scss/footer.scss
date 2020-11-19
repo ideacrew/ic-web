@@ -63,7 +63,6 @@
     margin: 0;
     padding: 0;
     gap: 1rem;
-
   }
 
   .navbar-link {
@@ -97,7 +96,6 @@
     grid-column: 2 / 3;
     display: grid;
     align-items: start;
-    column-gap: 1.5rem;
     grid-template-columns: 0.75fr repeat(3, 1fr);
   }
 
@@ -161,9 +159,22 @@
     --side-padding: 0;
 
     grid-template-columns: 1fr 62.667rem 1fr;
+
+    .nav-links {
+      grid-column: 3 / 6;
+      display: inline-flex;
+      align-self: center;
+      justify-self: end;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar-link {
+      padding: 0 1rem;
+      color: inherit;
+      font-size: 0.75rem;
+    }
   }
 
-  .footer-nav a {
-    font-size: 0.75rem;
-  }
+
 }
