@@ -10,16 +10,27 @@
   display: none;
 }
 
+// .work-list {
+//   margin: 0;
+//   padding: 0;
+//   gap: 1rem;
+// }
+
 @media screen and (min-width: 769px) {
-  .our-work-page {
+  .work-page {
     .work-list {
       display: grid;
+      margin: 0;
+      padding: 0;
       grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+      gap: 1rem;
     }
 
     .work-item + .work-item {
       margin-top: 0;
     }
+
+    padding-bottom: 12rem;
   }
 }
 
