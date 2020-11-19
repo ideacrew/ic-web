@@ -13,6 +13,27 @@
     color: var(--footer-text);
     font-size: 1rem;
   }
+
+  .home-link {
+    display: list-item;
+  }
+
+  .nav-links {
+    margin-top: 1rem;
+    padding: 0;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .navbar-link {
+    display: block;
+    padding: 0.5rem 0;
+    color: inherit;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .footer-content-container {
@@ -46,36 +67,6 @@
   align-self: start;
 }
 
-.footer-nav {
-  margin-top: 1rem;
-  text-align: center;
-
-  .home-link {
-    display: block;
-  }
-
-  h3 {
-    margin: 2rem 0 0;
-  }
-
-  .nav-links {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    gap: 1rem;
-  }
-
-  .navbar-link {
-    display: block;
-    padding: 0.5rem 0;
-    color: inherit;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-}
-
 .footer .contact-info {
   display: none;
 }
@@ -90,6 +81,21 @@
     padding-right: 0;
     padding-left: 0;
     grid-template-columns: var(--side-padding) 1fr var(--side-padding);
+
+    .nav-links {
+      grid-column: 2 / 6;
+      display: inline-flex;
+      align-self: center;
+      justify-self: end;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar-link {
+      padding: 0 1rem;
+      color: inherit;
+      font-size: 0.75rem;
+    }
   }
 
   .footer-content-container {
@@ -159,22 +165,5 @@
     --side-padding: 0;
 
     grid-template-columns: 1fr 62.667rem 1fr;
-
-    .nav-links {
-      grid-column: 3 / 6;
-      display: inline-flex;
-      align-self: center;
-      justify-self: end;
-      margin: 0;
-      padding: 0;
-    }
-
-    .navbar-link {
-      padding: 0 1rem;
-      color: inherit;
-      font-size: 0.75rem;
-    }
   }
-
-
 }
