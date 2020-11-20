@@ -1,15 +1,6 @@
 ---
 title: Careers
 ---
-If you’re looking for a company that works where technology touches people’s lives… a company that regularly turns “that’s impossible” into “Got it – what’s next?”… a company that rewards performance with generous pay, health insurance and other employee benefits… IdeaCrew may be right for you.
-
-We’re smart, talented, solutions oriented, diverse, forward thinking and fun. As a member of our crew you will have the opportunity to work closely with like-minded professionals in a fast-paced, engaging, professional environment.
-
-## About Us
-
-Headquartered in Washington, D.C., IdeaCrew is a full-service technology consultancy that develops and operates modern technology solutions for public and private organizations. Clients in need of new ideas and better solutions turn to IdeaCrew as a trusted source and partner. Our clients do important work with purpose, and our support for that work is a renewable source for IdeaCrew’s “sense of service” core value.
-
-IdeaCrew is an open source software community supporter and contributor. Our culture encourages independent work, creative input, sharing of ideas, continuous learning and superior results.
 
 ## Benefits
 
