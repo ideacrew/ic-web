@@ -45,11 +45,11 @@ async function submitForm(): Promise<void> {
           'Content-Type': 'application/json',
         },
       });
+      location.href = '/thank-you';
     } catch (e) {
+      submitButton.innerText = 'Something went wrong, refresh and try again.';
       console.error('This request could not be completed');
     }
-
-    location.href = '/thank-you';
   }
 }
 
