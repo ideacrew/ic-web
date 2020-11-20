@@ -1,28 +1,27 @@
 import { MailDataRequired, send, setApiKey } from '@sendgrid/mail';
 import * as functions from 'firebase-functions';
 
-interface ContactMessage {
-  company: string;
-  contactName: string;
-  email: string;
-  message: string;
-  submitted: string;
-  sent?: boolean;
-}
+import { ContactMessage } from './contactMessage';
 
 export async function sendEmail(
   snapshot: functions.firestore.QueryDocumentSnapshot
 ): Promise<FirebaseFirestore.WriteResult | void> {
+  // Sets the SendGrid API key, accessed from cloud functions secret store
   setApiKey(functions.config().sendgrid.key);
 
-  const {
-    contactName,
-    company,
-    email,
-    message,
-  } = snapshot.data() as ContactMessage;
+  const mailData = prepareEmail(snapshot.data() as ContactMessage);
 
-  console.log(contactName, company, email, message);
+  try {
+    await send(mailData);
+    return snapshot.ref.update({ sent: true });
+  } catch (e) {
+    console.error('Unable to send email');
+    return Promise.resolve();
+  }
+}
+
+function prepareEmail(contactMessage: ContactMessage): MailDataRequired {
+  const { contactName, company, email, message } = contactMessage;
 
   const mailData: MailDataRequired = {
     to: 'mark.goho@ideacrew.com',
@@ -35,11 +34,5 @@ export async function sendEmail(
     <p>${message}</p>`,
   };
 
-  try {
-    await send(mailData);
-    return snapshot.ref.update({ sent: true });
-  } catch (e) {
-    console.error('Unable to send email');
-    return Promise.resolve();
-  }
+  return mailData;
 }

@@ -13,7 +13,7 @@ declare let grecaptcha: any;
 // Element Selectors
 const submitButton: HTMLButtonElement = document.querySelector(
   '.submit-button'
-);
+) as HTMLButtonElement;
 
 // Attach function to click event
 submitButton.addEventListener('click', submitForm, false);

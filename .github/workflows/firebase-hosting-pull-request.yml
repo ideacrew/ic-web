@@ -2,7 +2,11 @@
 # https://github.com/firebase/firebase-tools
 
 name: Deploy to Firebase Hosting on PR
-on: pull_request
+on:
+  pull_request:
+    paths:
+      - 'hugo/**'
+
 jobs:
   build_and_preview:
     runs-on: ubuntu-latest
@@ -16,8 +20,8 @@ jobs:
         id: firebase_hosting_preview
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          repoToken: "${{ secrets.GITHUB_TOKEN }}"
-          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_IC_WEB_7B0DF }}"
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_IC_WEB_7B0DF }}'
           projectId: ic-web-7b0df
         env:
           FIREBASE_CLI_PREVIEWS: hostingchannels

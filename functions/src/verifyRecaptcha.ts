@@ -1,6 +1,15 @@
 import * as functions from 'firebase-functions';
 import * as fetch from 'node-fetch';
 
+interface VerificationResponse {
+  success: 'true' | 'false';
+  score: number;
+  action: string;
+  challenge_ts: string;
+  hostname: string;
+  'error-codes'?: string[];
+}
+
 export async function verify(
   req: functions.https.Request,
   res: functions.Response<unknown>
@@ -8,13 +17,19 @@ export async function verify(
   res.set('Access-Control-Allow-Origin', '*');
   res.set('Access-Control-Allow-Methods', 'GET');
 
+  // ReCaptcha Server-side Secret
   const secret = functions.config().recaptcha.server;
+
+  // Client-side token passed via POST body
   const token = req.query.token;
 
-  const url = `https://www.google.com/recaptcha/api/siteverify?secret=${secret}&response=${token}`;
+  // ReCaptcha Verification
+  const response = await fetch(
+    `https://www.google.com/recaptcha/api/siteverify?secret=${secret}&response=${token}`,
+    { method: 'POST' }
+  );
+  const verification: VerificationResponse = (await response.json()) as VerificationResponse;
 
-  const response = await fetch(url, { method: 'POST' });
-  const verification = await response.json();
-
+  // Send verification in response to POST
   res.status(200).send(verification);
 }

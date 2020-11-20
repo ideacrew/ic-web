@@ -4,6 +4,8 @@
 name: Deploy to Firebase Hosting on merge
 on:
   push:
+    paths:
+      - 'hugo/**'
     branches:
       - master
 jobs:
@@ -15,8 +17,8 @@ jobs:
       - run: cd hugo && hugo --minify
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          repoToken: "${{ secrets.GITHUB_TOKEN }}"
-          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_IC_WEB_7B0DF }}"
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_IC_WEB_7B0DF }}'
           channelId: live
           projectId: ic-web-7b0df
         env:
