@@ -8,7 +8,7 @@ title = "QA Engineer"
 +++
 IdeaCrew is currently seeking senior and mid-level Quality Assurance Testers to join our innovative, hard-working team as we disrupt healthcare technology. As a member of our crew you will have the opportunity to work closely with like-minded professionals in a fast-paced, engaging, professional environment.
 
-## A Quality Assurance Tester for IdeaCrew will:
+### A Quality Assurance Tester for IdeaCrew will:
 
 * Create clear, comprehensive and concise test plans and test cases
 * Conduct full cycle testing-Smoke, Unit, Functional, Integration, UAT and Regression in multiple environments
@@ -19,7 +19,7 @@ IdeaCrew is currently seeking senior and mid-level Quality Assurance Testers to 
 * Contribute to business discussions about the project and user interfaces
 * Troubleshoot problems and provide customer support for application issues
 
-## Desired Skills & Expertise
+### Desired Skills & Expertise
 
 * Three-plus years’ experience working as a QA Tester/Engineer
 * Agile software development principles, practice and process experience) experience required

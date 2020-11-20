@@ -12,7 +12,7 @@ This individual guides strategic technical direction and technology choices, def
 
 This is a leadership role in the IdeaCrew team, with potential for continued growth and development of the strategic and management elements for the right candidate.
 
-## Key Skills & Qualifications
+### Key Skills & Qualifications
 
 * System Architecture
 * Evolutionary Architecture
@@ -22,7 +22,7 @@ This is a leadership role in the IdeaCrew team, with potential for continued gro
 * Client-side UI development principles and frameworks (primarily AngularJS)
 * Mobile-first application design
 
-## A Solutions Architect for IdeaCrew will:
+### A Solutions Architect for IdeaCrew will:
 
 * Work directly with the Chief Architect and executive stakeholders (both internal and client) on strategy and vision
 * Collaborate with development teams and senior engineers to guide technical execution, solve problems and evolve patterns and conventions as projects and roadmaps change
@@ -34,7 +34,7 @@ You will also be a champion not just of our technical roadmap, but of our delive
 
 You will bring expert knowledge on industry, development and architecture trends, and be able to coach and communicate them to the wider organization.
 
-## Desired Skills & Expertise
+### Desired Skills & Expertise
 
 * 4+ years working as a lead or principal engineer developing applications built using Ruby on Rails
 * 10+ years working as a software engineer

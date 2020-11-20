@@ -10,7 +10,7 @@ IdeaCrew is currently seeking senior and mid-level Ruby on Rails Developers to j
 
 As a member of our development team, you will work closely with subject matter experts, chief engineers, business analysts, system architects, UI designers, SOA and RoR developers, DBA’s, testers and others to design and implement APIs and Web-based applications.
 
-## A Ruby on Rails Software Developer for IdeaCrew will:
+### A Ruby on Rails Software Developer for IdeaCrew will:
 
 * Design and develop software for Web applications, Application Program Interfaces (APIs) and Electronic Data Interchange (EDI)
 * Capture functional requirements as Use Cases and accurately estimate level of effort to develop
@@ -24,7 +24,7 @@ As a member of our development team, you will work closely with subject matter e
 * Document development projects and create test plans
 * Troubleshoot problems and provide customer support for application issues
 
-## Desired Skills & Expertise
+### Desired Skills & Expertise
 
 * Four year degree in computer science or related field, or equivalent experience
 * Three-plus years experience with Ruby on Rails

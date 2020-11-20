@@ -43,6 +43,10 @@ main {
   section + section {
     margin-top: 4rem;
   }
+
+  section:last-child {
+    padding-bottom: 4rem;
+  }
 }
 
 main > :first-child:not(.index-heading) {

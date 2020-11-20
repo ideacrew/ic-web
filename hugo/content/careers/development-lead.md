@@ -10,7 +10,7 @@ IdeaCrew is currently seeking a Development Lead to join our fast-paced, growing
 
 Reporting to the Director of Application Development, you will oversee the evolution and communication of design patterns, quality standards and toolsets used across the organization, and work with senior developers to ensure technical risks and blockers are understood and raised and software delivery is sustainable and resilient.
 
-## Key Skills & Qualifications
+### Key Skills & Qualifications
 
 * RESTful API design
 * Ruby on Rails development
@@ -22,7 +22,7 @@ Reporting to the Director of Application Development, you will oversee the evolu
 * Test and Behavior Driven Development
 * Continuous Integration
 
-## A Development Lead for IdeaCrew will:
+### A Development Lead for IdeaCrew will:
 
 * Design and develop software for Web applications, Application Program Interfaces (APIs) and Electronic Data Interchange (EDI)
 * Oversee multiple cross functional development teams and provide technical guidance and steering
@@ -35,7 +35,7 @@ Reporting to the Director of Application Development, you will oversee the evolu
 * Document development projects and create test plans
 * Support incident management and root cause analysis activities
 
-## Desired Skills & Expertise
+### Desired Skills & Expertise
 
 * Four year degree in computer science or related field, or equivalent experience
 * Ten plus years experience with Ruby on Rails, including five plus years in a technical leadership role

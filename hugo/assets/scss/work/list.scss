@@ -1,6 +1,11 @@
 @import './work-item';
 
-.our-work-page {
+.work-page {
+  .work-list {
+    margin: 0;
+    padding: 0;
+  }
+
   .work-item + .work-item {
     margin-top: 1rem;
   }
@@ -20,8 +25,6 @@
   .work-page {
     .work-list {
       display: grid;
-      margin: 0;
-      padding: 0;
       grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
       gap: 1rem;
     }
