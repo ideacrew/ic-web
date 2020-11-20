@@ -16,7 +16,7 @@
 {{ define "main" }}
 <h1>Contact Us</h1>
 
-<form class="contact-form">
+<form class="contact-form submitting">
   <div class="input-group">
     <label for="contact-name">Your name</label>
     <input type="text" name="contact-name" id="contact-name" />
@@ -42,7 +42,10 @@
       cols="30"
     ></textarea>
   </div>
-  <button disabled class="submit-button" type="button">Send message</button>
+  <button disabled class="submit-button" type="button">
+    Send message
+  </button>
+
 </form>
 
 <div class="contact-info">

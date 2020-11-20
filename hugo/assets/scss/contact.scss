@@ -23,6 +23,7 @@
 }
 
 .contact-form {
+  position: relative;
   margin-top: 1rem;
   z-index: 2;
   grid-area: form;
@@ -83,6 +84,7 @@
   display: none;
 }
 
+
 @media screen and (min-width: 1128px) {
   .contact-us-page {
     grid-template-columns: 1fr repeat(2, 31.33rem) 1fr;
@@ -111,13 +113,19 @@
       textarea {
         border: 0;
       }
+
+      &.submitting .submitting-shade {
+        display: flex;
+      }
     }
 
     .contact-info {
       position: relative;
       padding: 1rem;
       background-image: url('https://res.cloudinary.com/ideacrew/image/upload/f_auto/v1605645847/ideacrew-website/google-map-image.jpg');
+      background-repeat: no-repeat;
       background-size: 100%;
+      background-size: cover;
       color: var(--white);
 
       a {

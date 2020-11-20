@@ -35,7 +35,8 @@ async function submitForm(): Promise<void> {
   if (contactName !== '' && company !== '' && email !== '' && message !== '') {
     const data = { contactName, email, company, message };
     const url = '/contact-form-submission';
-
+    submitButton.setAttribute('disabled', '');
+    submitButton.innerText = 'Sending message to IdeaCrew...';
     try {
       await fetch(url, {
         method: 'POST',
