@@ -20,3 +20,5 @@ export const processFormSubmission = functions.https.onRequest(
     );
   }
 );
+
+// console.log 'hello'
