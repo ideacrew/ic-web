@@ -61,7 +61,7 @@
   display: grid;
   position: relative;
   padding: 0.75rem;
-  grid-template-columns: 1fr min-content;
+  grid-template-columns: 1fr;
   grid-template-rows: minmax(1.5rem, max-content) minmax(2.5rem, max-content);
   border: 2px solid var(--secondary-blue);
   border-radius: 5px;
@@ -73,16 +73,22 @@
   font-weight: 700;
   grid-column: 1 / -1;
   line-height: 1.25;
-
-  // &:hover {
-  //   color: var(--neutral-020);
-  //   text-decoration: underline;
-  // }
 }
 
 .person-title {
-  // grid-column: 1 / 2;
   color: inherit;
+}
+
+.linked-in-link {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  align-self: end;
+  line-height: 1;
+}
+
+.linked-in-logo {
+  width: 1rem;
 }
 
 @media screen and (min-width: 769px) {
@@ -120,6 +126,12 @@
     }
   }
 
+  .leadership-team {
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  }
+}
+
+@media screen and (min-width: 1128px) {
   .values-section {
     display: grid;
     padding: 2rem 0;
@@ -144,9 +156,5 @@
         margin-bottom: 0;
       }
     }
-  }
-
-  .leadership-team {
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
   }
 }

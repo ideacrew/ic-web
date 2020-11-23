@@ -3,4 +3,12 @@
     {{ .name }}
   </span>
   <div class="person-title">{{ .job_title }}</div>
+  <a
+    class="linked-in-link"
+    href="https://www.linkedin.com/in/{{ .linked_in}}/"
+    target="__blank"
+    rel="noopener noreferrer">
+    <span class="visually-hidden">Link to {{ .name }}</span>
+    <img class="linked-in-logo" src="/images/linked-in-logo.svg" alt="">
+  </a>
 </li>

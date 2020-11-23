@@ -78,10 +78,7 @@
   <h2>Leadership</h2>
   <ul class="leadership-team">
     {{ range .Site.Data.team }}
-    <li class="person-tile">
-      <span class="person-name">{{ .name }}</span>
-      <div class="person-title">{{ .job_title }}</div>
-    </li>
+    {{ partial "person-tile" . }}
     {{ end }}
   </ul>
 </section>
