@@ -9,12 +9,17 @@ export async function sendEmail(
   // Sets the SendGrid API key, accessed from cloud functions secret store
   setApiKey(functions.config().sendgrid.key);
 
+  // Prepare email for sending
   const mailData = prepareEmail(snapshot.data() as ContactMessage);
 
   try {
+    // Send email
     await send(mailData);
+
+    // Update message to reflect message was sent
     return snapshot.ref.update({ sent: true });
   } catch (e) {
+    // Database write failed?
     console.error('Unable to send email');
     return Promise.resolve();
   }
@@ -25,7 +30,6 @@ function prepareEmail(contactMessage: ContactMessage): MailDataRequired {
 
   const mailData: MailDataRequired = {
     to: 'mark.goho@ideacrew.com',
-    // cc: "mark.goho@ideacrew.com",
     from: email,
     subject: 'Contact Form Submission',
     html: `<div>Name: ${contactName}</div>
