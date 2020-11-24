@@ -8,23 +8,27 @@
 {{ end }}
 
 {{ define "main"}}
-<h1 class="index-heading">
-  Strategy & technology solutions that help our clients solve their most important challenges
-</h1>
-
-<section class="services-section">
-  <div class="services-container">
-    <h2 class="services-heading alt-heading">Our Services</h2>
-    <ul class="services-list">
-      <li>Management Consulting</li>
-      <li>Data Integration</li>
-      <li>Application Development</li>
-      <li>DevOps & Cloud Infrastructure</li>
-    </ul>
-    <a class="services-link" href="/about/#services-section">
-      More Services
-    </a>
+<section class="index-heading">
+  <h1>
+    Strategy & technology solutions that help our clients solve their most important challenges
+  </h1>
+  <div class="hero-cta">
+    <a href="/contact/" class="button outline">Get in Touch</a>
+    <a href="/health-benefits-marketplace/" class="button primary">Health Benefits Marketplace</a>
   </div>
+</section>
+
+<section class="hbm-section">
+  <h2>Health Benefits Marketplace</h2>
+  <ul class="hbm-list">
+    <li class="hbm-item">State Based Exchange</li>
+    <li class="hbm-item">HRA Tool</li>
+    <li class="hbm-item">GlueDB</li>
+    <li class="hbm-item">Call Center</li>
+  </ul>
+  <a href="/health-benefits-marketplace" class="button outline">
+    Learn More About Our Benefits Marketplace Solution
+  </a>
 </section>
 
 <section class="clients-section">
@@ -42,13 +46,29 @@
   </ul>
 </section>
 
+<section class="services-section">
+  <h2>Our Services</h2>
+  <ul class="services-list">
+    <li class="services-item">Management Consulting</li>
+    <li class="services-item">Data Integration</li>
+    <li class="services-item">Application Development</li>
+    <li class="services-item">DevOps & Cloud Infrastructure</li>
+  </ul>
+  <a class="button outline" href="/about/#services-section">
+    See More of Our Services
+  </a>
+</section>
+
+
+
 <section class="recent-work-section">
   <h2 class="work-section-heading">Our Work</h2>
   <ul class="work-list">
-    {{ range (where .Site.RegularPages.ByTitle "Section" "work") }}
+    {{ range first 4 (where .Site.RegularPages.ByTitle "Section" "work") }}
     {{ partial "work-item" . }}
     {{ end }}
   </ul>
+  <a href="/our-work/" class="button outline">Read More of Our Work</a>
 </section>
 
 {{ end }}

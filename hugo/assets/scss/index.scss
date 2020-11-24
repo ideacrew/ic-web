@@ -2,60 +2,74 @@
 
 .index-heading {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   height: calc(100vh - var(--header-height) + 2rem);
-  font-size: 1.25rem;
   grid-column: 2 / 6;
-  line-height: 1.5;
-}
 
-.services-container {
-  padding: 0.5rem;
-  border: 5px solid var(--secondary-blue);
-  border-radius: 5px;
-  background-color: var(--white);
-  z-index: 2;
+  h1 {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
 
-  .services-link {
-    display: block;
-    margin-top: 1rem;
-    padding: 0.5rem 0;
-    border: 2px solid var(--primary-blue);
-    border-radius: 5px;
-    text-align: center;
+  .button {
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  .outline {
+    background-color: var(--white);
   }
 }
 
-.horizontal-block {
-  background-image: linear-gradient(
-    267.63deg,
-    var(--primary-blue) 45.83%,
-    rgba(52, 147, 255, 0) 100%
-  );
-  opacity: 0.2;
+.hbm-section {
+  .hbm-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .hbm-item {
+    padding: 1rem 0;
+    border-radius: 5px;
+    background-color: var(--gray-blue);
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .hbm-item + .hbm-item {
+    margin-top: 0.5rem;
+  }
+
+  .button {
+    margin-top: 1rem;
+  }
 }
 
 .services-section {
-  .services-heading {
-    color: var(--secondary-blue);
-    font-weight: 700;
-    grid-area: heading;
-  }
-
   .services-list {
-    display: flex;
-    flex-direction: column;
     margin: 0;
     padding: 0;
-    color: var(--secondary-blue);
-    font-family: var(--sans-serif);
     list-style: none;
-    grid-area: services;
-    gap: 1rem;
+  }
 
-    li {
-      padding: 0;
-    }
+  .services-item {
+    padding: 1rem 0;
+    border-radius: 5px;
+    background-color: var(--light-blue);
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .services-item + .services-item {
+    margin-top: 0.5rem;
+  }
+
+  .button {
+    width: 100%;
+    margin-top: 1rem;
   }
 }
 
@@ -95,10 +109,16 @@
 
   .work-list {
     display: grid;
+    margin: 0;
     padding: 0;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     grid-template-rows: auto;
     gap: 1rem;
+  }
+
+  .button {
+    width: 100%;
+    margin-top: 1rem;
   }
 }
 
