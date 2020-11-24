@@ -6,7 +6,6 @@
   align-items: center;
   justify-content: center;
   height: calc(100vh - var(--header-height) + 2rem);
-  grid-column: 2 / 6;
 
   h1 {
     margin: 0;
@@ -73,10 +72,6 @@
   }
 }
 
-.clients-section-heading {
-  margin-top: 5rem;
-}
-
 .client-tile {
   display: flex;
   align-items: center;
@@ -95,7 +90,6 @@
 .client-list {
   display: grid;
   margin-top: 0;
-  margin-bottom: 5.5rem;
   padding: 0;
   grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
   list-style: none;
@@ -120,9 +114,7 @@
 
 @media screen and (min-width: 769px) {
   .index-heading {
-    grid-column: 2 / 5;
     align-items: flex-start;
-    font-size: 2rem;
 
     h1 {
       max-width: 40ch;
@@ -183,18 +175,7 @@
 }
 
 @media screen and (min-width: 1128px) {
-  .services-section {
-    margin: 0;
-    grid-column: 1 / -1;
-    grid-template-columns: 1fr repeat(2, 31.33rem) 1fr;
-  }
-
-  .services-container {
-    grid-column: 3 / 4;
-    justify-self: center;
-  }
-
-  .services-link {
-    margin-top: 1rem;
+  .index-heading h1 {
+    font-size: 2rem;
   }
 }
