@@ -13,27 +13,6 @@
     color: var(--footer-text);
     font-size: 1rem;
   }
-
-  .home-link {
-    display: list-item;
-  }
-
-  .nav-links {
-    margin-top: 1rem;
-    padding: 0;
-    gap: 1rem;
-    text-align: center;
-  }
-
-  .navbar-link {
-    display: block;
-    padding: 0.5rem 0;
-    color: inherit;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
 }
 
 .footer-content-container {
@@ -81,21 +60,6 @@
     padding-right: 0;
     padding-left: 0;
     grid-template-columns: var(--side-padding) 1fr var(--side-padding);
-
-    .nav-links {
-      grid-column: 2 / 6;
-      display: inline-flex;
-      align-self: center;
-      justify-self: end;
-      margin: 0;
-      padding: 0;
-    }
-
-    .navbar-link {
-      padding: 0 1rem;
-      color: inherit;
-      font-size: 0.75rem;
-    }
   }
 
   .footer-content-container {
