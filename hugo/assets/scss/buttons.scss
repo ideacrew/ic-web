@@ -6,6 +6,7 @@
   text-align: center;
 
   &.primary {
+    border: 2px solid var(--primary-blue);
     background-color: var(--primary-blue);
     color: var(--white);
   }
