@@ -1,5 +1,9 @@
 @import './work/work-item';
 
+// .home section {
+//   outline: 1px solid red;
+// }
+
 .index-heading {
   display: flex;
   flex-direction: column;
@@ -43,7 +47,9 @@
   }
 
   .button {
+    width: 100%;
     margin-top: 1rem;
+    background-color: var(--white);
   }
 }
 
@@ -101,7 +107,7 @@
     display: grid;
     margin: 0;
     padding: 0;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
     grid-template-rows: auto;
     gap: 1rem;
   }
@@ -160,17 +166,20 @@
       margin: 0;
     }
   }
-}
-
-@media screen and (min-width: 769px) {
-  .services-container {
-    grid-column: 3 / 6;
-  }
 
   .recent-work-section {
     .work-list {
       padding: 0;
     }
+  }
+
+  .link-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .home section:not(.index-heading) .button {
+    width: auto;
   }
 }
 

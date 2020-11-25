@@ -5,7 +5,8 @@ quote_attribution = "Mila Kofman, DCHBX Executive Director"
 solution = "IdeaCrew’s successful implementation, including carrier and broker onboarding resulted in immediate growth. Since its re-launch Massachusetts SHOP was the fastest growing in the country. Membership increased 90% from 4,500 to over 8,000 members in two years. The shared services model with DC has resulted in significant financial savings for both Massachusetts and the District of Columbia."
 summary = "Our health insurance exchange platform delights individuals, small businesses, and members of congress"
 title = "Washington DC Health Benefit Exchange"
-
+weight = 1
+featured_image = "dc-healthlink.png"
 +++
 IdeaCrew has provided health benefit and marketplace solutions to the District of Columbia since 2014. The District of Columbia Health Benefit Exchange Authority (HBX) launched its state-based marketplace in 2013. The District had invested in expensive commercial-off-the-shelf (COTS) software products and reputable systems integrator to delivery its new marketplace. The stakes were high to implement something that had not been implemented before. DC Health Link, the District’s new health insurance marketplace, launched on time in October 2013. On the surface the launch was successful. Individuals and households in the District were getting health coverage and Federal subsidies for the first time. There were problems brewing. Behind the scenes the new expensive software and its costlier integration was failing. Transactions were getting lost. Data was out of sync. Wheels were spinning as online customers experienced slow website performance and crashes. Calls into the call center were mounting.  
   

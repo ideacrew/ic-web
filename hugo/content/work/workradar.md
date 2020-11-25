@@ -5,7 +5,8 @@ quote_attribution = "Luis Gutierrez, CCA Executive Director"
 solution = "IdeaCrew’s successful implementation, including carrier and broker onboarding resulted in immediate growth. Since its re-launch Massachusetts SHOP was the fastest growing in the country. Membership increased 90% from 4,500 to over 8,000 members in two years. The shared services model with DC has resulted in significant financial savings for both Massachusetts and the District of Columbia."
 summary = "A modern tool to help companies safely return to the workplace during COVID-19"
 title = "WorkRadar"
-
+weight = 3
+featured_image = "workradar-logo.png"
 +++
 IdeaCrew has provided health benefit and marketplace solutions to the Massachusetts Health Connector since 2017. The Connector, launched in 2007, was the first health insurance exchange in the nation and became the model for the Affordable Care Act (ACA) in reducing the number of individuals without health insurance. While Massachusetts focused on the individual market, achieving the lowest uninsured rate in the country, growth in small group membership through the Connector remained flat. Growth was flat despite the Connector introducing plan choice, partnering with brokers and introducing innovative discounts through health and wellness programs for employers. The Connector lacked the modern technology private exchanges had to make enrollment easier for brokers, employers and their members. To make matters worse there did not appear to be many economical technology options supporting the small group market.  
   

@@ -1,9 +1,21 @@
 .work-item {
+  display: grid;
   position: relative;
   padding: var(--side-padding);
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3rem 1fr;
   border: 2px solid var(--secondary-blue);
   border-radius: 0.27em;
   list-style: none;
+}
+
+.work-image {
+  align-self: center;
+  justify-self: center;
+}
+
+.work-title {
+  margin: 0;
 }
 
 .work-link::after {
@@ -13,15 +25,4 @@
   bottom: 0;
   left: 0;
   content: '';
-}
-
-.work-content {
-  top: 60%;
-  left: 0;
-  width: 100%;
-  padding: var(--side-padding);
-
-  p {
-    font-size: 1rem;
-  }
 }

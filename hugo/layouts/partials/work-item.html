@@ -1,6 +1,11 @@
 <li class="work-item">
+  <img
+    class="work-image"
+    src="https://res.cloudinary.com/ideacrew/image/upload/c_fit,f_auto,h_178,w_178/ideacrew-website/{{ .Params.featured_image }}"
+    alt="" >
   <h3 class="work-title">
     <a class="work-link" href="{{ .RelPermalink }}">{{ .Title }}</a>
   </h3>
-  <p>{{ .Params.summary }}</p>
+  <p class="work-summary">{{ .Params.summary }}</p>
 </li>
+

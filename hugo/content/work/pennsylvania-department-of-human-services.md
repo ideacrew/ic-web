@@ -5,6 +5,7 @@ quote_attribution = "Believable Name, Director of Customer Success"
 solution = "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 summary = "Clinical consulting reduced wait times for defendants to receive state psychiatric treatment"
 title = "Pennsylvania Department of Human Services"
+featured_image = "pennsylvania-department-human-services.png"
 
 +++
 Criminal defendants in Pennsylvania routinely wait months, sometimes years, in county prisons before being transferred to state psychiatric hospitals for treatment to restore them to competency. That was the lawsuit by the American Civil Liberties Union (ACLU) against the Commonwealth of Pennsylvania (PA).   

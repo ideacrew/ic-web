@@ -5,7 +5,7 @@ quote_attribution = "Sally Francis, Manager of one of the hospitals"
 solution = "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 summary = "Our consulting improved the quality of care in the State’s five psychiatric hospitals"
 title = "Maryland Behavioral Health Services"
-
+featured_image = "maryland-department-health.png"
 +++
 The State of Maryland, Department of Health, Behavioral Health Administration needed to create a system of care that provided consistent, high-quality inpatient psychiatric care in all state psychiatric hospitals as part of achieving its goals.  
   

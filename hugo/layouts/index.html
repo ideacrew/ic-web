@@ -26,9 +26,11 @@
     <li class="sbm-item">Employees</li>
     <li class="sbm-item">Brokers</li>
   </ul>
-  <a href="/state-based-marketplace" class="button outline">
-    Learn More About Our Benefits Marketplace Solution
-  </a>
+  <div class="link-container">
+    <a href="/state-based-marketplace" class="button outline">
+      Learn More About Our Benefits Marketplace Solution
+    </a>
+  </div>
 </section>
 
 <section class="clients-section">
@@ -54,21 +56,23 @@
     <li class="services-item">Application Development</li>
     <li class="services-item">DevOps & Cloud Infrastructure</li>
   </ul>
-  <a class="button outline" href="/about/#services-section">
-    See More of Our Services
-  </a>
+  <div class="link-container">
+    <a class="button outline" href="/about/#services-section">
+      See More of Our Services
+    </a>
+  </div>
 </section>
-
-
 
 <section class="recent-work-section">
   <h2 class="work-section-heading">Our Work</h2>
   <ul class="work-list">
-    {{ range first 4 (where .Site.RegularPages.ByTitle "Section" "work") }}
+    {{ range first 4 (where .Site.RegularPages "Section" "work") }}
     {{ partial "work-item" . }}
     {{ end }}
   </ul>
-  <a href="/our-work/" class="button outline">Read More of Our Work</a>
+  <div class="link-container">
+    <a href="/work/" class="button outline">Read More of Our Work</a>
+  </div>
 </section>
 
 {{ end }}
