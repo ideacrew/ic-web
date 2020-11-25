@@ -1,8 +1,8 @@
 +++
-problem = "When initially launched, the Massachusetts Health Connector focused on the individual market, achieving the lowest uninsured rate in the country. However, growth in small group membership through the Connector remained flat, it lacked the modern technology private exchanges need to make enrollment easy for brokers, employers and their members."
+problem = "The District of Columbia’s expensive commercial-off-the-shelf (COTS) software failed after implementation during its first renewal period in 2014."
+solution = "IdeaCrew re-implemented the District’s state-based marketplace using open standards and cloud technology to quickly become one of the leading and most financially sustainable platforms in the nation."
 quote = "The SHOP system IdeaCrew delivered exceeded our expectations…The online marketplace is easy for customers to use. Feedback from enrolled businesses and their workers, brokers, and our congressional customers is very positive."
 quote_attribution = "Mila Kofman, DCHBX Executive Director"
-solution = "IdeaCrew’s successful implementation, including carrier and broker onboarding resulted in immediate growth. Since its re-launch Massachusetts SHOP was the fastest growing in the country. Membership increased 90% from 4,500 to over 8,000 members in two years. The shared services model with DC has resulted in significant financial savings for both Massachusetts and the District of Columbia."
 summary = "Our health insurance exchange platform delights individuals, small businesses, and members of congress"
 title = "Washington DC Health Benefit Exchange"
 weight = 1

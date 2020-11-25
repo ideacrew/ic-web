@@ -1,8 +1,6 @@
 +++
-problem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-quote = "This product was amazingly effective at helping us solve our problem."
-quote_attribution = "Believable Name, Director of Customer Success"
-solution = "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+problem = "Pennsylvania Department of Human Services as a result of a legal settlement were required to improve the transfer and treatment of individuals in state psychiatric hospitals."
+solution = "IdeaCrew delivered a Competency Evaluation and Treatment Guide that significantly reduced transfer and treatment of individuals including criminal defendants in county prisons restoring them to competency."
 summary = "Clinical consulting reduced wait times for defendants to receive state psychiatric treatment"
 title = "Pennsylvania Department of Human Services"
 featured_image = "pennsylvania-department-human-services.png"
