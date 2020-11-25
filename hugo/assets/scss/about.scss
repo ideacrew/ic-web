@@ -9,8 +9,6 @@
 }
 
 .service-container {
-  text-align: center;
-
   ul,
   h3 {
     font-family: var(--sans-serif);
@@ -111,9 +109,13 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 0.5rem;
 
+    ul {
+      padding: 0;
+      list-style: none;
+    }
+
     .graphic {
       display: block;
-      margin: 0 auto;
       margin-bottom: 2rem;
     }
 
@@ -128,6 +130,24 @@
 
   .leadership-team {
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  }
+
+  .careers-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    h2 {
+      grid-column: 1 / -1;
+    }
+
+    p {
+      grid-column: 1 / 4;
+      max-width: 80ch;
+    }
+
+    .button {
+      align-self: center;
+    }
   }
 }
 
@@ -150,7 +170,7 @@
 
     .values {
       padding: 1rem;
-      border-left: 5px solid var(--secondary-blue);
+      border-left: 5px solid var(--text-color);
 
       p {
         margin-bottom: 0;
