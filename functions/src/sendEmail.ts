@@ -29,7 +29,7 @@ function prepareEmail(contactMessage: ContactMessage): MailDataRequired {
   const { contactName, company, email, message } = contactMessage;
 
   const mailData: MailDataRequired = {
-    to: 'mark.goho@ideacrew.com',
+    to: 'info@ideacrew.com',
     from: email,
     subject: 'Contact Form Submission',
     html: `<div>Name: ${contactName}</div>
