@@ -140,14 +140,14 @@
       grid-column: 1 / -1;
     }
 
-    p {
-      grid-column: 1 / 4;
-      max-width: 80ch;
-    }
-
     .button {
       align-self: center;
     }
+  }
+
+  .careers-content {
+    grid-column: 1 / 4;
+    max-width: 55ch;
   }
 }
 
@@ -176,5 +176,9 @@
         margin-bottom: 0;
       }
     }
+  }
+
+  .careers-content {
+    max-width: 75ch;
   }
 }
