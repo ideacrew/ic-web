@@ -35,17 +35,7 @@
 
 <section class="clients-section">
   <h2 class="clients-section-heading">Our Clients</h2>
-  <ul class="client-list">
-    {{ range .Site.Data.clients }}
-    <li class="client-tile">
-      <img
-        loading="lazy"
-        src="https://res.cloudinary.com/ideacrew/image/upload/c_scale,e_grayscale,q_auto,f_auto,w_300/ideacrew-website/{{ .image }}"
-        alt="{{ .title }}"
-      />
-    </li>
-    {{ end }}
-  </ul>
+  {{ partial "client-list" . }}
 </section>
 
 <section class="services-section">
