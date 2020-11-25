@@ -1,0 +1,20 @@
+[
+  {
+    "image": "aws-city-on-cloud-2018.png",
+    "external_link": "https://aws.amazon.com/stateandlocal/cityonacloud/2018winners/",
+    "title": "2018 AWS City on a Cloud Winner",
+    "details": "IdeaCrew's marketplace won the Best Practices Award for providing a cost-effective platform"
+  },
+  {
+    "image": "clear-choices-2017.png",
+    "external_link": "https://www.clearchoicescampaign.org/news/2017/1/30/2017-health-insurance-exchanges-lessons-for-the-online-health-insurance-marketplace",
+    "title": "Clear Choices Award",
+    "details": "Our state-based marketplace was ranked #1 among 13 other State-Based Marketplaces"
+  },
+  {
+    "image": "aws-city-on-cloud-2016.png",
+    "external_link": "https://aws.amazon.com/stateandlocal/cityonacloud/2016winners/",
+    "title": "2016 AWS City on a Cloud Winner",
+    "details": "Our marketplace won the Best Practices Award for website performance and cost savings"
+  }
+]

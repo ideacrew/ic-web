@@ -1,0 +1,24 @@
+<ul class="awards-list">
+  {{ range .Site.Data.awards }}
+  <li class="award-item">
+    <img
+      class="award-image color"
+      src="https://res.cloudinary.com/ideacrew/image/upload/c_fit,f_auto,h_178,w_178/ideacrew-website/{{ .image }}"
+      alt="" >
+    <img
+      class="award-image grayscale"
+      src="https://res.cloudinary.com/ideacrew/image/upload/e_grayscale,c_fit,f_auto,h_178,w_178/ideacrew-website/{{ .image }}"
+      alt="" >
+    <h3 class="award-title">
+      <a
+        class="award-link"
+        href="{{ .external_link }}"
+        target="__blank"
+        rel="noopener noreferrer">
+        {{ .title }}
+      </a>
+    </h3>
+    <p class="award-details">{{ .details }}</p>
+  </li>
+  {{ end }}
+</ul>

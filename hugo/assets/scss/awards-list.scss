@@ -1,21 +1,30 @@
-.work-item {
+.awards-list {
+  display: grid;
+  margin-top: 0;
+  padding: 0;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  list-style: none;
+  gap: 0.75rem;
+}
+
+.award-item {
   display: grid;
   position: relative;
   padding: var(--side-padding);
   grid-template-columns: 1fr;
-  grid-template-rows: 10em 4rem 8em;
+  grid-template-rows: 12em max-content max-content;
   border: 2px solid var(--secondary-blue);
   border-radius: 0.27em;
   list-style: none;
 }
 
-.work-item .color {
+.award-item .color {
   display: none;
 }
 
-.work-item:hover,
-.work-item:focus,
-.work-item:focus-within {
+.award-item:hover,
+.award-item:focus,
+.award-item:focus-within {
   .color {
     display: inline;
   }
@@ -25,16 +34,13 @@
   }
 }
 
-.work-image {
+.award-image {
   align-self: center;
   justify-self: center;
+
 }
 
-.work-title {
-  margin: 0;
-}
-
-.work-link::after {
+.award-link::after {
   position: absolute;
   top: 0;
   right: 0;
