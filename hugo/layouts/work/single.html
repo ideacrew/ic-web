@@ -7,23 +7,33 @@
 {{ define "main" }}
 <h1>{{ .Params.title }}</h1>
 <div class="work-summary">
+
+
+  {{ with .Params.problem }}
   <div class="problem">
     <h2>Problem</h2>
-    <p>{{ .Params.problem }}</p>
+    <p>{{ . }}</p>
   </div>
+  {{ end }}
+  {{ with .Params.solution }}
   <div class="solution">
     <h2>Solution</h2>
-    <p>{{ .Params.solution }}</p>
+    <p>{{ . }}</p>
   </div>
+  {{ end }}
 </div>
 <div class="work-content measure">
   {{ .Content }}
 </div>
+{{ with .Params.quote }}
 <div class="quote">
   <p class="quote-content">
-    {{ .Params.quote }}
+    {{ . }}
   </p>
-  <div class="attribution">&mdash; {{ .Params.quote_attribution }}</div>
+{{ end }}
+  {{ with .Params.quote_attribution }}
+  <div class="attribution">&mdash; {{ . }}</div>
+  {{ end }}
 </div>
 {{ end }}
 
