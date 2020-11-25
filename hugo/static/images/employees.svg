@@ -1,0 +1,27 @@
+<svg width="273" height="168" viewBox="0 0 273 168" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="273" height="168">
+<rect width="273" height="168" rx="5" fill="#D6DAE0"/>
+</mask>
+<g mask="url(#mask0)">
+<g opacity="0.2">
+<rect x="203" y="98" width="132" height="28" rx="5" transform="rotate(-180 203 98)" stroke="white" stroke-width="5"/>
+<rect x="213" y="108" width="152" height="48" rx="5" transform="rotate(-180 213 108)" stroke="white" stroke-width="5"/>
+<rect x="223" y="118" width="172" height="68" rx="5" transform="rotate(-180 223 118)" stroke="white" stroke-width="5"/>
+<rect x="233" y="128" width="192" height="88" rx="5" transform="rotate(-180 233 128)" stroke="white" stroke-width="5"/>
+<rect x="243" y="138" width="212" height="108" rx="5" transform="rotate(-180 243 138)" stroke="white" stroke-width="5"/>
+<rect x="253" y="148" width="232" height="128" rx="5" transform="rotate(-180 253 148)" stroke="white" stroke-width="5"/>
+<rect x="263" y="158" width="252" height="148" rx="5" transform="rotate(-180 263 158)" stroke="white" stroke-width="5"/>
+<rect x="273" y="168" width="272" height="168" rx="5" transform="rotate(-180 273 168)" stroke="white" stroke-width="5"/>
+</g>
+<g opacity="0.25">
+<path d="M137 168L6 168C3.23857 168 1 165.761 1 163L1.00001 84" stroke="white" stroke-width="5"/>
+<path d="M137 158L16 158C13.2386 158 11 155.761 11 153L11 84" stroke="white" stroke-width="5"/>
+<path d="M137 148L26 148C23.2386 148 21 145.761 21 143L21 84" stroke="white" stroke-width="5"/>
+<path d="M137 138L36 138C33.2386 138 31 135.761 31 133L31 84" stroke="white" stroke-width="5"/>
+<path d="M137 128L46 128C43.2386 128 41 125.761 41 123L41 84" stroke="white" stroke-width="5"/>
+<path d="M137 118L56 118C53.2386 118 51 115.761 51 113L51 84" stroke="white" stroke-width="5"/>
+<path d="M137 108L66 108C63.2386 108 61 105.761 61 103L61 84" stroke="white" stroke-width="5"/>
+<path d="M137 98L76 98C73.2386 98 71 95.7614 71 93L71 84" stroke="white" stroke-width="5"/>
+</g>
+</g>
+</svg>

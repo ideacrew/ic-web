@@ -1,0 +1,27 @@
+<svg width="273" height="168" viewBox="0 0 273 168" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="273" height="168">
+<rect width="273" height="168" rx="5" fill="#D6DAE0"/>
+</mask>
+<g mask="url(#mask0)">
+<g opacity="0.2">
+<rect x="71" y="70" width="132" height="28" rx="5" stroke="white" stroke-width="5"/>
+<rect x="61" y="60" width="152" height="48" rx="5" stroke="white" stroke-width="5"/>
+<rect x="51" y="50" width="172" height="68" rx="5" stroke="white" stroke-width="5"/>
+<rect x="41" y="40" width="192" height="88" rx="5" stroke="white" stroke-width="5"/>
+<rect x="31" y="30" width="212" height="108" rx="5" stroke="white" stroke-width="5"/>
+<rect x="21" y="20" width="232" height="128" rx="5" stroke="white" stroke-width="5"/>
+<rect x="11" y="10" width="252" height="148" rx="5" stroke="white" stroke-width="5"/>
+<rect x="1" width="272" height="168" rx="5" stroke="white" stroke-width="5"/>
+</g>
+<g opacity="0.25">
+<path d="M137 0H268C270.761 0 273 2.23858 273 5V84" stroke="white" stroke-width="5"/>
+<path d="M137 10H258C260.761 10 263 12.2386 263 15V84" stroke="white" stroke-width="5"/>
+<path d="M137 20H248C250.761 20 253 22.2386 253 25V84" stroke="white" stroke-width="5"/>
+<path d="M137 30H238C240.761 30 243 32.2386 243 35V84" stroke="white" stroke-width="5"/>
+<path d="M137 40H228C230.761 40 233 42.2386 233 45V84" stroke="white" stroke-width="5"/>
+<path d="M137 50H218C220.761 50 223 52.2386 223 55V84" stroke="white" stroke-width="5"/>
+<path d="M137 60H208C210.761 60 213 62.2386 213 65V84" stroke="white" stroke-width="5"/>
+<path d="M137 70H198C200.761 70 203 72.2386 203 75V84" stroke="white" stroke-width="5"/>
+</g>
+</g>
+</svg>

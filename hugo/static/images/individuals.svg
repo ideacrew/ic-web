@@ -1,0 +1,91 @@
+<svg width="273" height="168" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <mask id="a" maskUnits="userSpaceOnUse" x="0" y="0" width="273" height="168">
+    <rect
+      x="273"
+      y="168"
+      width="273"
+      height="168"
+      rx="5"
+      transform="rotate(-180 273 168)"
+      fill="#D6DAE0"
+    />
+  </mask>
+  <g mask="url(#a)" stroke="#fff" stroke-width="5">
+    <g opacity=".2">
+      <rect
+        x="202"
+        y="98"
+        width="132"
+        height="28"
+        rx="5"
+        transform="rotate(-180 202 98)"
+      />
+      <rect
+        x="212"
+        y="108"
+        width="152"
+        height="48"
+        rx="5"
+        transform="rotate(-180 212 108)"
+      />
+      <rect
+        x="222"
+        y="118"
+        width="172"
+        height="68"
+        rx="5"
+        transform="rotate(-180 222 118)"
+      />
+      <rect
+        x="232"
+        y="128"
+        width="192"
+        height="88"
+        rx="5"
+        transform="rotate(-180 232 128)"
+      />
+      <rect
+        x="242"
+        y="138"
+        width="212"
+        height="108"
+        rx="5"
+        transform="rotate(-180 242 138)"
+      />
+      <rect
+        x="252"
+        y="148"
+        width="232"
+        height="128"
+        rx="5"
+        transform="rotate(-180 252 148)"
+      />
+      <rect
+        x="262"
+        y="158"
+        width="252"
+        height="148"
+        rx="5"
+        transform="rotate(-180 262 158)"
+      />
+      <rect
+        x="272"
+        y="168"
+        width="272"
+        height="168"
+        rx="5"
+        transform="rotate(-180 272 168)"
+      />
+    </g>
+    <g opacity=".25">
+      <path d="M136 0H5a5 5 0 00-5 5v79" />
+      <path d="M136 10H15a5 5 0 00-5 5v69" />
+      <path d="M136 20H25a5 5 0 00-5 5v59" />
+      <path d="M136 30H35a5 5 0 00-5 5v49" />
+      <path d="M136 40H45a5 5 0 00-5 5v39" />
+      <path d="M136 50H55a5 5 0 00-5 5v29" />
+      <path d="M136 60H65a5 5 0 00-5 5v19" />
+      <path d="M136 70H75a5 5 0 00-5 5v9" />
+    </g>
+  </g>
+</svg>
