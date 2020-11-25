@@ -1,0 +1,55 @@
+.heading-section {
+  // display: grid;
+  column-gap: 0.5rem;
+  grid-template-columns: repeat(4, 1fr);
+
+  h1 {
+    grid-column: 1 / -1;
+  }
+
+  p {
+    grid-column: 1 / 4;
+  }
+
+  .supplemental-information {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .button + .button {
+    margin-top: 0.5rem;
+  }
+}
+
+.benefits-modules {
+  summary {
+    font-size: 1.33rem;
+  }
+
+  .details-container {
+    column-gap: 0.5rem;
+    grid-template-columns: repeat(4, 1fr);
+
+    p {
+      grid-column: 1 / 4;
+    }
+
+    .supplemental-information {
+      grid-column: 4 / 5;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      gap: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .details-container {
+    display: grid;
+  }
+}

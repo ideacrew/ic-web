@@ -1,0 +1,115 @@
+{{ define "head-styles" }}
+{{ $options := (dict "targetPath" "sbm.css" "outputStyle" "compressed") }}
+{{ $style := resources.Get "scss/sbm.scss" | resources.ToCSS $options | resources.Fingerprint}}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+{{ end }}
+
+{{ define "main" }}
+<section class="heading-section">
+  <h1>State-Based Marketplace</h1>
+  <p>IdeaCrew’s award winning State-based Marketplace (SBM) platform is a cloud-based, complete end-to-end ACA-compliant solution for states, employers, employees and individuals to sponsor, shop and enroll in health insurance and other benefits. Our platforms modular, flexible design that supports different marketplace needs from Individuals to small business to large group enrollments.</p>
+
+
+  <a href="/results/district-of-columbia-exchange" class="button outline">DC Health Link</a>
+  <a href="/results/district-of-columbia-exchange" class="button outline">MA Health Connector</a>
+</section>
+
+
+<section class="benefits-modules">
+  <h2>Marketplace Modules</h2>
+  <details>
+    <summary>Anonymous Tools</summary>
+    <div class="details-container">
+      <p>Our Anonymous Tools allow consumers to browse and compare plans, check eligibility for Medicaid or subsidies as well as HRA affordability without having to register their details. Our Anonymous Tools extend to provider and drug formulary lookup through integration with Consumers' Checkbook.</p>
+      <div class="supplemental-information">
+
+        <!-- <a href="https://ideacrew.github.io/hra_calculator/" class="button primary">HRA Tool</a> -->
+      </div>
+    </div>
+  </details>
+  <details>
+    <summary>Portals</summary>
+    <div class="details-container">
+      <p>Our portals provide a tailored user experience for Individuals, Employers, Employees, Brokers, Navigators, Assisters, Carriers and marketplace Administrators. Portals manage registration, authentication and authorized access to wide range of self-service features, navigation and help support depending on the user role. Common features accessed include communications through secure message center, uploaded documents and transaction history.</p>
+      <div class="supplemental-information"></div>
+    </div>
+  </details>
+  <details>
+    <summary>Eligibility</summary>
+    <div class="details-container">
+      <p>Eligibility determination for individual affordability programs (Medicaid / CHIP) and Federal subsidies (APTC and cost sharing reduction) based on MAGI rules. Our eligibility module integrates with MAGI-in-the-Cloud for eligibility determination across all states as well as state's Medicaid system eligibility rules as required. Our Eligibility module also manages rules for qualifying life events that trigger a special enrollment period.</p>
+      <div class="supplemental-information"></div>
+    </div>
+  </details>
+  <details>
+    <summary>Plan Shopping</summary>
+    <div class="details-container">
+      <p>Our plan shopping presents qualified health plan options with eligible subsidies (APTC and cost sharing reduction) after eligibility determination. Registered applicants can go directly to plan shopping if they do not wish to apply for subsidies. Consumers are able to filter, sort and compare plans depending on their preferences. Plan shopping also presents dental, vision and other ancillary product options such as life insurance and flexible spending benefits.</p>
+      <div class="supplemental-information"></div>
+    </div>
+  </details>
+  <details>
+    <summary>Decision Support</summary>
+    <div class="details-container">
+      <p>Our plan shopping integrates with Consumers' Checkbook and other decision support tools. These tools provide up-to-date provider directory and drug formulary lookup to help consumers check their doctors and prescription drugs are in network. The decision support tools also estimate out-of-pocket costs based on premiums, any subsidies, and predicted in network services utilization..</p>
+      <div class="supplemental-information">
+
+      </div>
+    </div>
+  </details>
+  <details>
+    <summary>Enrollment</summary>
+    <div class="details-container">
+      <p>Our Enrollment module translates plan selection and enrollment details, or changes, into EDI (ASC X12 5010) compliant transactions ready to send to carriers. Our Enrollment module includes an intelligent EDI database that stores all transactions and can identify and resolve discrepancies before sending to carriers. These checks extend to returned TA1/999 transactions to support full enrollment reconciliation with carriers and CMS.</p>
+      <div class="supplemental-information"></div>
+    </div>
+  </details>
+  <details>
+    <summary>Plan Management</summary>
+    <div class="details-container">
+      <p>Our Plan Management module provides tools to load and validate plans, benefits and rates. Our Plan Management module integrates with SERFF templates but can adapt to other carrier/plan formats uploaded and validated, by carriers, through our carrier portal.</p>
+      <div class="supplemental-information"></div>
+    </div>
+  </details>
+  <details>
+    <summary>Broker / Quoting</summary>
+    <div class="details-container">
+      <p>Our Broker / Quoting module provides broker and general agency partners tools to convert leads to enrollments and support customers during open and special enrollments. Once authorized brokers can perform functions on behalf of employers and individuals to provide complete broker service.</p>
+      <div class="supplemental-information"></div>
+    </div>
+  </details>
+  <details>
+    <summary>Group</summary>
+    <div class="details-container">
+      <p>Our Group module services small business health options (SHOP) up to larger group Employers including Members of Congress.  The module supports flexible integration with payroll systems through roster import, advanced configuration of many different benefit packages and ability to scale to thousands of members.</p>
+      <div class="supplemental-information"></div>
+    </div>
+  </details>
+  <details>
+    <summary>Admin</summary>
+    <div class="details-container">
+      <p>Our Admin portal provides customer service representatives, supervisors and marketplace staff the tools to monitor and support customers to fully manage the marketplace. Tools include handling verifications, communications and document management. A wide range of business rules including exception processing and adding new SEP qualifying life events can be configured through the Admin portal, avoiding dependencies on development staff.</p>
+      <div class="supplemental-information"></div>
+    </div>
+  </details>
+  <details>
+    <summary>Ledger</summary>
+    <div class="details-container">
+      <p>Our Ledger module provides premium billing and payments processing engine for the marketplace. The Ledger module is also a double entry accounting that journals all payments and receivables ready to reconcile all premiums, subsidies, user fees and aggregated payments to carriers. Our Ledger module integrates with third-party payment processors for convenience of instant as well as lock-box payments.</p>
+      <div class="supplemental-information"></div>
+    </div>
+  </details>
+  <details>
+    <summary>Reporting</summary>
+    <div class="details-container">
+      <p>Our Reporting module generates the standard CMS reports and IRS (1095) forms in addition to broad set of operational reports. Our Reporting module integrates with visualization and analytics tools such as Tableau to produce management dashboards and trend reports, as well as data warehouse and big data services for broader analytics.</p>
+      <div class="supplemental-information"></div>
+    </div>
+  </details>
+</section>
+
+{{ end }}
+
+{{ define "cta" }}
+{{ partial "cta.html" . }}
+{{ end }}

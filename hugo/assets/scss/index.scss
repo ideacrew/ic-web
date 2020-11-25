@@ -23,14 +23,14 @@
   }
 }
 
-.hbm-section {
-  .hbm-list {
+.sbm-section {
+  .sbm-list {
     margin: 0;
     padding: 0;
     list-style: none;
   }
 
-  .hbm-item {
+  .sbm-item {
     padding: 1rem 0;
     border-radius: 5px;
     background-color: var(--gray-blue);
@@ -38,7 +38,7 @@
     text-align: center;
   }
 
-  .hbm-item + .hbm-item {
+  .sbm-item + .sbm-item {
     margin-top: 0.5rem;
   }
 
@@ -121,22 +121,22 @@
     }
   }
 
-  .hbm-section {
-    .hbm-list {
+  .sbm-section {
+    .sbm-list {
       display: grid;
       column-gap: 0.5rem;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: 9rem;
     }
 
-    .hbm-item {
+    .sbm-item {
       display: flex;
       align-items: center;
       justify-content: center;
       padding: 0 0.5rem;
     }
 
-    .hbm-item + .hbm-item {
+    .sbm-item + .sbm-item {
       margin: 0;
     }
   }
