@@ -42,7 +42,7 @@
         "headers": [
           {
             "key": "Cache-Control",
-            "value": "max-age=31536000"
+            "value": "max-age=31536000, immutable"
           },
           {
             "key": "X-Content-Type-Options",
@@ -55,7 +55,7 @@
         "headers": [
           {
             "key": "Cache-Control",
-            "value": "max-age=31536000"
+            "value": "max-age=31536000, immutable"
           },
           {
             "key": "X-Content-Type-Options",
