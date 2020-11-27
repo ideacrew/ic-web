@@ -3,7 +3,8 @@
 }
 
 .nav-links abbr {
-  text-decoration: none;
+  text-decoration: none !important;
+  cursor: pointer !important;
 }
 
 .header-nav .no-header {
