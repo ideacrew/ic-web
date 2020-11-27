@@ -16,6 +16,11 @@
 </script>
 {{ end }}
 
+<!-- Load Critical CSS Inline -->
+{{ $applicationCSS := "styles.scss" }}
+{{ $options := (dict "outputStyle" "compressed") }}
+{{ $appInlineCSS := resources.Get $applicationCSS | resources.ToCSS $options }}
+<style>{{ $appInlineCSS.Content | safeCSS }}</style>
 
 <!-- Load Non-Critical Styles Asynchronously -->
 {{ $options := (dict "targetPath" "non-critical.css" "outputStyle" "compressed") }}
@@ -28,12 +33,6 @@
 <noscript>
   <link rel="stylesheet" href="{{ $nonCriticalCSS.RelPermalink }}">
 </noscript>
-
-<!-- Load Critical CSS Inline -->
-{{ $applicationCSS := "styles.scss" }}
-{{ $options := (dict "outputStyle" "compressed") }}
-{{ $appInlineCSS := resources.Get $applicationCSS | resources.ToCSS $options }}
-<style>{{ $appInlineCSS.Content | safeCSS }}</style>
 
 <title>{{ .Title }} - Strategic solutions for the IT industry</title>
 <meta charset="utf-8">
