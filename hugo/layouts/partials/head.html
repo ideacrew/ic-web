@@ -34,18 +34,18 @@
   <link rel="stylesheet" href="{{ $nonCriticalCSS.RelPermalink }}">
 </noscript>
 
-<title>{{ .Title }} - Strategic solutions for the IT industry</title>
+<title>{{ .Title }}</title>
 <meta charset="utf-8">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width">
-<meta name="description" content="IdeaCrew - Strategic solutions for the IT industry">
 
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="description" content="{{ .Description | default .Summary }}">
 
-{{ block "meta" . }}
-{{ partial "meta.html" . }}
-{{ end }}
+<link rel="canonical" href="{{ .Permalink | absURL }}" />
+{{ template "_internal/opengraph.html" . }}
+{{ template "_internal/twitter_cards.html" . }}
 
 <!-- <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
