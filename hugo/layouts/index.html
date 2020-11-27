@@ -1,10 +1,7 @@
-{{ define "head-scripts" }}
-{{ end }}
-
 {{ define "head-styles" }}
-{{ $options := (dict "targetPath" "index.css" "outputStyle" "compressed") }}
-{{ $style := resources.Get "scss/index.scss" | resources.ToCSS $options | resources.Fingerprint}}
-<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+{{ $options := (dict "outputStyle" "compressed") }}
+{{ $inlineCSS := resources.Get "scss/index.scss" | resources.ToCSS $options }}
+<style>{{ $inlineCSS.Content | safeCSS }}</style>
 {{ end }}
 
 {{ define "main"}}

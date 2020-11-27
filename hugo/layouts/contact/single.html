@@ -8,9 +8,10 @@
 
 
 {{ define "head-styles" }}
-{{ $options := (dict "targetPath" "contact.css" "outputStyle" "compressed") }}
-{{ $style := resources.Get "scss/contact.scss" | resources.ToCSS $options | resources.Fingerprint}}
-<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+{{ $pageCSS := "scss/contact.scss" }}
+{{ $options := (dict "outputStyle" "compressed") }}
+{{ $inlineCSS := resources.Get $pageCSS | resources.ToCSS $options }}
+<style>{{ $inlineCSS.Content | safeCSS }}</style>
 {{ end }}
 
 {{ define "main" }}

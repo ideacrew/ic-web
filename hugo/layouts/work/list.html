@@ -1,7 +1,8 @@
 {{ define "head-styles" }}
-{{ $options := (dict "targetPath" "work/list.css" "outputStyle" "compressed") }}
-{{ $style := resources.Get "scss/work/list.scss" | resources.ToCSS $options | resources.Fingerprint}}
-<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+{{ $pageCSS := "scss/work/list.scss" }}
+{{ $options := (dict "outputStyle" "compressed") }}
+{{ $inlineCSS := resources.Get $pageCSS | resources.ToCSS $options }}
+<style>{{ $inlineCSS.Content | safeCSS }}</style>
 {{ end }}
 
 

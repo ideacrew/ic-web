@@ -1,7 +1,8 @@
 {{ define "head-styles" }}
-{{ $options := (dict "targetPath" "careers/single.css" "outputStyle" "compressed") }}
-{{ $style := resources.Get "scss/careers/single.scss" | resources.ToCSS $options | resources.Fingerprint}}
-<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+{{ $pageCSS := "scss/careers/single.scss" }}
+{{ $options := (dict "outputStyle" "compressed") }}
+{{ $inlineCSS := resources.Get $pageCSS | resources.ToCSS $options }}
+<style>{{ $inlineCSS.Content | safeCSS }}</style>
 {{ end }}
 
 
