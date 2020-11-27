@@ -8,7 +8,7 @@ pluralizelisttitles = false
 
 [params]
   description = "Strategic Solutions for the IT Industry"
-  images = ["/images/ideacrew-full-logo-with-tagline.svg", "/images/ideacrew-lightbulb-only.png"]
+  images = ["/images/ideacrew-full-logo-with-tagline.png", "/images/ideacrew-lightbulb-only.png"]
   title = "IdeaCrew"
 
 
