@@ -1,6 +1,6 @@
 ---
 title: About Us
-pageTitle: About IdeaCrew
+description: IdeaCrew is a full-service IT and clinical consultancy. We offer a cadre of experienced former leaders who have served in the private sector and federal and state governments at the highest levels.
 type: about
 ---
 

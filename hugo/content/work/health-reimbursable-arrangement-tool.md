@@ -5,6 +5,7 @@ featured_image = "state-health-value-strategies.png"
 problem = "Under new regulations, Employers offering Employees ICHRAs to purchase individual health insurance could cause tax complications."
 solution = "IdeaCrew worked with State Health & Value Strategies to develop an HRA calculator tool as a shared service for State-based Marketplaces to provide consumers consistent guidance"
 weight = 3
+
 +++
 In June of 2019, the Trump Administration published new regulations creating something called the Individual Coverage Health Reimbursable Arrangement, “ICHRA” for short. Under this program, employers have flexibility to provide HRAs to employees, in lieu of traditional group coverage, which the employees then use to purchase coverage on the individual market. The challenge for states was that the availability of the ICHRA could affect an individual’s eligibility for premium tax credits, causing tax complications down the road. So the new program added a level of complexity, and State-Based Marketplaces (SBMs) needed an HRA calculator tool to help. 
 

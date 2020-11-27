@@ -1,5 +1,5 @@
 ---
 title: Contact Us
-pageTitle: Contact IdeaCrew
+description: Contact IdeaCrew to find out how we can help you
 type: contact
 ---
