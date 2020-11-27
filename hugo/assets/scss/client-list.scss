@@ -12,12 +12,9 @@
   align-items: center;
   padding: 1rem;
   list-style: none;
+}
 
-  a {
-    display: block;
-  }
-
-  img {
-    width: 100%;
-  }
+.client-image {
+  width: 100%;
+  filter: grayscale(1);
 }

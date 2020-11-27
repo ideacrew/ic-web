@@ -18,26 +18,18 @@
   list-style: none;
 }
 
-.award-item .color {
-  display: none;
+.award-image {
+  filter: grayscale(1);
+  align-self: center;
+  justify-self: center;
 }
 
 .award-item:hover,
 .award-item:focus,
 .award-item:focus-within {
-  .color {
-    display: inline;
+  .award-image {
+    filter: grayscale(0);
   }
-
-  .grayscale {
-    display: none;
-  }
-}
-
-.award-image {
-  align-self: center;
-  justify-self: center;
-
 }
 
 .award-link::after {

@@ -9,25 +9,19 @@
   list-style: none;
 }
 
-.work-item .color {
-  display: none;
+.work-image {
+  align-self: center;
+  justify-self: center;
+  filter: grayscale(1);
+  max-height: 3.75rem;
 }
 
 .work-item:hover,
 .work-item:focus,
 .work-item:focus-within {
-  .color {
-    display: inline;
+  .work-image {
+    filter: grayscale(0)
   }
-
-  .grayscale {
-    display: none;
-  }
-}
-
-.work-image {
-  align-self: center;
-  justify-self: center;
 }
 
 .work-title {
