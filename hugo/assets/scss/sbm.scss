@@ -42,10 +42,15 @@
     p {
       grid-column: 1 / 4;
     }
+  }
 
-    .supplemental-information {
-      grid-column: 1 / 4;
-    }
+  .supplemental-information {
+    grid-column: 1 / 4;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem;
   }
 }
 
@@ -53,5 +58,9 @@
   .details-container {
     display: grid;
     margin-top: 0.5rem;
+  }
+
+  .benefits-modules .supplemental-information {
+    display: block;
   }
 }
