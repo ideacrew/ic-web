@@ -27,6 +27,10 @@
 }
 
 .benefits-modules {
+  details + details {
+    margin-top: 1rem;
+  }
+
   summary {
     font-size: 1.33rem;
   }
@@ -40,12 +44,7 @@
     }
 
     .supplemental-information {
-      grid-column: 4 / 5;
-      display: flex;
-      flex-direction: column;
-      align-items: start;
-      justify-content: center;
-      gap: 1rem;
+      grid-column: 1 / 4;
     }
   }
 }
@@ -53,5 +52,6 @@
 @media screen and (min-width: 769px) {
   .details-container {
     display: grid;
+    margin-top: 0.5rem;
   }
 }

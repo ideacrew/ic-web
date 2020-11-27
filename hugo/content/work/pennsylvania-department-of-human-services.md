@@ -6,7 +6,7 @@ title = "Pennsylvania Department of Human Services"
 featured_image = "pennsylvania-department-human-services.png"
 
 +++
-Criminal defendants in Pennsylvania routinely wait months, sometimes years, in county prisons before being transferred to state psychiatric hospitals for treatment to restore them to competency. That was the lawsuit by the American Civil Liberties Union (ACLU) against the Commonwealth of Pennsylvania (PA).   
+Criminal defendants in Pennsylvania routinely wait months, sometimes years, in county prisons before being transferred to state psychiatric hospitals for treatment to restore them to competency. That was the lawsuit by the American Civil Liberties Union (ACLU) against the Commonwealth of Pennsylvania (PA). 
   
 In 2018, PA Department of Human Services contracted with IdeaCrew to create an operational improvement plan to implement recommendations to comply with terms of an agreement with ACLU regarding the treatment of individuals in the state psychiatric hospitals within the commonwealth. IdeaCrew delivered the plan in two phases within 3 months focusing on three aspects of treatment for those patients who were sent to the state hospitals for competency to stand trial evaluation and/or for treatment to restore competency.
 

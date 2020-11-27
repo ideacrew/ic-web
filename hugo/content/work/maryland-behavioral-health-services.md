@@ -5,9 +5,9 @@ summary = "Our consulting improved the quality of care in the State’s five psy
 title = "Maryland Behavioral Health Services"
 featured_image = "maryland-department-health.png"
 +++
-The State of Maryland, Department of Health, Behavioral Health Administration needed to create a system of care that provided consistent, high-quality inpatient psychiatric care in all state psychiatric hospitals as part of achieving its goals.  
+The State of Maryland, Department of Health, Behavioral Health Administration needed to create a system of care that provided consistent, high-quality inpatient psychiatric care in all state psychiatric hospitals as part of achieving its goals. 
   
-The administration contracted with IdeaCrew to review and make recommendations relating to the implementation of a single system of hospital care to improve the overall quality of care in the State’s five psychiatric hospitals.   
+The administration contracted with IdeaCrew to review and make recommendations relating to the implementation of a single system of hospital care to improve the overall quality of care in the State’s five psychiatric hospitals. 
   
 IdeaCrew’s clinical consulting team worked with Maryland Behavioral Health Services (BHS) to identify excellent programs or practices at particular hospitals that could be used across the system. Similarly, we were asked to identify challenges faced by some or all of the hospitals the impacted patient care. 
 

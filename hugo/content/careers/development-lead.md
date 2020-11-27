@@ -6,7 +6,7 @@ salary_range = "$70,000 to $150,000 per year"
 title = "Development Lead"
 
 +++
-IdeaCrew is currently seeking a Development Lead to join our fast-paced, growing development team.  This individual will lead implementation of technical solutions across multiple software teams. You will work closely with the Chief Architect to define strategy and technical goals across clients and projects, and ensure teams are building to a cohesive vision. 
+IdeaCrew is currently seeking a Development Lead to join our fast-paced, growing development team. This individual will lead implementation of technical solutions across multiple software teams. You will work closely with the Chief Architect to define strategy and technical goals across clients and projects, and ensure teams are building to a cohesive vision. 
 
 Reporting to the Director of Application Development, you will oversee the evolution and communication of design patterns, quality standards and toolsets used across the organization, and work with senior developers to ensure technical risks and blockers are understood and raised and software delivery is sustainable and resilient.
 
