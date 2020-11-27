@@ -25,15 +25,6 @@
     ],
     "headers": [
       {
-        "source": "**/*.html",
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "max-age=180"
-          }
-        ]
-      },
-      {
         "source": "**/*.@(eot|otf|ttf|ttc|woff|woff2|font)",
         "headers": [
           {
