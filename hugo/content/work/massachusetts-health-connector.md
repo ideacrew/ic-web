@@ -1,12 +1,13 @@
 +++
+featured_image = "massachusetts-health-connector.png"
 problem = "The Massachusetts Health Connector was struggling to grow its Small Business Health Options Program due to old technology and lack of economical technology options available in the market."
-solution = "IdeaCrew successfully implemented its fully configured SHOP platform including Broker, Employer, Employee and Admin portals in 5 months, and enrollments have almost doubled."
 quote = "Membership in SHOP programs has increased almost 30% since go-live, growing from approximately 6,000 to over 7,800 members as of February 2020, and the option for choice is welcome. In 2019, 59% of new members enrolled in a choice model, while 37% of total members are now in a choice model. The IdeaCrew platform features and its ease of use have allowed the Health Connector for Business program to flourish."
-quote_attribution = "Luis Gutierrez, CCA Executive Director"
+quote_attribution = "Louis Gutierrez, CCA Executive Director"
+solution = "IdeaCrew successfully implemented its fully configured SHOP platform including Broker, Employer, Employee and Admin portals in 5 months, and enrollments have almost doubled."
 summary = "Our health insurance exchange platform doubled small business enrollments"
 title = "Massachusetts Health Connector"
 weight = 2
-featured_image = "massachusetts-health-connector.png"
+
 +++
 IdeaCrew has provided health benefit and marketplace solutions to the Massachusetts Health Connector since 2017. The Connector, launched in 2007, was the first health insurance exchange in the nation and became the model for the Affordable Care Act (ACA) in reducing the number of individuals without health insurance. While Massachusetts focused on the individual market, achieving the lowest uninsured rate in the country, growth in small group membership through the Connector remained flat. Growth was flat despite the Connector introducing plan choice, partnering with brokers and introducing innovative discounts through health and wellness programs for employers. The Connector lacked the modern technology private exchanges had to make enrollment easier for brokers, employers and their members. To make matters worse there did not appear to be many economical technology options supporting the small group market.
 
