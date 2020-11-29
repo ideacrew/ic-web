@@ -64,16 +64,6 @@
       margin-left: 2rem;
     }
 
-    @supports (gap: 1rem) {
-      .nav-links {
-        gap: 2rem;
-      }
-
-      .navbar-list-item + .navbar-list-item {
-        margin-left: 0;
-      }
-    }
-
     .home-link {
       display: none;
     }
