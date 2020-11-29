@@ -58,7 +58,20 @@
       align-self: stretch;
       margin: 0;
       padding: 0;
-      gap: 2rem;
+    }
+
+    .navbar-list-item + .navbar-list-item {
+      margin-left: 2rem;
+    }
+
+    @supports (gap: 1rem) {
+      .nav-links {
+        gap: 2rem;
+      }
+
+      .navbar-list-item + .navbar-list-item {
+        margin-left: 0;
+      }
     }
 
     .home-link {
