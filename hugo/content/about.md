@@ -1,8 +1,8 @@
 ---
 title: About Us
-description: IdeaCrew is a full-service IT and clinical consultancy. We offer a cadre
-  of experienced former leaders who have served in the private sector and federal
-  and state governments at the highest levels.
+description: Established in 2002 with headquarters in Washington DC, IdeaCrew is a
+  full IT services company. We focus on healthcare, health benefits, and human services,
+  to improve the experience for all involved.
 type: about
 
 ---
