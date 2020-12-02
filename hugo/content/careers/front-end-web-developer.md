@@ -6,8 +6,6 @@ salary_range = "$70,000 to $150,000 per year"
 title = "Front End Web Developer"
 
 +++
-# Front End Web Developer in Washington, DC
-
 IdeaCrew is currently seeking a Front End Web Developer to join our team. In this role you will build user interfaces and shape the user experience of our products. We have interest in candidates at both mid and senior levels. This position requires experience defining, evolving, and embedding development standards across teams.
 
 ## A Front End Developer at IdeaCrew is someone who will:
