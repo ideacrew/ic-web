@@ -37,7 +37,7 @@ fields:
     wysiwyg: false
     schema:
       format: markdown
-    max: 120
+    max: 150
     min: 10
   label: Summary
   description: A summary of this position
