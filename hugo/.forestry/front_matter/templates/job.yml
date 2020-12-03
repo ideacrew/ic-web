@@ -29,6 +29,18 @@ fields:
       path: 
   label: Type
   description: The type of position
+- name: summary
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+    max: 120
+    min: 10
+  label: Summary
+  description: A summary of this position
 - name: post_date
   type: datetime
   label: Post Date
