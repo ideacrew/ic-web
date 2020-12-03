@@ -42,15 +42,6 @@
   align-self: center;
 }
 
-.mobile-navbar-toggler {
-  grid-column: 5 / 6;
-  justify-self: end;
-  border: 0;
-  background-color: transparent;
-  -webkit-appearance: none;
-  box-shadow: 0;
-}
-
 .nav-header {
   display: flex;
   align-items: center;
@@ -65,9 +56,6 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  grid-template-columns: 1rem 1fr 1rem;
-  grid-template-rows: repeat(3, min-content) 1fr;
-  row-gap: 0.75rem;
   transform: translateX(100%);
   transition: all 250ms;
   background-color: var(--neutral-015);
@@ -103,10 +91,6 @@
     align-self: center;
     justify-self: end;
     grid-column: 3 / 6;
-  }
-
-  .mobile-navbar-toggler {
-    display: none;
   }
 }
 

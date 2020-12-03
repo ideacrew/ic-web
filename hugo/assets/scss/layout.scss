@@ -33,8 +33,7 @@ body.home {
 
 main {
   // min-height: calc(100vh - var(--header-height));
-  margin-top: var(--header-height);
-  padding: 0 var(--side-padding);
+  padding: var(--header-height) var(--side-padding) 0;
 
   section {
     scroll-margin-top: var(--header-height);

@@ -2,6 +2,7 @@
 <html lang="{{ $.Site.LanguageCode | default "en" }}">
 
   <head>
+    <meta charset="utf-8">
     {{ partial "head.html" .}}
 
     {{- block "head-scripts" . -}}
@@ -12,11 +13,12 @@
   </head>
 
   <body class="{{ .Page.Kind }}">
+    <a href="#main-content" class="skip-to-content-link">Skip Content</a>
     {{ block "hero" . }}
       {{ partial "header.html" . }}
     {{ end }}
 
-    <main class="{{ with .Page.Section }}{{ . }}-section {{ end }} {{ .Page.Title | urlize }}-page">
+    <main id="main-content" class="{{ with .Page.Section }}{{ . }}-section {{ end }} {{ .Page.Title | urlize }}-page">
     {{ block "main" . }}{{ end }}
     {{ block "feed" . }}{{ end }}
     </main>
