@@ -12,15 +12,12 @@
     {{- end -}}
   </head>
 
-  <body class="{{ .Page.Kind }}">
+  <body class="page-kind-{{ .Page.Kind }}">
     <a href="#main-content" class="skip-to-content-link">Skip Content</a>
-    {{ block "hero" . }}
-      {{ partial "header.html" . }}
-    {{ end }}
+    {{ partial "header.html" . }}
 
     <main id="main-content" class="{{ with .Page.Section }}{{ . }}-section {{ end }} {{ .Page.Title | urlize }}-page">
     {{ block "main" . }}{{ end }}
-    {{ block "feed" . }}{{ end }}
     </main>
 
     {{ block "cta" . }}{{ end }}
@@ -28,6 +25,7 @@
     {{ block "footer" . }}
      {{ partial "footer.html" . }}
     {{ end }}
+
     {{ $opts := dict "targetPath" "main.js"  }}
     {{ $built := resources.Get "ts/menu.ts" | js.Build $opts | resources.Minify | resources.Fingerprint }}
     <script type="text/javascript" src="{{ $built.RelPermalink }}" defer></script>
