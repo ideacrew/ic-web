@@ -45,4 +45,5 @@ IdeaCrew is currently seeking a Front End Web Developer to join our team. In thi
 * Two (2) or more years using NgRx for state management
 * Deeper-than-average understanding of RxJS (might have implemented a customer operator or two)
 * Familiarity with modern CSS (css grid, custom properties)
-* General understanding of front-end performance metrics (TTFB, CLS, First Paint, etc.)
+* General understanding of front-end performance metrics (TTFB, CLS, FID, etc.)
+* Knowledge of best practices of REST API Design
