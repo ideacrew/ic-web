@@ -51,7 +51,7 @@ fields:
     wysiwyg: false
     schema:
       format: markdown
-    min: 50
+    min: 
     max: 500
   label: Quote
   description: A testimonial-style quote from a stakeholder
@@ -59,7 +59,7 @@ fields:
   type: text
   config:
     required: false
-    min: 10
+    min: 
     max: 100
   label: Quote Attribution
   description: The name and title of the testimonial quote
