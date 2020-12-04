@@ -2,6 +2,7 @@
 problem = "Under new regulations, Employers offering Employees ICHRAs to purchase individual health insurance could cause tax complications."
 quote = ""
 quote_attribution = ""
+featured_image = "state-health-value-strategies.png"
 solution = "IdeaCrew worked with State Health & Value Strategies to develop an HRA calculator tool as a shared service for State-based Marketplaces to provide consumers consistent guidance"
 summary = "The HRA Tool offers consumers a web interface to enter information about eligibility and HRA terms"
 title = "HRA Tool"

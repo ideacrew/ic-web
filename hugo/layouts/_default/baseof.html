@@ -16,7 +16,9 @@
     <a href="#main-content" class="skip-to-content-link">Skip Content</a>
     {{ partial "header.html" . }}
 
-    <main id="main-content" class="{{ with .Page.Section }}{{ . }}-section {{ end }} {{ .Page.Title | urlize }}-page">
+    <main
+      id="main-content"
+      class="{{ with .Page.Section }}{{ . }}-section {{ end }} {{ .Page.Title | urlize }}-page">
     {{ block "main" . }}{{ end }}
     </main>
 
@@ -28,7 +30,10 @@
 
     {{ $opts := dict "targetPath" "main.js"  }}
     {{ $built := resources.Get "ts/menu.ts" | js.Build $opts | resources.Minify | resources.Fingerprint }}
-    <script type="text/javascript" src="{{ $built.RelPermalink }}" defer></script>
+    <script
+      type="text/javascript"
+      src="{{ $built.RelPermalink }}"
+      defer></script>
 
     {{ block "page-scripts" . }}
     {{ end }}
@@ -37,3 +42,6 @@
     {{ end }}
   </body>
 </html>
+
+
+
