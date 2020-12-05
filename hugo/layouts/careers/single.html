@@ -35,12 +35,38 @@
     "@context": "https://schema.org",
     "@type": "JobPosting",
     "title": "{{ .Params.title }}",
+    "description" : "<p>{{ .Params.summary }}</p>",
     "hiringOrganization": {
       "@type": "Organization",
-      "name": "IdeaCrew"
+      "name": "IdeaCrew",
+      "sameAs": "https://ideacrew.com",
+      "logo": "https://ideacrew.com/images/ideacrew-full-logo-with-tagline.png"
     },
+    "applicantLocationRequirements": {
+      "@type": "Country",
+      "name": "USA"
+    },
+    "jobLocation": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Washington",
+        "addressRegion": "DC",
+        "addressCountry": "US"
+      }
+     },
+    "baseSalary": {
+      "@type": "MonetaryAmount",
+      "currency": "USD",
+      "value": {
+        "@type": "QuantitativeValue",
+        "value": 75000.00,
+        "unitText": "YEAR"
+      }
+    }, 
+    "jobLocationType": "TELECOMMUTE"
     "employmentType": "{{ .Params.position_type }}",
-    "datePosted": "{{ .Params.post_date.Format "2006-01-02" }}"
+    "datePosted": "{{ .Params.post_date.Format "2006-01-02" }}",
   }
 </script>
 {{ end }}
