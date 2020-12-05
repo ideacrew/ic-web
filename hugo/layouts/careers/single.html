@@ -7,6 +7,8 @@
 
 
 {{ define "main" }}
+{{ $jobType := dict "Full Time" "FULL_TIME" }}
+
 <section class="career-heading">
   <h1 class="career-title">{{ .Params.title }}</h1>
   <div class="subheading">{{ .Params.position_type }}</div>
@@ -63,9 +65,9 @@
         "value": 75000.00,
         "unitText": "YEAR"
       }
-    }, 
+    },
     "jobLocationType": "TELECOMMUTE",
-    "employmentType": "{{ .Params.position_type }}",
+    "employmentType": "{{ replace .Params.position_type " " "_" | upper }}",
     "datePosted": "{{ .Params.post_date.Format "2006-01-02" }}",
   }
 </script>
