@@ -2,7 +2,7 @@
 location = ["Washington, DC", "Remote"]
 position_type = "Full Time"
 post_date = 2020-11-12T00:00:00Z
-salary_range = "$125,000 to $200,000 per year"
+salary_range = "$125,000 to $225,000 per year"
 summary = "IdeaCrew is seeking a Principal Engineer to develop, defend, and oversee the execution of system architecture and implementation patterns."
 title = "Solutions Engineer/Architect"
 

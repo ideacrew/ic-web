@@ -2,7 +2,7 @@
 location = ["Washington, DC", "Remote"]
 position_type = "Full Time"
 post_date = 2020-11-12T00:00:00Z
-salary_range = "$90,000 to $170,000 per year"
+salary_range = "$100,000 to $180,000 per year"
 summary = "IdeaCrew is currently seeking a Development Lead to join our fast-paced, growing development team."
 title = "Development Lead"
 

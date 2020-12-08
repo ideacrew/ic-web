@@ -64,7 +64,6 @@ fields:
   label: Quote Attribution
   description: The name and title of the testimonial quote
 pages:
-- hugo/content/work/hra-tool.md
 - hugo/content/work/maryland-behavioral-health-services.md
 - hugo/content/work/massachusetts-health-connector.md
 - hugo/content/work/pennsylvania-department-of-human-services.md
