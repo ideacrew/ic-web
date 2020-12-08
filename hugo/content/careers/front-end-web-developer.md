@@ -2,7 +2,7 @@
 location = ["Washington, DC", "Remote"]
 position_type = "Full Time"
 post_date = 2020-12-02T00:00:00Z
-salary_range = "$70,000 to $150,000 per year"
+salary_range = "$80,000 to $150,000 per year"
 summary = "IdeaCrew is currently seeking a Front End Web Developer to build user interfaces and shape the user experience of our products."
 title = "Front End Web Developer"
 
