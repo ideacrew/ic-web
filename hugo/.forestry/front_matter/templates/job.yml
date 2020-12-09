@@ -52,6 +52,30 @@ fields:
     display_utc: false
     export_format: YYYY-MM-DD
   default: now
+- name: base_salary
+  type: number
+  description: This number will be used as the bottom of the salary range posted on
+    the job listing itself. It also provides key data to Job Indexing sites.
+  default: 75000
+  required: true
+  config:
+    min: 1
+    max: 1000000
+    step: 5000
+    required: true
+  label: Base Salary
+- name: maximum_salary
+  type: number
+  label: Maximum Salary
+  description: The absolute highest we're willing to pay for this role. This will
+    only be displayed on the job posting itself.
+  default: 100000
+  required: true
+  config:
+    min: 1
+    max: 1000000
+    step: 5000
+    required: true
 - name: salary_range
   type: text
   config:
