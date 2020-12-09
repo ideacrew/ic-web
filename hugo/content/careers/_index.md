@@ -1,5 +1,6 @@
 ---
-title: Careers
+title: Careers at IdeaCrew
+description: If you’re looking for a company that works where technology touches people’s lives, IdeaCrew may be right for you! We’re smart, talented, solutions oriented, diverse, forward thinking and fun. As a member of our crew you will have the opportunity to work closely with like-minded professionals in a fast-paced, engaging, professional environment.
 ---
 
 ## Benefits
