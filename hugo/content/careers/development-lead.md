@@ -1,5 +1,7 @@
 +++
+base_salary = 100000
 location = ["Washington, DC", "Remote"]
+maximum_salary = 180000
 position_type = "Full Time"
 post_date = 2020-11-12T00:00:00Z
 salary_range = "$100,000 to $180,000 per year"
