@@ -24,7 +24,7 @@
   <h2>Job Details</h2>
   {{ .Content }}
   <h3>Salary</h3>
-  <p>{{ .Params.salary_range }}</p>
+  <p>${{ .Params.base_salary }} to ${{ .Params.maximum_salary }} per year</p>
 </section>
 <section>
   <a class="apply-now button primary" href="mailto:careers@ideacrew.com">Apply Now</a>
@@ -32,6 +32,7 @@
 {{- end }}
 
 {{ define "schema" }}
+
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -62,7 +63,8 @@
       "currency": "USD",
       "value": {
         "@type": "QuantitativeValue",
-        "value": 75000.00,
+        "minValue": {{ lang.NumFmt 2 .Params.base_salary "- ." | safeJS }},
+        "maxValue": {{ lang.NumFmt 2 .Params.maximum_salary "- ." | safeJS }},
         "unitText": "YEAR"
       }
     },
