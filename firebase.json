@@ -34,6 +34,10 @@
           {
             "key": "X-Frame-Options",
             "value": "SAMEORIGIN always"
+          },
+          {
+            "key": "X-Content-Type-Options",
+            "value": "nosniff"
           }
         ]
       },
