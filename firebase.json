@@ -34,6 +34,10 @@
           {
             "key": "X-Frame-Options",
             "value": "SAMEORIGIN always"
+          },
+          {
+            "key": "X-Content-Type-Options",
+            "value": "nosniff"
           }
         ]
       },
@@ -43,10 +47,6 @@
           {
             "key": "Cache-Control",
             "value": "max-age=31536000, immutable"
-          },
-          {
-            "key": "X-Content-Type-Options",
-            "value": "nosniff"
           }
         ]
       },
@@ -56,10 +56,6 @@
           {
             "key": "Cache-Control",
             "value": "max-age=31536000, immutable"
-          },
-          {
-            "key": "X-Content-Type-Options",
-            "value": "nosniff"
           }
         ]
       },
@@ -69,10 +65,6 @@
           {
             "key": "Cache-Control",
             "value": "max-age=31536000, immutable"
-          },
-          {
-            "key": "X-Content-Type-Options",
-            "value": "nosniff"
           },
           {
             "key": "Content-Type",
@@ -101,10 +93,6 @@
             "value": "max-age=31536000, immutable"
           },
           {
-            "key": "X-Content-Type-Options",
-            "value": "nosniff"
-          },
-          {
             "key": "Content-Type",
             "value": "text/javascript; charset=utf-8"
           }
@@ -116,10 +104,6 @@
           {
             "key": "Cache-Control",
             "value": "max-age=31536000, immutable"
-          },
-          {
-            "key": "X-Content-Type-Options",
-            "value": "nosniff"
           }
         ]
       },
@@ -133,10 +117,6 @@
           {
             "key": "Content-Type",
             "value": "application/manifest+json; charset=utf-8"
-          },
-          {
-            "key": "X-Content-Type-Options",
-            "value": "nosniff"
           }
         ]
       }
