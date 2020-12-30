@@ -6,6 +6,7 @@ on:
   push:
     paths:
       - 'hugo/**'
+      - 'firebase.json'
     branches:
       - master
 jobs:

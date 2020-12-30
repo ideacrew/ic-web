@@ -34,7 +34,7 @@
         ]
       },
       {
-        "source": "**/*.@(eot|otf|ttf|ttc|woff|woff2|font)",
+        "source": "**/*.@(woff|woff2)",
         "headers": [
           {
             "key": "Cache-Control",
