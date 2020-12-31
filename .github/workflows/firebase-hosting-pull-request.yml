@@ -28,6 +28,13 @@ jobs:
           echo urls ${{steps.firebase_hosting_preview.outputs.url}}
           echo expire_time ${{steps.firebase_hosting_preview.outputs.expire_time}}
           echo details_url ${{steps.firebase_hosting_preview.outputs.details_url}}
+  check_broken_links:
+    runs-on: ubuntu-latest
+    needs: [build_and_preview]
+    steps:
+      - uses: technote-space/broken-link-checker-action@v2
+        with:
+          TARGET: ${{ needs.build_and_preview.outputs.url }}
   test_with_lighthouse:
     runs-on: ubuntu-latest
     needs: [build_and_preview]
