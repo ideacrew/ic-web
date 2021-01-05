@@ -8,7 +8,6 @@
   justify-content: center;
   height: calc(100vh - var(--header-height) + 2rem);
 
-
   .button {
     margin-top: 0.5rem;
     font-size: 0.89rem;
@@ -17,6 +16,10 @@
   .outline {
     background-color: var(--white);
   }
+}
+
+.hero-break {
+  display: none;
 }
 
 .hero-heading {
@@ -95,7 +98,6 @@
 @media screen and (min-width: 769px) {
   .index-heading {
     align-items: flex-start;
-
   }
 
   .hero-heading {
@@ -197,5 +199,9 @@
   .hero-heading {
     font-size: 2rem;
     line-height: 2;
+  }
+
+  .hero-break {
+    display: initial;
   }
 }
