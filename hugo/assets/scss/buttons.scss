@@ -27,4 +27,9 @@
   &.outline {
     border: 2px solid var(--primary-blue);
   }
+
+  &.text-only {
+    padding: 0;
+    border: 0;
+  }
 }

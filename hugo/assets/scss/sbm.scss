@@ -54,6 +54,25 @@
   }
 }
 
+.modules-heading {
+  margin-bottom: 0.5rem;
+}
+
+.expand-modules {
+  font-size: 0.75rem;
+}
+
+.collapse-modules {
+  margin-left: 1rem;
+  font-size: 0.75rem;
+}
+
+.back-to-top {
+  float: right;
+  border: 0;
+  background-color: transparent;
+}
+
 @media screen and (min-width: 769px) {
   .details-container {
     display: grid;

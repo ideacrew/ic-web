@@ -6,7 +6,7 @@
 {{ end }}
 
 {{ define "main" }}
-<section class="heading-section">
+<section id="top-section" class="heading-section">
   <h1>State-Based Marketplace</h1>
   <p>IdeaCrew’s award winning State-based Marketplace (SBM) platform is a cloud-based, complete end-to-end ACA-compliant solution for states, employers, employees and individuals to sponsor, shop and enroll in health insurance and other benefits. Our platform’s modular, flexible design supports different marketplace needs from Individuals to small business to large group enrollments.</p>
   <a href="/work/washington-dc-health-benefit-exchange/" class="button outline">DC Health Link</a>
@@ -15,7 +15,16 @@
 
 
 <section class="benefits-modules">
-  <h2>Marketplace Modules</h2>
+  <h2 class="modules-heading">
+    Marketplace Modules
+  </h2>
+  <button type="button" id="expand-modules" class="button secondary text-only expand-modules">
+    Expand all modules
+  </button>
+  <button type="button" id="collapse-modules" class="button secondary text-only collapse-modules">
+    Collapse all modules
+  </button>
+
   <details>
     <summary>Anonymous Tools</summary>
     <div class="details-container">
@@ -112,6 +121,12 @@
       <div class="supplemental-information"></div>
     </div>
   </details>
+  <a class="back-to-top" href="#top-section">
+    <span class="visually-hidden">Back to top</span>
+    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 0 25 0C11.1929 0 0 11.1929 0 25C0 38.8071 11.1929 50 25 50ZM33 30L25 16L17 30H33Z" fill="#C4C4C4"/>
+    </svg>
+  </a>
 </section>
 
 <section class="awards-section">
@@ -123,4 +138,10 @@
 
 {{ define "cta" }}
 {{ partial "cta.html" . }}
+{{ end }}
+
+{{ define "page-scripts" }}
+{{ $opts := dict "targetPath" "sbm.js"  }}
+{{ $built := resources.Get "ts/sbm.ts" | js.Build $opts | resources.Minify | resources.Fingerprint }}
+<script type="text/javascript" src="{{ $built.RelPermalink }}" defer></script>
 {{ end }}
