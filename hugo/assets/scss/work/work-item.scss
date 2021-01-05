@@ -3,11 +3,15 @@
   position: relative;
   padding: var(--side-padding);
   grid-template-columns: 1fr;
-  grid-template-rows: 10em 4rem 8em;
+  grid-template-rows: 15rem 4rem max-content;
   border: 2px solid var(--secondary-blue);
   border-radius: 0.27em;
   list-style: none;
 }
+
+// .work-item * {
+//   outline: 1px solid red;
+// }
 
 .work-image {
   align-self: center;
@@ -19,7 +23,7 @@
 .work-item:focus,
 .work-item:focus-within {
   .work-image {
-    filter: grayscale(0)
+    filter: grayscale(0);
   }
 }
 
