@@ -8,11 +8,6 @@
   justify-content: center;
   height: calc(100vh - var(--header-height) + 2rem);
 
-  h1 {
-    margin: 0;
-    font-size: 1.25rem;
-    line-height: 1.5;
-  }
 
   .button {
     margin-top: 0.5rem;
@@ -22,6 +17,12 @@
   .outline {
     background-color: var(--white);
   }
+}
+
+.hero-heading {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
 }
 
 .sbm-section {
@@ -95,9 +96,10 @@
   .index-heading {
     align-items: flex-start;
 
-    h1 {
-      max-width: 40ch;
-    }
+  }
+
+  .hero-heading {
+    max-width: 40ch;
   }
 
   .sbm-section {
@@ -191,7 +193,8 @@
 }
 
 @media screen and (min-width: 1128px) {
-  .index-heading h1 {
+  .hero-heading {
     font-size: 2rem;
+    line-height: 2;
   }
 }
