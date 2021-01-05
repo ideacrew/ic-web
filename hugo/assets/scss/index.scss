@@ -178,6 +178,11 @@
   .link-container {
     display: flex;
     justify-content: flex-end;
+    padding-top: 1rem;
+
+    a {
+      font-weight: 600;
+    }
   }
 
   .page-kind-home section:not(.index-heading) .button {
