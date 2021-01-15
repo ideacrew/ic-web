@@ -31,9 +31,15 @@
   font-size: 0.75rem;
 }
 
-
+.email-info {
+  display: block;
+}
 
 @media screen and (min-width: 769px) {
+  .email-info {
+    display: inline;
+  }
+
   .career-heading {
     display: grid;
     grid-template-columns: 1fr max-content;
