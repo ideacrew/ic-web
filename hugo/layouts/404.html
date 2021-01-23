@@ -6,6 +6,10 @@
 {{ end }}
 
 {{ define "main" }}
-<h1>Page Not Found</h1>
-<p>I'm sorry, we couldn't find what you were looking for.</p>
+<div class="container-404">
+  <img class="error-code" src="/images/404.svg" alt="">
+  <h1 class="page-heading">Page Not Found</h1>
+  <a href="/" class="button primary" type="button">Return to Homepage</a>
+  <img class="question-image" src="/images/question.svg" alt="">
+</div>
 {{ end }}
