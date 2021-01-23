@@ -94,6 +94,7 @@ fields:
   showOnly:
     value: Full Time
 pages:
+- hugo/content/careers/business-lead.md
 - hugo/content/careers/development-lead.md
 - hugo/content/careers/front-end-web-developer.md
 - hugo/content/careers/qa-engineer.md
