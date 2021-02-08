@@ -58,12 +58,12 @@
 .person-tile {
   display: grid;
   position: relative;
-  padding: 0.75rem;
+  padding: 1rem;
   grid-template-columns: 1fr;
   grid-template-rows: minmax(1.5rem, max-content) minmax(2.5rem, max-content);
-  border: 2px solid var(--secondary-blue);
   border-radius: 5px;
   font-size: 0.75rem;
+  box-shadow: 0 0 4px hsla(0, 0%, 0%, 0.35);
 }
 
 .person-name {
@@ -170,7 +170,7 @@
 
     .values {
       padding: 1rem;
-      border-left: 5px solid var(--text-color);
+      border-left: 5px solid var(--blue-035);
 
       p {
         margin-bottom: 0;

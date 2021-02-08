@@ -1,5 +1,4 @@
 :root {
-  --ideacrew-blue: hsl(219, 44%, 49%);
   --black: hsl(48, 17%, 15%);
   --darkest: hsl(67, 9%, 39%);
   --darker: hsl(44, 34%, 48%);
@@ -18,10 +17,12 @@
   --neutral-015: hsl(240, 3%, 15%);
   --neutral-010: hsl(240, 4%, 10%);
   --neutral-000: hsl(0, 0%, 0%);
-  --primary-blue: var(--ideacrew-blue);
-  --secondary-blue: hsl(210, 85%, 16%);
   --dark-blue: hsl(236, 22%, 24%);
   --dark-blue-tint: hsl(236, 40%, 87%);
   --gray-blue: hsl(216, 14%, 86%);
   --light-blue: hsl(219, 42%, 75%);
+  --blue-016: hsl(208, 69%, 16%);
+  --blue-035: hsl(208, 63%, 35%);
+  --blue-049: hsl(219, 44%, 49%);
+  --blue-090: hsl(219, 44%, 90%);
 }

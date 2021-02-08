@@ -1,3 +1,7 @@
+:root {
+  --button-color: var(--blue-035);
+}
+
 .button {
   display: inline-block;
   padding: 0.5em 2em;
@@ -6,8 +10,8 @@
   text-align: center;
 
   &.primary {
-    border: 2px solid var(--primary-blue);
-    background-color: var(--primary-blue);
+    border: 2px solid var(--button-color);
+    background-color: var(--button-color);
     color: var(--white);
   }
 
@@ -17,15 +21,16 @@
 
   &.secondary {
     background-color: var(--white);
-    color: var(--primary-blue);
+    color: var(--button-color);
   }
 
   &.secondary:hover {
-    color: var(--primary-blue);
+    color: var(--button-color);
   }
 
   &.outline {
-    border: 2px solid var(--primary-blue);
+    border: 2px solid var(--button-color);
+    color: var(--button-color);
   }
 
   &.text-only {

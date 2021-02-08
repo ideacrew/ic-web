@@ -1,6 +1,11 @@
 .call-to-action {
   padding: 1rem var(--side-padding);
-  background-color: var(--primary-blue);
+  background-color: var(--blue-035);
+  background-image: url('https://res.cloudinary.com/ideacrew/image/upload/c_scale,f_auto,q_auto,w_1500/v1612819099/ideacrew-website/image_1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
   text-align: center;
 }
 
@@ -23,7 +28,7 @@
 
 @media screen and (min-width: 769px) {
   .call-to-action {
-    padding: 2rem var(--side-padding);
+    padding: 5rem var(--side-padding);
   }
 
   .cta-heading {

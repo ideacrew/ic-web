@@ -1,12 +1,12 @@
 :root {
   --footer-gray: hsl(216, 14%, 86%);
-  --footer-text: var(--neutral-020);
+  --footer-text: var(--neutral-100);
 }
 
 .footer {
   // min-height: 7rem;
   padding: 3rem var(--side-padding);
-  background-color: var(--footer-gray);
+  background-color: var(--blue-016);
   color: var(--footer-text);
 
   h3 {
