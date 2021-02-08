@@ -8,15 +8,18 @@
 
 {{ define "main" }}
 {{ $jobType := dict "Full Time" "FULL_TIME" }}
+{{ $shortDate := .Params.post_date.Format "2006-01-02" }}
 
 <section class="career-heading">
   <h1 class="career-title">{{ .Params.title }}</h1>
-  <div class="subheading">{{ .Params.position_type }}</div>
-  <div class="location-list">
-    {{ delimit .Params.location ", " }}
-  </div>
-  <div class="posted-on">
-    Posted: {{ .Params.post_date.Format "January 2, 2006" }}
+  <div class="career-details">
+    <div class="subheading">{{ .Params.position_type }}</div>
+    <div class="location-list">{{ delimit .Params.location "/" }}</div>
+    <div class="posted-on">
+      Posted: <time datetime="{{ $shortDate }}">
+        {{ .Params.post_date.Format "January 2, 2006" }}
+      </time>
+    </div>
   </div>
   <a
     class="heading-cta button primary"
