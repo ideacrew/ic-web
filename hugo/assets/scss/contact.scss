@@ -84,10 +84,9 @@
   display: none;
 }
 
-
 @media screen and (min-width: 1128px) {
   .contact-us-page {
-    grid-template-columns: 1fr repeat(2, 31.33rem) 1fr;
+    grid-template-columns: 1fr repeat(2, 26.665rem) 1fr;
     grid-template-areas:
       '. heading heading .'
       '. info form .'
