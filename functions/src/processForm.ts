@@ -1,6 +1,6 @@
 import * as functions from 'firebase-functions';
 import * as admin from 'firebase-admin';
-import { ContactMessage } from './contactMessage';
+import { ContactMessage } from './models/contactMessage';
 
 admin.initializeApp();
 

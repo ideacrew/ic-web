@@ -1,15 +1,6 @@
 import * as functions from 'firebase-functions';
 import * as fetch from 'node-fetch';
-
-interface VerificationResponse {
-  success: 'true' | 'false';
-  score: number;
-  action: string;
-  // eslint-disable-next-line camelcase
-  challenge_ts: string;
-  hostname: string;
-  'error-codes'?: string[];
-}
+import { VerificationResponse } from './models';
 
 /**
  *

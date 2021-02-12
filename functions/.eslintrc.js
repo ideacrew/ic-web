@@ -22,6 +22,7 @@ module.exports = {
   },
   ignorePatterns: [
     '/lib/**/*', // Ignore built files.
+    '.eslintrc.js',
   ],
   plugins: ['@typescript-eslint', 'import', 'prettier'],
 };

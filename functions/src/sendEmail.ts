@@ -1,7 +1,7 @@
 import { MailDataRequired, send, setApiKey } from '@sendgrid/mail';
 import * as functions from 'firebase-functions';
 
-import { ContactMessage } from './contactMessage';
+import { ContactMessage } from './models';
 
 /**
  * Sends an Email using SendGrid
