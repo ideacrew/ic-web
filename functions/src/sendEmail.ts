@@ -3,6 +3,11 @@ import * as functions from 'firebase-functions';
 
 import { ContactMessage } from './contactMessage';
 
+/**
+ * Sends an Email using SendGrid
+ * @param {functions.firestore.QueryDocumentSnapshot} snapshot a document snapshot
+ * @return { Promise<FirebaseFirestore.WriteResult | void> }  a write result or void
+ */
 export async function sendEmail(
   snapshot: functions.firestore.QueryDocumentSnapshot
 ): Promise<FirebaseFirestore.WriteResult | void> {
@@ -25,6 +30,11 @@ export async function sendEmail(
   }
 }
 
+/**
+ * Prepares a contact message for emailing
+ * @param {ContactMessage} contactMessage The contact message
+ * @return {MailDataRequired} an object that can be used with SendGrid
+ */
 function prepareEmail(contactMessage: ContactMessage): MailDataRequired {
   const { contactName, company, email, message } = contactMessage;
 
