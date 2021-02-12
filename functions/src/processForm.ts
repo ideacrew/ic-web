@@ -1,13 +1,13 @@
 import * as functions from 'firebase-functions';
 import * as admin from 'firebase-admin';
-import { ContactMessage } from './contactMessage';
+import { ContactMessage } from './models/contactMessage';
 
 admin.initializeApp();
 
 /**
  * Processes a contact form submission
- * @param req http request
- * @param res http response
+ * @param {functions.https.Request } req http request
+ * @param {functions.Response<unknown> } res http response
  */
 export async function processFormSubmission(
   req: functions.https.Request,
@@ -34,7 +34,7 @@ export async function processFormSubmission(
 /**
  * Adds the contact message as a new document
  * in the messages collection
- * @param message the contact message to add
+ * @param {ContactMessage} message the contact message to add
  */
 async function addMessage(message: ContactMessage): Promise<void> {
   const today = new Date().toISOString();

@@ -1,15 +1,12 @@
 import * as functions from 'firebase-functions';
 import * as fetch from 'node-fetch';
+import { VerificationResponse } from './models';
 
-interface VerificationResponse {
-  success: 'true' | 'false';
-  score: number;
-  action: string;
-  challenge_ts: string;
-  hostname: string;
-  'error-codes'?: string[];
-}
-
+/**
+ *
+ * @param {functions.https.Request} req http request
+ * @param {functions.Response<unknown>} res http response
+ */
 export async function verify(
   req: functions.https.Request,
   res: functions.Response<unknown>
