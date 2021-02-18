@@ -76,13 +76,6 @@ fields:
     max: 1000000
     step: 5000
     required: true
-- name: salary_range
-  type: text
-  config:
-    required: true
-  label: Salary Range
-  description: A range of salary that we're offering this position
-  default: "$70,000 to $150,000 per year"
 - name: location
   type: list
   config:
