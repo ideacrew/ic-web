@@ -4,7 +4,6 @@ location = ["Remote-US", "Washington, DC"]
 maximum_salary = 165000
 position_type = "Full Time"
 post_date = 2021-02-18T00:00:00Z
-salary_range = "$100,000 to $165,000 per year"
 summary = "IdeaCrew is currently seeking a talented and experienced Senior Security Engineer to build and evolve IdeaCrew’s Security Practice.  \n\n\n\n"
 title = "Senior Security Engineer"
 
@@ -24,7 +23,7 @@ IdeaCrew’s Security Engineers thrive in a DevOps culture, working with multi-d
 * Deep domain expertise in one or more of the following areas: cloud security, compute, networking, storage, high availability, application performance
 * Demonstrated knowledge using Continuous Integration tools (Jenkins, GitHub Actions, AWS CodePipeline, etc.)
 * Demonstrated knowledge using Amazon Web Services (EC2, VPC, ALB/ELB, S3, EBS, EKS, etc.)  
-  Experience configuring and using Infrastructure as Code (IaC) (Terraform, OpenStack, Chef, Puppet, etc.) and containerization/orchestration tools including Docker and Kubernetes 
+* Experience configuring and using Infrastructure as Code (IaC) (Terraform, OpenStack, Chef, Puppet, etc.) and containerization/orchestration tools including Docker and Kubernetes 
 * Expertise with Linux, Public Cloud platforms, monitoring tools (New Relic, Nagios, etc.), and scripting languages (Bash, Ruby, Perl or other)
 * Due to the robust security documentation expectations required of this role, strong written communication skills are mandatory
 
@@ -64,7 +63,7 @@ IdeaCrew’s Security Engineers thrive in a DevOps culture, working with multi-d
 * Two years-plus experience designing and building e-commerce web application environments on AWS or similar Public Cloud platform
 * Three years-plus working with Linux, Red Hat/CentOS or Ubuntu preferred, with emphasis on scripting and automation
 * Minimum of one year working with Terraform, OpenStack, Chef or similar IaC configuration management and automation tools (experience with Terraform strongly preferred)  
-  Minimum of one year working with Docker, Kubernetes or similar containerization and container orchestration tools
+* Minimum of one year working with Docker, Kubernetes or similar containerization and container orchestration tools
 * Minimum of one year designing and building web or mobile applications using cloud-based services (AWS Amplify, AWS DynamoDB, Firebase, or similar)
 * Minimum of one year of experience in working within a concentrated infrastructure domain – compute, networking, storage, infrastructure security
 * Experience with third-party assessment contractor reps
