@@ -4,7 +4,6 @@ location = ["Washington, DC", "Remote"]
 maximum_salary = 150000
 position_type = "Full Time"
 post_date = 2020-11-12T00:00:00Z
-salary_range = "$70,000 to $150,000 per year"
 summary = "IdeaCrew is currently seeking senior and mid-level Ruby on Rails Developers to join our innovative, hard-working team."
 title = "Ruby on Rails Developer (mid, senior)"
 
