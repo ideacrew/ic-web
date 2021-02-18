@@ -1,6 +1,5 @@
 +++
 base_salary = 70000
-draft = true
 location = ["Washington, DC"]
 maximum_salary = 140000
 position_type = "Full Time"
