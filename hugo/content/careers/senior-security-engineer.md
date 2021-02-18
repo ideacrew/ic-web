@@ -5,7 +5,7 @@ maximum_salary = 165000
 position_type = "Full Time"
 post_date = 2021-02-18T00:00:00Z
 salary_range = "$100,000 to $165,000 per year"
-summary = " IdeaCrew is currently seeking a talented and experienced Senior Security Engineer to build and evolve IdeaCrew’s Security Practice.  \n\n\n\n"
+summary = "IdeaCrew is currently seeking a talented and experienced Senior Security Engineer to build and evolve IdeaCrew’s Security Practice.  \n\n\n\n"
 title = "Senior Security Engineer"
 
 +++
