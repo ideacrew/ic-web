@@ -29,6 +29,11 @@
 }
 
 .sbm-section {
+  .sbm-item-list {
+    margin: 0;
+    padding: 0;
+  }
+
   .sbm-item {
     display: flex;
     align-items: center;
