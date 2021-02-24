@@ -14,7 +14,7 @@ Reporting to the Project Manager and key members of the Leadership team, you wil
 
 You will work closely with your immediate team, peers and senior stakeholders to champion and evolve agile practices, continuous integration and the frequent delivery of working software. This role is an opportunity for the right candidate to anchor CRM knowledge and practices in the organization, and lead the longer term development of CRM capability at IdeaCrew.
 
-**Key Skills & Qualifications**
+### Key Skills & Qualifications
 
 * Elicit requirements using interviews, document analysis, requirements, workshops, business process descriptions, use cases, scenarios, business analysis, task and workflow
 * Understand, optimize and document business processes
@@ -34,7 +34,7 @@ You will work closely with your immediate team, peers and senior stakeholders to
 
 ### You will also:
 
-• Facilitate JAD workshops that generate ideas and content for building complex custom- designed solutions that use a wide range of the latest technologies
+* Facilitate JAD workshops that generate ideas and content for building complex custom- designed solutions that use a wide range of the latest technologies
 * Recommend optimization to increase the effectiveness of the team, current processes and engagement models
 * Collaborate on organizational transformation solutions and execution
 * Coordinate and assist in the review, editing and update of new and existing documentation
