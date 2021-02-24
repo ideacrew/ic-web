@@ -67,27 +67,45 @@
 }
 
 .services-section {
+  display: grid;
+  grid-template: repeat(3, min-content) / max-content 1fr;
+
   .services-list {
     margin: 0;
-    padding: 0;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: var(--blue-035);
     list-style: none;
+    grid-column: 1 / 2;
   }
 
   .services-item {
-    padding: 1rem 0;
-    border-radius: 5px;
-    background-color: var(--light-blue);
+    padding: 0.5rem 0;
+    color: var(--white);
     font-weight: 600;
-    text-align: center;
-  }
-
-  .services-item + .services-item {
-    margin-top: 0.5rem;
   }
 
   .button {
     width: 100%;
     margin-top: 1rem;
+  }
+
+  img {
+    place-self: center;
+  }
+
+  .services-large {
+    display: none;
+  }
+
+  h2,
+  a {
+    grid-column: 1 / -1;
+  }
+
+  a {
+    padding: 1rem 0;
+    font-weight: 600;
   }
 }
 
@@ -144,37 +162,30 @@
   }
 
   .services-section {
+    grid-template-columns: 1fr 1fr;
+
     .services-list {
-      display: grid;
-      column-gap: 0.5rem;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: 9rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 0 1rem;
     }
 
     .services-item {
-      display: flex;
-      align-items: center;
-      padding: 0 2rem 0 6rem;
-      background-repeat: no-repeat;
-      background-position: left center;
-      text-align: left;
+      font-size: 1rem;
     }
 
-    .item-1 {
-      background-image: url('/images/management-consulting.svg');
-    }
-    .item-2 {
-      background-image: url('/images/application-development.svg');
-    }
-    .item-3 {
-      background-image: url('/images/data-integration.svg');
-    }
-    .item-4 {
-      background-image: url('/images/devops.svg');
+    a {
+      justify-self: end;
     }
 
-    .services-item + .services-item {
-      margin: 0;
+    .services-small {
+      display: none;
+    }
+
+    .services-large {
+      display: inline;
+      width: 25rem;
     }
   }
 
