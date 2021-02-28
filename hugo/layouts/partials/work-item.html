@@ -1,10 +1,15 @@
 <li class="work-item">
-  <img
-    class="work-image"
-    src="https://res.cloudinary.com/ideacrew/image/upload/c_lpad,q_auto,f_auto,h_168,w_168/ideacrew-website/{{ .Params.featured_image }}"
-    alt=""
-    height="168"
-    width="168" >
+  <picture class="work-image" >
+    <source
+      srcset="https://res.cloudinary.com/ideacrew/image/upload/c_lpad,q_auto,f_auto,h_168,w_168/ideacrew-website/{{ .Params.featured_image }}"
+      media="(hover: hover")>
+      <img
+        src="https://res.cloudinary.com/ideacrew/image/upload/c_lpad,q_auto,f_auto,h_100,w_100/ideacrew-website/{{ .Params.featured_image }}"
+        alt=""
+        loading="lazy"
+        height="var(--img-width)"
+        width="var(--img-height)" >
+  </picture>
   <h3 class="work-title">
     <a class="work-link" href="{{ .RelPermalink }}">{{ .Title }}</a>
   </h3>

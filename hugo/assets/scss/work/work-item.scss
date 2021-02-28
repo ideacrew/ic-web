@@ -1,36 +1,51 @@
 .work-item {
+  --img-width: 100;
+  --img-height: 100;
+
   display: grid;
+  // Relative position needed for clickable link
   position: relative;
   padding: var(--side-padding);
-  grid-template-columns: 1fr;
-  grid-template-rows: 15rem minmax(max-content, 4rem) max-content;
-  border-radius: 0.27em;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.25);
   list-style: none;
-  box-shadow: 0 0 4px hsla(0, 0%, 0%, 0.25);
+  cursor: pointer;
+
+  // > * {
+  //   outline: 1px solid red;
+  // }
 }
 
 .work-image {
-  align-self: center;
-  justify-self: center;
-  filter: grayscale(1);
-}
-
-.work-summary {
-  font-size: 0.75rem;
-}
-
-.work-item:hover,
-.work-item:focus,
-.work-item:focus-within {
-  .work-image {
-    filter: grayscale(0);
-  }
+  grid-row: span 2;
+  // background-color: lightyellow;
 }
 
 .work-title {
   margin: 0;
+  font-size: 0.667rem;
 }
 
+.work-summary {
+  font-size: 0.556rem;
+  grid-column: 2 / 3;
+}
+
+@media (hover: hover) {
+  .work-image {
+    filter: grayscale(1);
+  }
+
+  .work-item:hover,
+  .work-item:focus,
+  .work-item:focus-within {
+    .work-image {
+      filter: grayscale(0);
+    }
+  }
+}
+
+// Makes the entire card a clickable link
 .work-link::after {
   position: absolute;
   top: 0;
@@ -38,4 +53,32 @@
   bottom: 0;
   left: 0;
   content: '';
+}
+
+@media screen and (min-width: 600px) {
+  .work-item {
+    grid-template-columns: 1fr;
+    grid-template-rows: 15rem minmax(max-content, 4rem) max-content;
+    border-bottom: 0;
+    border-radius: 0.27em;
+    box-shadow: 0 0 4px hsla(0, 0%, 0%, 0.25);
+  }
+
+  .work-image {
+    --img-width: 168;
+    --img-height: 168;
+
+    grid-row: unset;
+    // background-color: lightyellow;
+    place-self: center;
+  }
+
+  .work-title {
+    font-size: 1rem;
+  }
+
+  .work-summary {
+    font-size: 0.667rem;
+    grid-column: unset;
+  }
 }
