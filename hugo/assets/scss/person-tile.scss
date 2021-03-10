@@ -1,0 +1,56 @@
+.person-tile {
+  display: grid;
+  position: relative;
+  padding: 0.75rem;
+  grid-template-columns: 1fr max-content;
+  grid-template-rows: repeat(2, max-content);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 0.75rem;
+
+  // > * {
+  //   outline: 1px solid pink;
+  // }
+}
+
+.person-title {
+  color: inherit;
+}
+
+.person-name {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.linked-in-link {
+  display: flex;
+  grid-row: 1 / -1;
+  grid-column: 2 / 3;
+  place-self: stretch;
+  padding-left: 0.5rem;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  line-height: 1;
+}
+
+.linked-in-logo {
+  width: 1rem;
+}
+
+@media screen and (min-width: 1128px) {
+  .person-tile {
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content 1fr max-content;
+    gap: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0 0 4px hsla(0, 0%, 0%, 0.35);
+  }
+
+  .linked-in-link {
+    grid-row: auto;
+    grid-column: auto;
+    padding-top: 0.5rem;
+    padding-left: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: 0;
+  }
+}
