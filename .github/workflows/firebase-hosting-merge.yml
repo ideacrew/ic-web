@@ -8,7 +8,7 @@ on:
       - 'hugo/**'
       - 'firebase.json'
     branches:
-      - main
+      - trunk
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
