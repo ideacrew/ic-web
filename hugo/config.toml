@@ -5,6 +5,7 @@ publishDir = "../public"
 
 disableKinds = ["taxonomy", "term"]
 pluralizelisttitles = false
+enableRobotsTXT = true
 
 [params]
   description = "Strategic Solutions for the IT Industry"
