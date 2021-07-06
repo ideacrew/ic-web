@@ -4,7 +4,7 @@
 
 .contact-us-page {
   .contact-info {
-    grid-area: info;
+    grid-area: contact contact;
     line-height: 2;
     z-index: 2;
 
@@ -30,7 +30,7 @@
 
   label {
     margin-bottom: 0.125rem;
-    color: var(--secondary-blue);
+    color: var(--neutral-020);
     font-size: 0.75rem;
   }
 
@@ -42,7 +42,7 @@
     display: block;
     width: 100%;
     padding: 0.5rem 0 0.5rem 0.5rem;
-    border: 1px solid var(--secondary-blue);
+    border: 1px solid var(--neutral-058, chartreuse);
     border-radius: 5px;
   }
 
@@ -50,7 +50,7 @@
     display: block;
     width: 100%;
     padding: 0.5rem;
-    border: 1px solid var(--secondary-blue);
+    border: 1px solid var(--neutral-058, chartreuse);
     border-radius: 5px;
   }
 
@@ -60,110 +60,84 @@
     padding: 0.75rem 0;
     border: 0;
     border-radius: 5px;
-    background-color: var(--primary-blue);
+    background-color: var(--blue-035, chartreuse);
     color: var(--neutral-094);
 
     &:disabled {
-      background-color: var(--neutral-031);
+      background-color: var(--neutral-031, chartreuse);
       cursor: not-allowed;
     }
   }
 }
 
-.google-map {
+.cta-careers {
+  grid-area: cta;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+
+  a {
+    text-align: center;
+  }
+
+  svg {
+    align-self: center;
+    margin-top: 1rem;
+  }
+}
+
+.map {
+  display: none;
   grid-area: map;
 }
 
-.cta-careers {
-  display: none;
-  grid-area: cta;
-  padding: 4rem 0;
-}
-
-.shade {
-  display: none;
-}
-
 @media screen and (min-width: 1128px) {
+  .map {
+    display: block;
+    background-image: url('https://res.cloudinary.com/ideacrew/image/upload/f_auto/v1605645847/ideacrew-website/google-map-image.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+  }
+
   .contact-us-page {
     grid-template-columns: 1fr repeat(2, 26.665rem) 1fr;
     grid-template-areas:
       '. heading heading .'
-      '. info form .'
+      '. form map .'
+      '. contact contact .'
       '. cta cta . ';
 
-    > * + * {
-      margin-top: 0;
-    }
+    column-gap: 1rem;
 
     h1 {
       grid-area: heading;
     }
 
-    .contact-form {
-      padding: 1rem;
-      background-color: hsl(0, 0%, 46%);
-
-      label {
-        color: var(--white);
-      }
-
-      input,
-      textarea {
-        border: 0;
-      }
-
-      &.submitting .submitting-shade {
-        display: flex;
-      }
-    }
-
-    .contact-info {
-      position: relative;
-      padding: 1rem;
-      background-image: url('https://res.cloudinary.com/ideacrew/image/upload/f_auto/v1605645847/ideacrew-website/google-map-image.jpg');
-      background-repeat: no-repeat;
-      background-size: 100%;
-      background-size: cover;
-      color: var(--white);
-
-      a {
-        color: var(--white);
-      }
-    }
-
-    .shade {
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: hsl(0, 0%, 0%);
-      opacity: 0.5;
-      z-index: -1;
-    }
-
-    .google-map {
-      display: none;
-    }
-
     .cta-careers {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      gap: 1rem;
 
-      h2 {
-        align-self: center;
+      h2,
+      a {
         margin: 0;
+        grid-column: 1 / 2;
       }
 
-      h2 + div {
-        margin-top: 1rem;
+      h2 {
+        align-self: end;
       }
 
       a {
+        align-self: start;
+      }
+
+      svg {
+        margin: 0;
+        grid-column: 2 / -1;
+        grid-row: 1 / span 2;
         justify-self: center;
-        align-self: center;
       }
     }
   }
