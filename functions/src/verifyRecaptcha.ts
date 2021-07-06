@@ -25,7 +25,8 @@ export async function verify(
     `https://www.google.com/recaptcha/api/siteverify?secret=${secret}&response=${token}`,
     { method: 'POST' }
   );
-  const verification: VerificationResponse = (await response.json()) as VerificationResponse;
+  const verification: VerificationResponse =
+    (await response.json()) as VerificationResponse;
 
   // Send verification in response to POST
   res.status(200).send(verification);
