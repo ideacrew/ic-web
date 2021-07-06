@@ -13,6 +13,7 @@ IdeaCrew is currently seeking an experienced Business Lead to help support and l
 Reporting to the Project Manager and key members of the Leadership team, you will guide the understanding of the project team through design and development to ensure project requirements are met. Business Leads build trusted customer relationships through proactive client management and effective project delivery.
 
 ### Key Skills & Qualifications
+
 - Establish knowledge of client business challenges and priorities to translate into opportunities
 - Maintain regular client communication and satisfaction, ensuring opportunities and challenges are addressed in a timely manner
 - Elicit requirements using interviews, document analysis, requirements, workshops, business process descriptions, use cases, scenarios, business analysis, task and workflow
@@ -21,7 +22,8 @@ Reporting to the Project Manager and key members of the Leadership team, you wil
 - Translate client’s business needs into detailed business requirements documents, use cases and systems interaction diagrams
 - Review client deliverables to ensure they meet client acceptance criteria.
 
-### A Business Lead for IdeaCrew will oversee: 
+### A Business Lead for IdeaCrew will oversee
+
 - Plan Management – loading and verification of data and plan documents onto the marketplace technology platform
 - Requirements traceability – verification that all business rules have been configured, tested and accepted
 - Stakeholder Review Support – coordinate with business stakeholders
@@ -29,10 +31,11 @@ Reporting to the Project Manager and key members of the Leadership team, you wil
 - Operational Readiness management: planning and overseeing execution of operational readiness activities, CMS gate reviews and compliance items
 - Consumer Assistance Center integration: work closely with Consumer Assistance Center vendors to manage marketplace technology platform dependencies such as CRM data and automated application status lookup
 
-### You will also:
+### You will also
+
 - Recommend optimization to increase the effectiveness of the team, current processes and engagement models
 - Collaborate on organizational transformation solutions and execution
-- Coordinate and assist in the review, editing and update of new and existing documentation 
+- Coordinate and assist in the review, editing and update of new and existing documentation
 - Demonstrate leadership and accountability for not only your work but the team’s work
 - Provide guidance and work leadership to less-experienced business analysts
 - Instill team commitment to company delivery methodologies and practices
@@ -40,7 +43,8 @@ Reporting to the Project Manager and key members of the Leadership team, you wil
 - Interface with developers, testers and other analysts to ensure requirements are understood
 - Participate in special projects as required
 
-### Desired Skills & Expertise:
+### Desired Skills & Expertise
+
 - Four year degree or equivalent experience
 - 5 plus years Business Analyst / Lead Experience
 - Five plus years working with and leading agile teams

@@ -10,7 +10,7 @@ title = "Front End Web Developer"
 +++
 IdeaCrew is currently seeking a Front End Web Developer to join our team. In this role you will build user interfaces and shape the user experience of our products. We have interest in candidates at both mid and senior levels. This position requires experience defining, evolving, and embedding development standards across teams.
 
-## A Front End Developer at IdeaCrew is someone who will:
+## A Front End Developer at IdeaCrew is someone who will
 
 * Develop the front end of web-first applications
 * Use best practices in application design, service design, form design, and application interfaces

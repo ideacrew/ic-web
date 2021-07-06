@@ -12,7 +12,7 @@ IdeaCrew is currently seeking an experienced Business Analyst with EDI expertise
 
 Reporting to the VP of Integration and the Team Lead, the EDI Business Analyst ensures that individuals, families, and businesses are properly enrolled in qualified health plans and qualified dental plans.  
   
-This individual works directly with qualified health plan and qualified dental plan issuers on operations related to electronic data interchange (EDI) including ASC X12 820 and 834 files, error logs, and effectuation files. The EDI Business Analyst works with the federal government on required data files submitted to CMS and other federal agencies. You will interact closely with internal staff including policy and business staff, contact center staff, and command and control center staff. 
+This individual works directly with qualified health plan and qualified dental plan issuers on operations related to electronic data interchange (EDI) including ASC X12 820 and 834 files, error logs, and effectuation files. The EDI Business Analyst works with the federal government on required data files submitted to CMS and other federal agencies. You will interact closely with internal staff including policy and business staff, contact center staff, and command and control center staff.
 
 ### The EDI Business Analyst will
 

@@ -23,11 +23,11 @@ IdeaCrew’s Security Engineers thrive in a DevOps culture, working with multi-d
 * Deep domain expertise in one or more of the following areas: cloud security, compute, networking, storage, high availability, application performance
 * Demonstrated knowledge using Continuous Integration tools (Jenkins, GitHub Actions, AWS CodePipeline, etc.)
 * Demonstrated knowledge using Amazon Web Services (EC2, VPC, ALB/ELB, S3, EBS, EKS, etc.)  
-* Experience configuring and using Infrastructure as Code (IaC) (Terraform, OpenStack, Chef, Puppet, etc.) and containerization/orchestration tools including Docker and Kubernetes 
+* Experience configuring and using Infrastructure as Code (IaC) (Terraform, OpenStack, Chef, Puppet, etc.) and containerization/orchestration tools including Docker and Kubernetes
 * Expertise with Linux, Public Cloud platforms, monitoring tools (New Relic, Nagios, etc.), and scripting languages (Bash, Ruby, Perl or other)
 * Due to the robust security documentation expectations required of this role, strong written communication skills are mandatory
 
-### A Senior Security Engineer Will:
+### A Senior Security Engineer Will
 
 * Lead design and implementation of security controls and processes
 * Establish corporate security requirements by evaluating business strategies and requirements, researching information security standards, performing risk assessments, identifying integration issues, and provide recommendations for remediating identified risk

@@ -23,7 +23,7 @@ You will work closely with your immediate team, peers and senior stakeholders to
 * Translate client’s business needs into agile artifacts (features & epics, user stories and story maps, diagrams and mockups) to drive development activities for your team
 * Review client deliverables to ensure they meet client acceptance criteria
 
-### A Business Analyst for IdeaCrew will oversee:
+### A Business Analyst for IdeaCrew will oversee
 
 * System customization and configuration to meet business requirements
 * Requirements traceability – verification that all business rules have been configured, tested and accepted
@@ -32,7 +32,7 @@ You will work closely with your immediate team, peers and senior stakeholders to
 * Consumer Assistance Center integration: work closely with Consumer Assistance Center vendors to manage marketplace technology platform dependencies such as CRM data and automated application status lookup
 * Support the development of technical training for staff and stakeholders and participate in the delivery of such training
 
-### You will also:
+### You will also
 
 * Facilitate JAD workshops that generate ideas and content for building complex custom- designed solutions that use a wide range of the latest technologies
 * Recommend optimization to increase the effectiveness of the team, current processes and engagement models
@@ -45,7 +45,7 @@ You will work closely with your immediate team, peers and senior stakeholders to
 * Interface with developers, testers and other analysts to ensure requirements are understood
 * Participate in special projects as required
 
-### Desired Skills & Expertise:
+### Desired Skills & Expertise
 
 * Four year degree or equivalent experience
 * At least three years as a business analyst working with agile teams

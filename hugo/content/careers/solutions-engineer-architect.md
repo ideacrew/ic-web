@@ -24,7 +24,7 @@ This is a leadership role in the IdeaCrew team, with potential for continued gro
 * Client-side UI development principles and frameworks (primarily AngularJS)
 * Mobile-first application design
 
-### A Solutions Architect for IdeaCrew will:
+### A Solutions Architect for IdeaCrew will
 
 * Work directly with the Chief Architect and executive stakeholders (both internal and client) on strategy and vision
 * Collaborate with development teams and senior engineers to guide technical execution, solve problems and evolve patterns and conventions as projects and roadmaps change
