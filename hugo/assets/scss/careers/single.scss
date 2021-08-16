@@ -31,24 +31,8 @@
   font-size: 0.75rem;
 }
 
-.email-info {
-  display: block;
-}
-
 @media screen and (min-width: 769px) {
-  .email-info {
-    display: inline;
-  }
-
   .career-heading {
-    display: grid;
-    grid-template-columns: 1fr max-content;
-    grid-template-areas:
-      'title button'
-      'subheading .'
-      'location .'
-      'posted .';
-
     .career-title {
       margin: 0;
     }
@@ -67,6 +51,8 @@
 
   .career-details {
     display: flex;
+    margin-bottom: 1rem;
+
     div + div {
       margin-left: 0.5rem;
       padding-left: 0.5rem;
