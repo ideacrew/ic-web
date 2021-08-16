@@ -58,7 +58,7 @@
 @media screen and (min-width: 600px) {
   .work-item {
     grid-template-columns: 1fr;
-    grid-template-rows: 15rem minmax(max-content, 4rem) max-content;
+    grid-template-rows: max-content minmax(max-content, 5rem) max-content;
     border-bottom: 0;
     border-radius: 0.27em;
     box-shadow: 0 0 4px hsla(0, 0%, 0%, 0.25);
@@ -75,10 +75,11 @@
 
   .work-title {
     font-size: 1rem;
+    align-self: center;
   }
 
   .work-summary {
-    font-size: 0.667rem;
+    font-size: 0.78rem;
     grid-column: unset;
   }
 }
