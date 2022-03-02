@@ -19,24 +19,24 @@ const submitButton: HTMLButtonElement = document.querySelector(
 submitButton.addEventListener('click', submitForm, false);
 
 async function submitForm(): Promise<void> {
-  const contactName: string = (document.getElementById(
-    'contact-name'
-  ) as HTMLInputElement).value;
-  const email: string = (document.getElementById(
-    'contact-email'
-  ) as HTMLInputElement).value;
-  const company: string = (document.getElementById(
-    'contact-company'
-  ) as HTMLInputElement).value;
-  const message: string = (document.getElementById(
-    'contact-message'
-  ) as HTMLTextAreaElement).value;
+  const contactName: string = (
+    document.querySelector('#contact-name') as HTMLInputElement
+  ).value;
+  const email: string = (
+    document.querySelector('#contact-email') as HTMLInputElement
+  ).value;
+  const company: string = (
+    document.querySelector('#contact-company') as HTMLInputElement
+  ).value;
+  const message: string = (
+    document.querySelector('#contact-message') as HTMLTextAreaElement
+  ).value;
 
   if (contactName !== '' && company !== '' && email !== '' && message !== '') {
     const data = { contactName, email, company, message };
     const url = '/contact-form-submission';
     submitButton.setAttribute('disabled', '');
-    submitButton.innerText = 'Sending message to IdeaCrew...';
+    submitButton.textContent = 'Sending message to IdeaCrew...';
     try {
       await fetch(url, {
         method: 'POST',
@@ -46,8 +46,8 @@ async function submitForm(): Promise<void> {
         },
       });
       location.href = '/thank-you';
-    } catch (e) {
-      submitButton.innerText = 'Something went wrong, refresh and try again.';
+    } catch {
+      submitButton.textContent = 'Something went wrong, refresh and try again.';
       console.error('This request could not be completed');
     }
   }

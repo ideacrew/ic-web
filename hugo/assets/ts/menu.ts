@@ -1,10 +1,10 @@
-const navBar: HTMLElement | null = document.getElementById('mobile-nav');
+const navBar: HTMLElement | null = document.querySelector('#mobile-nav');
 
-const menuButton: HTMLButtonElement | null = document.getElementById(
-  'menu-button'
+const menuButton: HTMLButtonElement | null = document.querySelector(
+  '#menu-button'
 ) as HTMLButtonElement;
-const closeButton: HTMLButtonElement | null = document.getElementById(
-  'close-button'
+const closeButton: HTMLButtonElement | null = document.querySelector(
+  '#close-button'
 ) as HTMLButtonElement;
 
 menuButton?.addEventListener('click', () => {

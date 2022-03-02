@@ -1,19 +1,20 @@
-const collapseButton: HTMLButtonElement = document.getElementById(
-  'collapse-modules'
+const collapseButton: HTMLButtonElement = document.querySelector(
+  '#collapse-modules'
 ) as HTMLButtonElement;
 
-const expandButton: HTMLButtonElement = document.getElementById(
-  'expand-modules'
+const expandButton: HTMLButtonElement = document.querySelector(
+  '#expand-modules'
 ) as HTMLButtonElement;
 
 const allDetails = document.querySelectorAll('details');
 
 const collapseModules = () => {
-  allDetails.forEach((detailElement) => detailElement.removeAttribute('open'));
+  for (const detailElement of allDetails) detailElement.removeAttribute('open');
 };
 
 const expandModules = () => {
-  allDetails.forEach((detailElement) => detailElement.setAttribute('open', ''));
+  for (const detailElement of allDetails)
+    detailElement.setAttribute('open', '');
 };
 
 collapseButton.addEventListener('click', collapseModules);

@@ -4,30 +4,30 @@ import { VerificationResponse } from './models';
 
 /**
  *
- * @param {functions.https.Request} req http request
- * @param {functions.Response<unknown>} res http response
+ * @param {functions.https.Request} request http request
+ * @param {functions.Response<unknown>} response http response
  */
 export async function verify(
-  req: functions.https.Request,
-  res: functions.Response<unknown>
+  request: functions.https.Request,
+  response: functions.Response<unknown>
 ): Promise<void> {
-  res.set('Access-Control-Allow-Origin', '*');
-  res.set('Access-Control-Allow-Methods', 'GET');
+  response.set('Access-Control-Allow-Origin', '*');
+  response.set('Access-Control-Allow-Methods', 'GET');
 
   // ReCaptcha Server-side Secret
   const secret = functions.config().recaptcha.server;
 
   // Client-side token passed via POST body
-  const token = req.query.token;
+  const token = request.query.token;
 
   // ReCaptcha Verification
-  const response = await fetch(
+  const verificationResponse = await fetch(
     `https://www.google.com/recaptcha/api/siteverify?secret=${secret}&response=${token}`,
     { method: 'POST' }
   );
   const verification: VerificationResponse =
-    (await response.json()) as VerificationResponse;
+    (await verificationResponse.json()) as VerificationResponse;
 
   // Send verification in response to POST
-  res.status(200).send(verification);
+  response.status(200).send(verification);
 }

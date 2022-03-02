@@ -1,2 +1,2 @@
-export * from './contactMessage';
-export * from './verificationResponse';
+export * from './contact-message';
+export * from './verification-response';

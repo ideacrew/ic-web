@@ -23,10 +23,10 @@ export async function sendEmail(
 
     // Update message to reflect message was sent
     return snapshot.ref.update({ sent: true });
-  } catch (e) {
+  } catch (error) {
     // Database write failed?
-    console.error('Unable to send email');
-    return Promise.resolve();
+    console.error('Unable to send email', error);
+    return;
   }
 }
 

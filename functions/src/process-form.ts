@@ -1,33 +1,33 @@
 import * as functions from 'firebase-functions';
 import * as admin from 'firebase-admin';
-import { ContactMessage } from './models/contactMessage';
+import { ContactMessage } from './models/contact-message';
 
 admin.initializeApp();
 
 /**
  * Processes a contact form submission
- * @param {functions.https.Request } req http request
- * @param {functions.Response<unknown> } res http response
+ * @param {functions.https.Request } request http request
+ * @param {functions.Response<unknown> } response http response
  */
 export async function processFormSubmission(
-  req: functions.https.Request,
-  res: functions.Response<unknown>
+  request: functions.https.Request,
+  response: functions.Response<unknown>
 ): Promise<void> {
   // Quick check to see if contactName is in body
-  if (req.body.contactName !== undefined) {
+  if (request.body.contactName !== undefined) {
     try {
       // Set the POST body as a  new document in the messages collection
-      await addMessage(req.body as ContactMessage);
+      await addMessage(request.body as ContactMessage);
 
       // Send success status
-      res.status(200).send('Okay');
-    } catch (e) {
+      response.status(200).send('Okay');
+    } catch (error) {
       // If this db action wasn't successful, send an error response
-      res.status(500).send({ error: e });
+      response.status(500).send({ error: error });
     }
   } else {
     // If the POST body didn't include a contactName, send an error response
-    res.status(400).send('Missing form inputs');
+    response.status(400).send('Missing form inputs');
   }
 }
 
