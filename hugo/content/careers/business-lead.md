@@ -3,7 +3,7 @@ base_salary = 80000
 location = ["Remote", "Washington, DC"]
 maximum_salary = 155000
 position_type = "Full Time"
-post_date = 2021-01-22T00:00:00Z
+post_date = 2022-01-22T00:00:00Z
 summary = "IdeaCrew is currently seeking an experienced Business Lead to help support and lead our fast-paced, growing State-based Marketplace (SBM) team."
 title = "Business Lead"
 

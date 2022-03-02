@@ -3,7 +3,7 @@ base_salary = 70000
 location = ["Washington, DC"]
 maximum_salary = 140000
 position_type = "Full Time"
-post_date = 2021-02-18T00:00:00Z
+post_date = 2022-02-18T00:00:00Z
 summary = "IdeaCrew is currently seeking an experienced Business Analyst with CRM experience to help support and lead our fast-paced, growing team."
 title = "Business Analyst-CRM"
 
