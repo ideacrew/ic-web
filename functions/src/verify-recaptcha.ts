@@ -19,11 +19,12 @@ export async function verify(
   // Client-side token passed via POST body
   const token = request.query.token;
 
-  // ReCaptcha Verification
-  const verificationResponse = await axios.post(
-    `https://www.google.com/recaptcha/api/siteverify?secret=${secret}&response=${token}`
-  );
-
-  // Send verification in response to POST
-  response.status(200).send(verificationResponse);
+  try {
+    const { data: verificationResponse } = await axios.post(
+      `https://www.google.com/recaptcha/api/siteverify?secret=${secret}&response=${token}`
+    );
+    response.status(200).send(verificationResponse);
+  } catch (error) {
+    response.status(500).send(`Could not get verification ${error}`);
+  }
 }
