@@ -1,6 +1,5 @@
 import * as functions from 'firebase-functions';
-import fetch from 'node-fetch';
-import { VerificationResponse } from './models';
+import axios from 'axios';
 
 /**
  *
@@ -21,13 +20,10 @@ export async function verify(
   const token = request.query.token;
 
   // ReCaptcha Verification
-  const verificationResponse = await fetch(
-    `https://www.google.com/recaptcha/api/siteverify?secret=${secret}&response=${token}`,
-    { method: 'POST' }
+  const verificationResponse = await axios.post(
+    `https://www.google.com/recaptcha/api/siteverify?secret=${secret}&response=${token}`
   );
-  const verification: VerificationResponse =
-    (await verificationResponse.json()) as VerificationResponse;
 
   // Send verification in response to POST
-  response.status(200).send(verification);
+  response.status(200).send(verificationResponse);
 }

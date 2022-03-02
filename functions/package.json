@@ -15,10 +15,10 @@
   "main": "lib/index.js",
   "dependencies": {
     "@sendgrid/mail": "^7.4.2",
+    "axios": "^0.26.0",
     "cors": "^2.8.5",
     "firebase-admin": "^10.0.2",
-    "firebase-functions": "^3.13.1",
-    "node-fetch": "^3.0.0-beta.9"
+    "firebase-functions": "^3.13.1"
   },
   "devDependencies": {
     "@types/cors": "^2.8.9",
