@@ -22,7 +22,7 @@ This is a leadership role in the IdeaCrew team, with potential for continued gro
 - RESTful API design
 - Ruby on Rails development
 - Server-side UI development principles
-- Client-side UI development principles and frameworks (primarily AngularJS)
+- Client-side UI development principles and frameworks (primarily Angular)
 - Mobile-first application design
 
 ### A Solutions Architect for IdeaCrew will
