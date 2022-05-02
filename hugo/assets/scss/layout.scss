@@ -32,7 +32,6 @@ body.page-kind-home {
 }
 
 main {
-  // min-height: calc(100vh - var(--header-height));
   padding: var(--header-height) var(--side-padding) 0;
 
   section {
@@ -80,6 +79,8 @@ main > :first-child:not(.index-heading) {
     padding-right: 0;
     padding-left: 0;
     grid-template-columns: 1fr 53.33rem 1fr;
+    grid-template-rows: min-content;
+    min-height: calc(100vh - var(--header-height));
   }
 
   main > * {
