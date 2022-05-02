@@ -43,6 +43,10 @@
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <meta name="description" content="{{ .Description | default .Summary }}">
 
-<link rel="canonical" href="{{ .Permalink | absURL }}" />
+{{ if .Params.canonicalUrl }}
+<link rel="canonical" href="{{ .Params.canonicalUrl }}">
+{{ else }}
+<link rel="canonical" href="{{ .Permalink | absURL }}">
+{{ end }}
 {{ template "_internal/opengraph.html" . }}
 {{ template "_internal/twitter_cards.html" . }}
