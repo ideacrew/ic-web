@@ -1,0 +1,20 @@
+{{ define "head-styles" }}
+{{ $pageCSS := "scss/news/single.scss" }}
+{{ $options := (dict "outputStyle" "compressed") }}
+{{ $inlineCSS := resources.Get $pageCSS | resources.ToCSS $options }}
+<style>{{ $inlineCSS.Content | safeCSS }}</style>
+{{ end }}
+
+{{ define "main" }}
+<article>
+  <h1>{{ .Title }}</h1>
+  <time datetime="{{ .Params.publishdate }}">
+    Published: {{ .Params.publishdate.Format "January 2, 2006" }}
+  </time>
+  <section class="article-content">
+    {{ .Content }}
+  </section>
+</article>
+{{ end }}
+
+

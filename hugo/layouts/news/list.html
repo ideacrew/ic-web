@@ -1,0 +1,18 @@
+{{ define "head-styles" }}
+{{ $pageCSS := "scss/news/list.scss" }}
+{{ $options := (dict "outputStyle" "compressed") }}
+{{ $inlineCSS := resources.Get $pageCSS | resources.ToCSS $options }}
+<style>{{ $inlineCSS.Content | safeCSS }}</style>
+{{ end }}
+
+{{ define "main" }}
+<h1>News</h1>
+<ul class="news-list">
+  {{ range .Pages.ByPublishDate.Reverse }}
+  <li class="news-item">
+    <h3 class="news-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <time>Published: {{ .Params.publishdate.Format "January 2, 2006" }}</time>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}
