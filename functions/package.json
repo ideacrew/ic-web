@@ -14,7 +14,7 @@
   },
   "main": "lib/index.js",
   "dependencies": {
-    "@sendgrid/mail": "^7.6.2",
+    "@sendgrid/mail": "^7.4.2",
     "axios": "^0.26.1",
     "cors": "^2.8.5",
     "firebase-admin": "^10.2.0",
