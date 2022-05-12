@@ -7,6 +7,7 @@ on:
     paths:
       - 'hugo/**'
       - 'firebase.json'
+      - '.github/workflows/firebase-hosting-merge.yml'
     branches:
       - trunk
 jobs:
