@@ -1,4 +1,4 @@
-import { MailDataRequired, send, setApiKey } from '@sendgrid/mail';
+import sgMail, { MailDataRequired } from '@sendgrid/mail';
 import * as functions from 'firebase-functions';
 
 import { ContactMessage } from './models';
@@ -13,12 +13,7 @@ export async function sendEmail(
 ): Promise<FirebaseFirestore.WriteResult | void> {
   const apiKey: string = functions.config().sendgrid.key;
 
-  // Sets the SendGrid API key, accessed from cloud functions secret store
-  functions.logger.info('API Key', {
-    apiKey: apiKey.slice(0, 5),
-  });
-
-  setApiKey(apiKey);
+  sgMail.setApiKey(apiKey);
 
   // Prepare email for sending
   const mailData = prepareEmail(snapshot.data() as ContactMessage);
@@ -28,7 +23,7 @@ export async function sendEmail(
   try {
     functions.logger.info('Sending mail', { mailData });
     // Send email
-    await send(mailData);
+    await sgMail.send(mailData);
 
     // If successful, update the sent flag
     sent = true;
