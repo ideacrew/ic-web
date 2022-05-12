@@ -11,11 +11,14 @@ import { ContactMessage } from './models';
 export async function sendEmail(
   snapshot: functions.firestore.QueryDocumentSnapshot
 ): Promise<FirebaseFirestore.WriteResult | void> {
+  const apiKey: string = functions.config().sendgrid.key;
+
   // Sets the SendGrid API key, accessed from cloud functions secret store
-  setApiKey(functions.config().sendgrid.key);
   functions.logger.info('API Key', {
-    apiKey: (functions.config().sendgrid.key as string).slice(0, 5),
+    apiKey: apiKey.slice(0, 5),
   });
+
+  setApiKey(apiKey);
 
   // Prepare email for sending
   const mailData = prepareEmail(snapshot.data() as ContactMessage);
