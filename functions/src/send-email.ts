@@ -13,21 +13,32 @@ export async function sendEmail(
 ): Promise<FirebaseFirestore.WriteResult | void> {
   // Sets the SendGrid API key, accessed from cloud functions secret store
   setApiKey(functions.config().sendgrid.key);
+  functions.logger.info('API Key', {
+    apiKey: (functions.config().sendgrid.key as string).slice(0, 5),
+  });
 
   // Prepare email for sending
   const mailData = prepareEmail(snapshot.data() as ContactMessage);
 
+  let sent = false;
+
   try {
+    functions.logger.info('Sending mail', { mailData });
     // Send email
     await send(mailData);
 
-    // Update message to reflect message was sent
-    return snapshot.ref.update({ sent: true });
+    // If successful, update the sent flag
+    sent = true;
   } catch (error) {
     // Database write failed?
-    console.error('Unable to send email', error);
+    functions.logger.error('Unable to send email', {
+      error,
+    });
     return;
   }
+
+  // Update message to reflect status
+  return snapshot.ref.update({ sent });
 }
 
 /**
