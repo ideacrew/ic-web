@@ -21,6 +21,6 @@ With CoverME.gov, consumers now have access to new interactive resources such as
 “IdeaCrew has devised a formula to both build and operate affordable SBM and Insurance Affordability Program solutions by combining a seasoned SBM policy and operations staff, state-of-the-art technology architecture housed in a secure cloud environment and agile software development processes.” IdeaCrew founder and CEO, Dan Thomas said. “Transitioning to a State-based Marketplace delivers a host of benefits, and we are proud to play a leading role in expanding Mainers’ access to healthcare coverage in our streamlined model.”
 With conclusion of the initial implementation, the state of Maine plans to leverage IdeaCrew’s expertise for continued operations and maintenance support as well as future enhancements.
 
-### About IdeaCrew Inc.
+### About IdeaCrew Inc
 
 Established in 2002 with headquarters in Washington DC, IdeaCrew is a full IT services company and leading provider of State-based Marketplace systems and large organization benefit enrollment solutions. For more information, please visit ideacrew.com.

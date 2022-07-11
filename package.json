@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "cd hugo && hugo server --disableFastRender",
+    "dev": "cd hugo && hugo server --disableFastRender --liveReloadPort 443",
     "build": "cd hugo && hugo --minify",
     "build:local": "rm -rf public && npm run build",
     "deploy": "firebase deploy --only hosting",
