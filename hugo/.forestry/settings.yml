@@ -5,6 +5,11 @@ admin_path: "/hugo/static/admin"
 webhook_url: 
 sections:
 - type: directory
+  path: hugo/content/news
+  label: News
+  create: documents
+  match: "**/*"
+- type: directory
   path: hugo/content/careers
   label: Careers
   create: documents
