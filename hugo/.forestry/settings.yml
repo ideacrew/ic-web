@@ -10,6 +10,8 @@ sections:
   create: documents
   match: "**/*"
   exclude: _index.md
+  templates:
+  - news
 - type: directory
   path: hugo/content/careers
   label: Careers
