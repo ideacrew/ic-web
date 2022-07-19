@@ -1,6 +1,5 @@
 +++
 title = "Health agency looks to data governance to streamline services"
-subtitle = "After struggling to work with nearly 70 disparate databases and paper-based grants management, the Washington, D.C.’s Department of Behavioral Health will map its data sources into an integrated technology engine that will ease information sharing and analysis."
 author = "Simon Henry"
 publishdate = 2022-07-02T00:00:00Z
 canonicalUrl = "https://www.gcn.com/data-analytics/2022/07/health-agency-looks-data-governance-streamline-services/373179/"

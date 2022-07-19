@@ -1,6 +1,5 @@
 +++
 title = "IdeaCrew enables DCHBX to be the first SBE to Go to Market, address the 2021 American Rescue Plan, & deliver DC resident savings"
-subtitle = "Thanks to its modern IT infrastructure, the Washington, D.C., Health Benefit Exchange Authority pushed out new features that reduced users’ health insurance premiums just two weeks after President Joe Biden signed the American Rescue Plan of 2021"
 author = "Simon Henry"
 publishdate = 2021-08-21T00:00:00Z
 canonicalUrl = "https://gcn.com/cloud-infrastructure/2021/07/dc-pivots-for-rescue-plans-health-benefits-changes/315608/"

@@ -1,6 +1,5 @@
 +++
 title = "CoverME.gov, the Nation’s Newest State-based Marketplace, Drives Increased Enrollment for the State of Maine"
-subtitle = "With the help of IdeaCrew, Inc., the State of Maine concluded its first Open Enrollment period, after launching in record time."
 author = "Simon Henry"
 publishdate = 2022-04-28T00:00:00Z
 canonicalUrl = "https://www.healthcarebusinesstoday.com/coverme-gov-the-nations-newest-state-based-marketplace-drives-increased-enrollment-for-the-state-of-maine/"

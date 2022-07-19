@@ -1,6 +1,5 @@
 +++
 title = "IdeaCrew's CFO, Trevor Garner guest on Speaking to Influence podcast"
-subtitle = ""
 author = "Mark Goho"
 publishdate = 2022-05-05T00:00:00Z
 
