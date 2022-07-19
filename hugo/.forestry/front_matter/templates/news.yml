@@ -5,6 +5,28 @@ fields:
 - name: title
   type: text
   config:
-    required: false
+    required: true
   label: Title
   description: The title of the article; should be the same as source article.
+- name: author
+  type: text
+  config:
+    required: false
+  label: Author
+  description: Who authored this article? Should be the same as source article.
+  hidden: false
+- name: publishdate
+  type: datetime
+  label: Publish date
+  config:
+    required: true
+    date_format: 
+    time_format: 
+    display_utc: false
+  description: The date the article was published.
+- name: canonicalUrl
+  type: text
+  config:
+    required: false
+  label: Canonical URL
+  description: If copying in a new article, the source article's URL
