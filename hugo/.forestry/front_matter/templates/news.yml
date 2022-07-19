@@ -1,4 +1,10 @@
 ---
 label: News
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+  description: The title of the article; should be the same as source article.
