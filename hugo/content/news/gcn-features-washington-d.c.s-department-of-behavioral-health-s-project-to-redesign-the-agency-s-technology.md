@@ -1,7 +1,6 @@
 +++
 author = ""
 canonicalUrl = "https://gcn.com/data-analytics/2022/07/health-agency-looks-data-governance-streamline-services/373179/"
-draft = true
 publishdate = 2022-07-08T04:00:00Z
 title = "GCN Features Washington, D.C.’s Department of Behavioral Health’s Project to Redesign the Agency’s Technology"
 
