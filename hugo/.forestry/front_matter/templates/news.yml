@@ -31,4 +31,5 @@ fields:
   label: Canonical URL
   description: If copying in a new article, the source article's URL
 pages:
+- hugo/content/news/gcn-features-washington-d.c.s-department-of-behavioral-health-s-project-to-redesign-the-agency-s-technology.md
 - hugo/content/news/leadership-howard-county-names-trevor-garner-board-chair.md
