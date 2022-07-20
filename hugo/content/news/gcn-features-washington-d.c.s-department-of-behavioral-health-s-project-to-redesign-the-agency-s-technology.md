@@ -16,6 +16,5 @@ After struggling to work with nearly 70 disparate databases and paper-based gran
 [**Health agency looks to data governance to streamline services**](https://ideacrew.com/news/health-agency-streamlining-services/)  
 Washington, D.C.’s Department of Behavioral Health (DBH) has almost 70 disparate databases and little to no data governance, which complicates its ability to provide prevention, treatment, recovery services and support for about 30,000 district residents with mental health and/or substance use disorders. In May, IdeaCrew announced that DBH had tapped the company to create a proof of concept for redesigning the agency’s use of technology. It will map the various data sources into an integrated technology engine that will allow data to be easily shared and analyzed.  
   
-**GCN**  
 [**Stephanie Kanowitz - GCN**](https://gcn.com/voices/stephanie-kanowitz/18811/?oref=gcn-post-author?oref=rf-post-author)  
 Stephanie Kanowitz is a freelance writer based in northern Virginia.
