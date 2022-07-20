@@ -31,4 +31,6 @@ That pilot supports DBH’s shift to whole-person care because behavioral health
 
 That predictability is one benefit he expects to come from this effort. Others include getting a better understanding of which services are effective and being able to identify gaps in needs for new services. “I think the benefit will be structure to data – something that foundational. That sounds crazy,” Neff said. But “we don’t have it, and that’s critical. We need to have confidence in data.”
 
-Change management will factor heavily into the project because it will fundamentally alter the way many DBH workers and contractors do their work. Buy-in from executives like Neff is in place. To get support throughout the department, the IdeaCrew team has had “interviews with pretty much every senior executive and middle manager,” Canavan said. “We hope they’ll continue to play with us as we break those [solutions we come up with] and put them back together.”
+Change management will factor heavily into the project because it will fundamentally alter the way many DBH workers and contractors do their work. Buy-in from executives like Neff is in place. To get support throughout the department, the IdeaCrew team has had “interviews with pretty much every senior executive and middle manager,” Canavan said. “We hope they’ll continue to play with us as we break those \[solutions we come up with\] and put them back together.”
+
+[Article originally published on GCN](https://gcn.com/data-analytics/2022/07/health-agency-looks-data-governance-streamline-services/373179/)
