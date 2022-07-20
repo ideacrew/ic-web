@@ -2,7 +2,7 @@
 author = "Stephanie Kanowitz"
 canonicalUrl = "https://www.gcn.com/data-analytics/2022/07/health-agency-looks-data-governance-streamline-services/373179/"
 publishdate = 2022-07-08T00:00:00Z
-title = "GCN Features Washington, D.C.’s Department of Behavioral Health’s Project to Redesign the Agency’s Technology"
+title = "Health agency looks to data governance to streamline services"
 
 +++
 Washington, D.C.’s Department of Behavioral Health (DBH) has almost 70 disparate databases and little to no data governance, which complicates its ability to provide prevention, treatment, recovery services and support for about 30,000 district residents with mental health and/or substance use disorders.
