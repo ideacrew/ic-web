@@ -6,16 +6,10 @@ publishdate = 2022-07-08T04:00:00Z
 title = "GCN Features Washington, D.C.’s Department of Behavioral Health’s Project to Redesign the Agency’s Technology"
 
 +++
-As part of vision to transform service delivery to a whole-person care model, the District of Columbia’s Department of Behavioral Health (DBH) is preparing sweeping improvements to its technology and data management capabilities. Recently, [Stephanie Kanowitz](https://gcn.com/voices/stephanie-kanowitz/18811/?oref=gcn-post-author?oref=rf-post-author) of Government Computer News spoke with Michael Neff, D.C.’s Department of Behavioral Health’s Chief of Administrative Operations and Patrick Canavan, IdeaCrew’s Vice President of Consulting Services who are leading this project. See Ms. Kanowitz’s article: [Health agency looks to data governance to streamline services](https://gcn.com/data-analytics/2022/07/health-agency-looks-data-governance-streamline-services/373179/) to learn how DBH is refitting technology to align with its new mission.
+In preparation for the American Rescue Plan signed in March, DCHBX and IdeaCrew worked to address how they would develop new features in response to the plan and to support DC Residents with health benefit changes. GCN spoke with CEO, Dan Thomas, and DCHBX Executive Director, Mila Kofman on their recent accomplishments of lowering health insurance premiums for the 100,000 users of DCHBX and expanding the number of people who qualify.
 
-**GCN**  
-[**Health agency looks to data governance to streamline services**](https://gcn.com/data-analytics/2022/07/health-agency-looks-data-governance-streamline-services/373179/)  
-After struggling to work with nearly 70 disparate databases and paper-based grants management, the Washington, D.C.’s Department of Behavioral Health will map its data sources into an integrated technology engine that will ease information sharing and analysis.  
-[https://gcn.com/data-analytics/2022/07/health-agency-looks-data-governance-streamline-services/373179/](https://gcn.com/data-analytics/2022/07/health-agency-looks-data-governance-streamline-services/373179/ "https://gcn.com/data-analytics/2022/07/health-agency-looks-data-governance-streamline-services/373179/")
+This ground-breaking achievement has allowed for some customers to go from paying $357 for coverage to $3.76 for the same coverage, resulting in $36 million in total savings. This was accomplished through IdeaCrew’s technical expertise and foresight to originally stand up the DCHBX in an agile, cloud-based environment, so when new features are needed they can be implemented cost-effectively and in a short amount of time.
 
-**IdeaCrew**  
-[**Health agency looks to data governance to streamline services**](https://ideacrew.com/news/health-agency-streamlining-services/)  
-Washington, D.C.’s Department of Behavioral Health (DBH) has almost 70 disparate databases and little to no data governance, which complicates its ability to provide prevention, treatment, recovery services and support for about 30,000 district residents with mental health and/or substance use disorders. In May, IdeaCrew announced that DBH had tapped the company to create a proof of concept for redesigning the agency’s use of technology. It will map the various data sources into an integrated technology engine that will allow data to be easily shared and analyzed.  
-  
-[**Stephanie Kanowitz - GCN**](https://gcn.com/voices/stephanie-kanowitz/18811/?oref=gcn-post-author?oref=rf-post-author)  
-Stephanie Kanowitz is a freelance writer based in northern Virginia.
+“The fact that we were able to do that a couple of weeks after the bill was signed, it’s huge,” Kofman said about the impactful changes for DC Residents.
+
+[Read the full article in GCN](https://gcn.com/articles/2021/07/06/dc-health-benefit-exchange-modernization.aspx)
