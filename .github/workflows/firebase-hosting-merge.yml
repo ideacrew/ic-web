@@ -15,14 +15,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: |
-          curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest \
-          | grep browser_download_url \
-          | grep Linux-64bit.deb \
-          | grep extended \
-          | cut -d '"' -f 4 \
-          | wget -i -
-          sudo dpkg -i hugo*_Linux-64bit.deb
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.105.0'
+          extended: true
       - run: cd hugo && hugo --minify
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
