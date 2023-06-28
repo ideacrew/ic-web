@@ -2,7 +2,7 @@
   <div class="footer-content-container">
     <div class="company-info">
       <img src="/images/full-logo.svg" alt="" width="186" height="50">
-      <div class="company-name">IdeaCrew, Inc. © 2020</div>
+      <div class="company-name">IdeaCrew, Inc. © {{ now.Format "2006" }}</div>
     </div>
     <nav class="footer-nav">
       {{ partial "nav-links" . }}
