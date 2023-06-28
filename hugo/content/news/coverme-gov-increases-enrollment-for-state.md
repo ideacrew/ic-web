@@ -1,10 +1,9 @@
-+++
-title = "CoverME.gov, the Nation’s Newest State-based Marketplace, Drives Increased Enrollment for the State of Maine"
-author = "Simon Henry"
-publishdate = 2022-04-28T00:00:00Z
-canonicalUrl = "https://www.healthcarebusinesstoday.com/coverme-gov-the-nations-newest-state-based-marketplace-drives-increased-enrollment-for-the-state-of-maine/"
-
-+++
+---
+title: 'CoverME.gov, the Nation’s Newest State-based Marketplace, Drives Increased Enrollment for the State of Maine'
+author: 'Simon Henry'
+publishdate: 2022-04-28T00:00:00Z
+canonicalUrl: 'https://www.healthcarebusinesstoday.com/coverme-gov-the-nations-newest-state-based-marketplace-drives-increased-enrollment-for-the-state-of-maine/'
+---
 
 IdeaCrew, a Washington, DC-based leading provider of State-based Marketplace (SBM) solutions and services, announces the successful implementation and completion of open enrollment for CoverME.gov, the State of Maine’s new Marketplace.
 

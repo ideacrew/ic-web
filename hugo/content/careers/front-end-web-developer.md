@@ -1,14 +1,13 @@
-+++
-base_salary = 80000
-location = ["Washington, DC", "Remote"]
-maximum_salary = 150000
-position_type = "Full Time"
-post_date = 2022-12-02T00:00:00Z
-summary = "IdeaCrew is currently seeking a Front End Web Developer to build user interfaces and shape the user experience of our products."
-title = "Front End Web Developer"
-draft = true
-
-+++
+---
+base_salary: 80000
+location: ['Washington, DC', 'Remote']
+maximum_salary: 150000
+position_type: 'Full Time'
+post_date: 2022-12-02T00:00:00Z
+summary: 'IdeaCrew is currently seeking a Front End Web Developer to build user interfaces and shape the user experience of our products.'
+title: 'Front End Web Developer'
+draft: true
+---
 
 IdeaCrew is currently seeking a Front End Web Developer to join our team. In this role you will build user interfaces and shape the user experience of our products. We have interest in candidates at both mid and senior levels. This position requires experience defining, evolving, and embedding development standards across teams.
 

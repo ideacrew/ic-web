@@ -1,13 +1,12 @@
-+++
-base_salary = 125000
-location = ["Washington, DC", "Remote"]
-maximum_salary = 225000
-position_type = "Full Time"
-post_date = 2022-02-12T00:00:00Z
-summary = "IdeaCrew is seeking a Principal Engineer to develop, defend, and oversee the execution of system architecture and implementation patterns."
-title = "Solutions Engineer/Architect"
-
-+++
+---
+base_salary: 125000
+location: ['Washington, DC', 'Remote']
+maximum_salary: 225000
+position_type: 'Full Time'
+post_date: 2022-02-12T00:00:00Z
+summary: 'IdeaCrew is seeking a Principal Engineer to develop, defend, and oversee the execution of system architecture and implementation patterns.'
+title: 'Solutions Engineer/Architect'
+---
 
 IdeaCrew is seeking a Principal Engineer to develop, defend and oversee the execution of system architecture and implementation patterns. You will work closely with the Chief Architect to define and map long term architectural vision for multiple products and platforms, set appropriate milestones in line with product and client roadmaps, and work with cross functional teams to ensure development is executed in line with this strategy.
 

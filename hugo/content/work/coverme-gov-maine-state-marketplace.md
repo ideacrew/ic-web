@@ -1,13 +1,12 @@
-+++
-featured_image = "coverme-wide.jpg"
-problem = "Maine’s pledge to run its own health insurance \nmarketplace made it the latest state, literally, to \ntransition from the Federally-Facilitated Exchange (FFE)."
-quote = ""
-quote_attribution = ""
-solution = "CoverME.gov, the nation’s newest State-based \nMarketplace, powered by IdeaCrew's cloud SBM platform, \nlaunched in record time enrolling over 66,000 Mainers in affordable health plans for 2022."
-summary = "Transitioning Maine off the Federally-Facilitated Exchange (FFE) to a State-based Marketplace (SBM)"
-title = "CoverME.gov"
-
-+++
+---
+featured_image: 'coverme-wide.jpg'
+problem: "Maine’s pledge to run its own health insurance \nmarketplace made it the latest state, literally, to \ntransition from the Federally-Facilitated Exchange (FFE)."
+quote: ''
+quote_attribution: ''
+solution: "CoverME.gov, the nation’s newest State-based \nMarketplace, powered by IdeaCrew's cloud SBM platform, \nlaunched in record time enrolling over 66,000 Mainers in affordable health plans for 2022."
+summary: 'Transitioning Maine off the Federally-Facilitated Exchange (FFE) to a State-based Marketplace (SBM)'
+title: 'CoverME.gov'
+---
 
 When Maine’s Governor notified CMS that her administration intended to transition Maine to a state-based marketplace using the federal platform (SBM-FP) in August 2019 it signaled Maine's intent to switch to a fully state-run exchange at a later date. In fact, state legislation was pushed through and Maine contracted with IdeaCrew at the end of January 2021 to provide the marketplace platform (called CoverME.gov) to enroll Mainers in coverage ready for open enrollment starting in November that year. The challenge: IdeaCrew had only 8 months until October to launch. No one had ever transitioned a state from HealthCare.gov that quickly.
 

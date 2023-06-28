@@ -8,7 +8,7 @@
 
 {{ define "main" }}
 {{ $jobType := dict "Full Time" "FULL_TIME" }}
-{{ $shortDate := .Params.post_date.Format "2006-01-02" }}
+{{ $shortDate := dateFormat "2006-01-02" .Params.post_date }}
 
 <section class="career-heading">
   <h1 class="career-title">{{ .Params.title }}</h1>
@@ -17,7 +17,7 @@
     <div class="location-list">{{ delimit .Params.location "/" }}</div>
     <div class="posted-on">
       Posted: <time datetime="{{ $shortDate }}">
-        {{ .Params.post_date.Format "January 2, 2006" }}
+        {{ dateFormat "January 2, 2006" .Params.post_date }}
       </time>
     </div>
   </div>
@@ -89,7 +89,7 @@
     },
     "jobLocationType": "TELECOMMUTE",
     "employmentType": "{{ replace .Params.position_type " " "_" | upper }}",
-    "datePosted": "{{ .Params.post_date.Format "2006-01-02" }}",
+    "datePosted": "{{ dateFormat "2006-01-02" .Params.post_date }}",
     "validThrough": "2022-04-01"
   }
 </script>

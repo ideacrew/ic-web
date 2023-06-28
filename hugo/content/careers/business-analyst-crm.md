@@ -1,13 +1,12 @@
-+++
-base_salary = 70000
-location = ["Washington, DC"]
-maximum_salary = 140000
-position_type = "Full Time"
-post_date = 2022-02-18T00:00:00Z
-summary = "IdeaCrew is currently seeking an experienced Business Analyst with CRM experience to help support and lead our fast-paced, growing team."
-title = "Business Analyst-CRM"
-
-+++
+---
+base_salary: 70000
+location: ['Washington, DC']
+maximum_salary: 140000
+position_type: 'Full Time'
+post_date: 2022-02-18T00:00:00Z
+summary: 'IdeaCrew is currently seeking an experienced Business Analyst with CRM experience to help support and lead our fast-paced, growing team.'
+title: 'Business Analyst-CRM'
+---
 
 IdeaCrew is currently seeking an experienced Business Analyst to help support and lead our fast-paced, growing State-based Marketplace (SBM) team. This individual will engage with cross-functional teams to manage the progression of critical activities, deliverables, resources, and timelines in connection with deployment and operations of key components of our technology platform SBMs.
 
